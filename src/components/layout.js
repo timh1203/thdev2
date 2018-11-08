@@ -83,7 +83,7 @@ const GlobalStyles = createGlobalStyle`
   h6 {
     font-size: 2rem;
   }
-  p {
+  p, a {
     font-size: 1.6rem;
   }
   /* HTML5 display-role reset for older browsers */
