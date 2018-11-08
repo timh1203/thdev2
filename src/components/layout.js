@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-import styled, { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 import Header from '../components/Header'
 
 const Layout = ({ children }) => (
@@ -27,10 +27,10 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Wrapper>
+        <div>
           <Header />
           {children}
-        </Wrapper>
+        </div>
 
         <GlobalStyles />
       </>
@@ -64,12 +64,15 @@ const GlobalStyles = createGlobalStyle`
     font-size: 62.5%;
     text-align: center;
     margin: 0 auto;
+    font-family: 'Monserrat';
   }
   h1 {
     font-size: 3.6rem;
+    font-family: 'Quicksand';
   }
   h2 {
     font-size: 3.4rem;
+    font-family: 'Quicksand';
   }
   h3 {
     font-size: 3.2rem;
@@ -79,12 +82,17 @@ const GlobalStyles = createGlobalStyle`
   }
   h5 {
     font-size: 2.4rem;
+    font-family: 'Quicksand';
   }
   h6 {
     font-size: 2rem;
+    font-family: 'Quicksand';
   }
   p, a {
     font-size: 1.6rem;
+  }
+  a:visited {
+    color: black;
   }
   /* HTML5 display-role reset for older browsers */
   article, aside, details, figcaption, figure, 
@@ -110,10 +118,8 @@ const GlobalStyles = createGlobalStyle`
     border-spacing: 0;
   }
   section {
-
+    margin-top: 2rem;
   }
-`
-const Wrapper = styled.div`
 `
 
 Layout.propTypes = {
