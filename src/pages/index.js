@@ -8,7 +8,9 @@ const HomePage = (props) => (
   <Layout>
     <section>
       <Image fluid={props.data.profileImage.childImageSharp.fluid} />
-      <H3>"Graduating <A href="https://lambdaschool.com/" target="_blank">Lambda School</A> in March 2019.<br />Open to connections, not actively seeking."</H3>
+      <H3>Hi, I'm Tim!</H3>
+      <H3>I love building powerful web apps that solve real problems.</H3>
+      <H3>Graduating <A href="https://lambdaschool.com/" target="_blank">Lambda School</A> in March 2019.<br />Open to connections, not actively seeking.</H3>
       {/* <H3>"I have no special talents.<br />I am only passionately curious."</H3> */}
       {/* <Span>-Albert Einstein</Span> */}
     </section>
@@ -24,12 +26,12 @@ const Image = styled(Img)`
 `
 
 const H3 = styled.h3`
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 1.5;
 `
 
 const A = styled.a`
-  font-size: 4rem;
+  font-size: 3rem;
 `
 
 // const Span = styled.span`
