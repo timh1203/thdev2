@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import { createGlobalStyle } from 'styled-components'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -30,6 +31,7 @@ const Layout = ({ children }) => (
         <div>
           <Header />
           {children}
+          <Footer />
         </div>
 
         <GlobalStyles />
