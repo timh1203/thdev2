@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../components/Layout'
+import { Bar } from 'react-chartjs-2'
+import { chartData, chartOptions } from '../assets/chart.js'
 
 const AboutPage = (props) => (
   <Layout>
@@ -10,17 +12,24 @@ const AboutPage = (props) => (
       <Image fluid={props.data.aboutImage.childImageSharp.fluid} />
       <Div>
         <P>
-          I'm Full Stack Developer who loves to work with web technologies. I am graduating in March 2019 from <A href="https://lambdaschool.com/" alt="Lambda School Home" target="_blank">Lambda School</A>, an academy with focus on full-stack web development spanning 7 months.
-          Here, you will find my latest works, my technology skills, and links to my <A href="https://docs.google.com/document/d/1vO5Ee5s1YYSpoAR3Ng5RQ-IoP3S6jpo3-ALeiYa2zZo" target="_blank">resume</A> and certificates.
-          If you'd like to reach me, please send me a message on <A href="https://www.linkedin.com/in/timothyhoang/" alt="My LinkedIn" target="_blank">LinkedIn</A> or in the <A href="#" alt="Contact Section" target="_blank">Contact</A> section.
+          I'm Full Stack Developer who loves to work with web technologies. I'm expecting to graduate in March 2019 from Lambda School, an academy with focusing on full-stack web development spanning 7 months. Here, you will find my latest works, stats about my skills, and link to my resume and certificates.
+          If you'd like to reach me, please send me an email on LinkedIn or email me in the contact section.
+
         </P>
         <br />
         <P>
-          I started as a self-taught developer in November 2016 from a full-time Pharmacist role.
-          In the past, I have completed paid freelance web projects, worked with a remote team called Chingu-Voyage, and organized a Free Code Camp local group.
-          I'm looking to work on exciting new projects, collaborate with a great team, and seize opportunities to grow.
+          A self-taught developer who started in January 2017 and transitioned from a full-time Pharmacist role. I'm looking to work on exciting new projects, with a great team, and seize opportunities to grow.
+          In the past, I have completed paid freelance web projects, worked remotely with a team called Chingu-Voyage, and organized for a Free Code Camp local group.
         </P>
       </Div>
+      <div>
+        <Bar
+          data={chartData}
+          options={chartOptions}
+          responsive={true}
+        />
+        <p>★ self-appointed</p>
+      </div>
     </section>
   </Layout >
 )
@@ -30,29 +39,25 @@ const Image = styled(Img)`
   border-radius: 3px;
   margin: 2% auto;
   padding: 0;
-  box-shadow: 0 0 5px gray;
-    `
+`
 const Div = styled.div`
   max-width: 1024px;
   margin: 0 auto;
+  margin-bottom: 1rem;
   text-align: left;
   line-height: 1.5;
 `
 const P = styled.p`
-  font-size: 2.4rem;
-`
-const A = styled.a`
-  font-size: 2.4rem;
-  color: black;
+  font-size: 1.8rem;
 `
 
 export const pageQuery = graphql`
 query {
-      aboutImage: file(relativePath: {eq: "gto.jpg" }) {
-      childImageSharp {
-    fluid(maxWidth: 1000) {
+  aboutImage: file(relativePath: { eq: "gto.jpg" }) {
+    childImageSharp {
+      fluid(maxWidth: 1000) {
       ...GatsbyImageSharpFluid
-    }
+      }
     }
   }
 }
