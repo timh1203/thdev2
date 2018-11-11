@@ -12,14 +12,14 @@ const AboutPage = (props) => (
       <Image fluid={props.data.aboutImage.childImageSharp.fluid} />
       <Div>
         <P>
-          I'm Full Stack Developer who loves to work with web technologies. I'm expecting to graduate in March 2019 from Lambda School, an academy with focusing on full-stack web development spanning 7 months. Here, you will find my latest works, stats about my skills, and link to my resume and certificates.
-          If you'd like to reach me, please send me an email on LinkedIn or email me in the contact section.
+          I'm Full Stack Developer who loves to work with web technologies. I'm expecting to graduate in March 2019 from <A href="https://lambdaschool.com/" alt="Lambda School Home" target="_blank">Lambda School</A>, an academy with focusing on full-stack web development spanning 7 months. Here, you will find my latest works, stats about my skills, and link to my <A href="https://docs.google.com/document/d/1vO5Ee5s1YYSpoAR3Ng5RQ-IoP3S6jpo3-ALeiYa2zZo/edit" alt="My Online Resume" target="_blank">resume</A> and certificates.
+          If you'd like to reach me, please send me an email on <A href="https://www.linkedin.com/in/timothyhoang/" target="_blank">LinkedIn</A> or email me in the <A href="/contact" target="_blank">Contact</A> section.
 
         </P>
         <br />
         <P>
           A self-taught developer who started in January 2017 and transitioned from a full-time Pharmacist role. I'm looking to work on exciting new projects, with a great team, and seize opportunities to grow.
-          In the past, I have completed paid freelance web projects, worked remotely with a team called Chingu-Voyage, and organized for a Free Code Camp local group.
+          In the past, I have completed paid freelance web projects, worked remotely with a team called <A href="https://chingu.io/" target="_blank">Chingu Voyage</A>, and organized for a Free Code Camp <A href="https://free-code-camp-ashburn.github.io/website/" target="_blank">local group</A>.
         </P>
       </Div>
       <Div2>
@@ -45,12 +45,6 @@ const AboutPage = (props) => (
   </Layout >
 )
 
-const Image = styled(Img)`
-  max-width: 80%;
-  border-radius: 3px;
-  margin: 2% auto;
-  padding: 0;
-`
 const Div = styled.div`
   max-width: 1024px;
   margin: 0 auto;
@@ -65,6 +59,13 @@ const Div2 = styled.div`
 `
 const Div3 = styled.div`
 `
+const Image = styled(Img)`
+  max-width: 80%;
+  border-radius: 3px;
+  margin: 2% auto;
+  padding: 0;
+  box-shadow: 0 0 5px black;
+`
 const A = styled.a`
 `
 const Button = styled.button`
@@ -78,6 +79,7 @@ const Button = styled.button`
     background: black;
     color: white;
     font-weight: 700;
+    cursor: pointer;
   }
 `
 const P = styled.p`
