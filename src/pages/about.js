@@ -22,14 +22,25 @@ const AboutPage = (props) => (
           In the past, I have completed paid freelance web projects, worked remotely with a team called Chingu-Voyage, and organized for a Free Code Camp local group.
         </P>
       </Div>
-      <div>
+      <Div2>
+        <A href="https://docs.google.com/document/d/1vO5Ee5s1YYSpoAR3Ng5RQ-IoP3S6jpo3-ALeiYa2zZo/edit" alt="My Online Resume" target="_blank">
+          <Button>My Online Resume</Button>
+        </A>
+        <A href="https://www.freecodecamp.org/timh1203/front-end-certification" alt="Certificate: Free Code Camp" target="_blank">
+          <Button>Certificate: Free Code Camp</Button>
+        </A>
+        <A href="https://www.udemy.com/certificate/UC-F6RNIX9G/" alt="Certificate: Web Dev Bootcamp" target="_blank">
+          <Button>Certificate: Web Dev Bootcamp</Button>
+        </A>
+      </Div2>
+      <Div3>
         <Bar
           data={chartData}
           options={chartOptions}
           responsive={true}
         />
         <p>★ self-appointed</p>
-      </div>
+      </Div3>
     </section>
   </Layout >
 )
@@ -43,9 +54,31 @@ const Image = styled(Img)`
 const Div = styled.div`
   max-width: 1024px;
   margin: 0 auto;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   text-align: left;
   line-height: 1.5;
+`
+const Div2 = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+`
+const Div3 = styled.div`
+`
+const A = styled.a`
+`
+const Button = styled.button`
+  padding: 1rem;
+  border-radius: 3px;
+  font-family: 'Quicksand';
+  font-size: 1.4rem;
+  box-shadow: 1px 1px 3px black;
+
+  :hover {
+    background: black;
+    color: white;
+    font-weight: 700;
+  }
 `
 const P = styled.p`
   font-size: 1.8rem;
