@@ -41,6 +41,43 @@ const AboutPage = (props) => (
         />
         <p>★ self-appointed</p>
       </Div3>
+      <Div4>
+        <div>
+          <h3>‣ Front-End:</h3>
+          <P>HTML</P>
+          <P>CSS</P>
+          <P>JavaScript (ES6/Beyond)</P>
+          <P>React</P>
+          <P>Redux</P>
+          <P>Styled Components</P>
+          <P>CSS Grid/Flexbox</P>
+          <P>GatsbyJS</P>
+          <P>Bootstrap</P>
+          <P>jQuery</P>
+        </div>
+        <div>
+          <h3>‣ Back-End:</h3>
+          <P>NodeJS</P>
+          <P>Express</P>
+          <P>SQL/SQLite3</P>
+          <P>MongoDB/Mongoose</P>
+          <P>REST/APIs</P>
+          <P>Authorization</P>
+          <P>Authentication</P>
+          <P>Netlify</P>
+          <P>Heroku</P>
+        </div>
+        <div>
+          <h3>‣ Other:</h3>
+          <P>Git/Github </P>
+          <P>Gitflow Workflow</P>
+          <P>Jest/Enzyme/SuperTest</P>
+          <P>iTerm2</P>
+          <P>Yarn</P>
+          <P>NPM</P>
+          <P>Mac OSX/VS Code</P>
+        </div>
+      </Div4>  
     </section>
   </Layout >
 )
@@ -48,16 +85,25 @@ const AboutPage = (props) => (
 const Div = styled.div`
   max-width: 1024px;
   margin: 0 auto;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   text-align: left;
   line-height: 1.5;
 `
 const Div2 = styled.div`
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 `
 const Div3 = styled.div`
+  margin-bottom: 3rem;
+`
+const Div4 = styled.div`
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.0rem;
+  line-height: 1.5;
 `
 const Image = styled(Img)`
   max-width: 80%;
