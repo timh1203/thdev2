@@ -8,10 +8,10 @@ const Footer = () => (
 )
 
 const Div = styled.div`
-  position: absolute;
-  width: 90%;
-  bottom: 0;
-  left: 5%;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 2%;
   padding: 0.5% 0;
   border-top: 3px solid black;
 `

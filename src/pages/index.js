@@ -21,7 +21,6 @@ const Image = styled(Img)`
   max-width: 20%;
   border-radius: 50%;
   margin: 2% auto;
-  margin-top: 4rem;
   padding: 0;
 `
 
@@ -40,7 +39,7 @@ const A = styled.a`
 // `
 
 export const pageQuery = graphql`
-  query profileImage {
+  query {
     profileImage: file(relativePath: { eq: "profile.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {

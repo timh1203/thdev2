@@ -90,10 +90,10 @@ const GlobalStyles = createGlobalStyle`
     font-size: 2rem;
     font-family: 'Quicksand';
   }
-  p, a {
+  p {
     font-size: 1.6rem;
   }
-  a:visited {
+  a {
     color: black;
   }
   /* HTML5 display-role reset for older browsers */
@@ -120,7 +120,7 @@ const GlobalStyles = createGlobalStyle`
     border-spacing: 0;
   }
   section {
-    margin-top: 2rem;
+    margin: 3% 0;
   }
 `
 

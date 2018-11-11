@@ -20,8 +20,8 @@ const Header = () => (
     </Div2>
 
     <Div3>
-      <Link1 to="#" activeClassName="active">Home</Link1>
-      <Link1 to="#">About</Link1>
+      <Link1 to="" activeClassName="active">Home</Link1>
+      <Link1 to="about">About</Link1>
       <Link1 to="#">Portfolio</Link1>
       <Link1 to="#">Contact</Link1>
     </Div3>
