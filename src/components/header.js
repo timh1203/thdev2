@@ -2,15 +2,51 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 import { FaGithub, FaLinkedin, FaTwitter, FaMedium } from 'react-icons/fa';
+import { links } from '../assets/links.js'
 
 const Header = () => (
   <Div>
     <Div1>
-      <FaGithub1 />
-      <FaLinkedin1 />
-      <FaTwitter1 />
-      <FaMedium1 />
-      {/* <FaFreeCodeCamp1 /> */}
+      <a
+        href={links.github.url}
+        alt={links.github.alt}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaGithub1 />
+      </a>
+      <a
+        href={links.linkedIn.url}
+        alt={links.linkedIn.alt}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaLinkedin1 />
+      </a>
+      <a
+        href={links.twitter.url}
+        alt={links.twitter.alt}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaTwitter1 />
+      </a>
+      <a
+        href={links.medium.url}
+        alt={links.medium.alt}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaMedium1 />
+      </a>
+      {/* <a
+        href={links.freeCodeCamp.url}
+        alt={links.freeCodeCamp.alt}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaFreeCodeCamp1 />
+      </a> */}
     </Div1>
 
     <Div2>
@@ -29,39 +65,39 @@ const Header = () => (
 )
 
 const Div = styled.div`
-  border-bottom: 3px solid black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 0;
-`
+      border-bottom: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    `
 const Div1 = styled.div`
-  margin-bottom: 1rem;
-  flex: 1 1 30%;
-  line-height: 2;
-`
+      margin-bottom: 1rem;
+      flex: 1 1 30%;
+      line-height: 2;
+    `
 const Div2 = styled.div`
-  margin-bottom: 1rem;
-  flex: 1 1 40%;
-`
+      margin-bottom: 1rem;
+      flex: 1 1 40%;
+    `
 const Div3 = styled.div`
-  margin-bottom: 1rem;
-  flex: 1 1 30%;
-`
+      margin-bottom: 1rem;
+      flex: 1 1 30%;
+    `
 const Link1 = styled(Link)`
-  font-size: 2rem;
-  margin: 0 1rem;
-  font-family: 'Quicksand';
-  text-decoration: none;
-  border-radius: 5px;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  border-left: 2px solid white;
-  border-right: 2px solid white;
-  padding: 0 0.5rem;
-  color: black;
+      font-size: 2rem;
+      margin: 0 1rem;
+      font-family: 'Quicksand';
+      text-decoration: none;
+      border-radius: 5px;
+      border-top: 2px solid black;
+      border-bottom: 2px solid black;
+      border-left: 2px solid white;
+      border-right: 2px solid white;
+      padding: 0 0.5rem;
+      color: black;
   :hover {
-    border-top: 2px solid white;
+      border-top: 2px solid white;
     border-bottom: 2px solid white;
     border-left: 2px solid black;
     border-right: 2px solid black;
@@ -83,7 +119,7 @@ const FaGithub1 = styled(FaGithub)`
   height: 40px;
   margin: 0 2rem;
   :hover {
-    box-shadow: 3px 3px 3px black;
+      box-shadow: 3px 3px 3px black;
   }
 `
 const FaLinkedin1 = styled(FaLinkedin)`
@@ -94,7 +130,7 @@ const FaLinkedin1 = styled(FaLinkedin)`
   height: 40px;
   margin: 0 2rem;
   :hover {
-    box-shadow: 3px 3px 3px black;
+      box-shadow: 3px 3px 3px black;
   }
 `
 const FaTwitter1 = styled(FaTwitter)`
@@ -105,7 +141,7 @@ const FaTwitter1 = styled(FaTwitter)`
   height: 41px;
   margin: 0 2rem;
   :hover {
-    box-shadow: 3px 3px 3px black;
+      box-shadow: 3px 3px 3px black;
   }
 `
 const FaMedium1 = styled(FaMedium)`
@@ -116,7 +152,7 @@ const FaMedium1 = styled(FaMedium)`
   height: 47px;
   margin: 0 2rem;
   :hover {
-    box-shadow: 3px 3px 3px black;
+      box-shadow: 3px 3px 3px black;
   }
 `
 // const FaFreeCodeCamp1 = styled(FaFreeCodeCamp)`
