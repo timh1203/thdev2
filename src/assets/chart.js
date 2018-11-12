@@ -3,21 +3,23 @@ export const chartData = {
     "HTML/CSS",
     "JavaScript",
     "React/Redux",
-    "Node",
-    "Express",
+    "Node/Express",
+    "Python/Django",
+    "C",
     "SQL",
     "MongoDB",
     "Traveling"
   ],
   datasets: [{
     labels: ['Basic', 'Average', 'High', 'Ricktastic'],
-    data: [3, 3, 3, 2, 2, 1, 1, 4],
+    data: [3, 3, 3, 2, 2, 1, 1, 1, 4],
     backgroundColor: [
       '#E44D26',
       '#F5DC41',
       '#61DAFB',
       '#77AF63',
       '#000000',
+      '#a0a0a0',
       '#336791',
       '#60BE86',
       '#70A8E0'

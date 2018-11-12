@@ -44,11 +44,9 @@ const AboutPage = (props) => (
       <Div4>
         <div>
           <h3>‣ Front-End:</h3>
-          <P>HTML</P>
-          <P>CSS</P>
-          <P>JavaScript (ES6/Beyond)</P>
-          <P>React</P>
-          <P>Redux</P>
+          <P>HTML/CSS</P>
+          <P>JavaScript (ES6+)</P>
+          <P>React/Redux</P>
           <P>Styled Components</P>
           <P>CSS Grid/Flexbox</P>
           <P>GatsbyJS</P>
@@ -57,13 +55,13 @@ const AboutPage = (props) => (
         </div>
         <div>
           <h3>‣ Back-End:</h3>
-          <P>NodeJS</P>
-          <P>Express</P>
+          <P>NodeJS/Express</P>
+          <P>Python/Django</P>
+          <P>C</P>
           <P>SQL/SQLite3</P>
           <P>MongoDB/Mongoose</P>
           <P>REST/APIs</P>
-          <P>Authorization</P>
-          <P>Authentication</P>
+          <P>Authorization/Authentication</P>
           <P>Netlify</P>
           <P>Heroku</P>
         </div>
@@ -75,9 +73,10 @@ const AboutPage = (props) => (
           <P>iTerm2</P>
           <P>Yarn</P>
           <P>NPM</P>
-          <P>Mac OSX/VS Code</P>
+          <P>Mac OSX</P>
+          <P>VS Code</P>
         </div>
-      </Div4>  
+      </Div4>
     </section>
   </Layout >
 )
