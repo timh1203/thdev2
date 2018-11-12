@@ -2,37 +2,55 @@ import React from 'react'
 import styled from 'styled-components'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import Layout from '../components/Layout'
 import { Bar } from 'react-chartjs-2'
 import { chartData, chartOptions } from '../assets/chart.js'
+import Layout from '../components/Layout'
+import { links, skills } from '../assets/data'
 
 const AboutPage = (props) => (
   <Layout>
     <section>
       <Image fluid={props.data.aboutImage.childImageSharp.fluid} />
+
       <Div>
         <P>
-          I'm Full Stack Developer who loves to work with web technologies. I'm expecting to graduate in March 2019 from <A href="https://lambdaschool.com/" alt="Lambda School Home" target="_blank">Lambda School</A>, an academy with focusing on full-stack web development spanning 7 months. Here, you will find my latest works, stats about my skills, and link to my <A href="https://docs.google.com/document/d/1vO5Ee5s1YYSpoAR3Ng5RQ-IoP3S6jpo3-ALeiYa2zZo/edit" alt="My Online Resume" target="_blank">resume</A> and certificates.
-          If you'd like to reach me, please send me an email on <A href="https://www.linkedin.com/in/timothyhoang/" target="_blank">LinkedIn</A> or email me in the <A href="/contact" target="_blank">Contact</A> section.
-
+          I'm Full Stack Developer who loves to work with web technologies. I'm expecting to graduate in March 2019 from <A href={links.lambdaSchool.url} alt={links.lambdaSchool.alt} target="_blank" rel="noopener noreferrer">Lambda School</A>, an academy with focusing on full-stack web development spanning 7 months. Here, you will find my latest works, stats about my skills, and link to my <A href={links.resume.url} alt={links.resume.alt} target="_blank" rel="noopener noreferrer">resume</A> and certificates.
+          If you'd like to reach me, please send me an email on <A href={links.linkedIn.url} alt={links.linkedIn.alt} target="_blank" rel="noopener noreferrer">LinkedIn</A> or email me in the <A href="/contact" target="_blank" rel="noopener noreferrer">Contact</A> section.
         </P>
         <br />
         <P>
           A self-taught developer who started in January 2017 and transitioned from a full-time Pharmacist role. I'm looking to work on exciting new projects, with a great team, and seize opportunities to grow.
-          In the past, I have completed paid freelance web projects, worked remotely with a team called <A href="https://chingu.io/" target="_blank">Chingu Voyage</A>, and organized for a Free Code Camp <A href="https://free-code-camp-ashburn.github.io/website/" target="_blank">local group</A>.
+          In the past, I have completed paid freelance web projects, worked remotely with a team called <A href={links.chingu.url} alt={links.chingu.alt} target="_blank" rel="noopener noreferrer">Chingu Voyage</A>, and organized for a Free Code Camp <A href={links.fccAshburn.url} alt={links.fccAshburn.alt} target="_blank" rel="noopener noreferrer">local group</A>.
         </P>
       </Div>
+
       <Div2>
-        <A href="https://docs.google.com/document/d/1vO5Ee5s1YYSpoAR3Ng5RQ-IoP3S6jpo3-ALeiYa2zZo/edit" alt="My Online Resume" target="_blank">
+        <A
+          href={links.resume.url}
+          alt={links.resume.alt}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Button>My Online Resume</Button>
         </A>
-        <A href="https://www.freecodecamp.org/timh1203/front-end-certification" alt="Certificate: Free Code Camp" target="_blank">
+        <A
+          href={links.fccCertificate.url}
+          alt={links.fccCertificate.alt}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Button>Certificate: Free Code Camp</Button>
         </A>
-        <A href="https://www.udemy.com/certificate/UC-F6RNIX9G/" alt="Certificate: Web Dev Bootcamp" target="_blank">
+        <A
+          href={links.wdbcCertificate.url}
+          alt={links.wdbcCertificate.alt}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Button>Certificate: Web Dev Bootcamp</Button>
         </A>
       </Div2>
+
       <Div3>
         <Bar
           data={chartData}
@@ -41,40 +59,19 @@ const AboutPage = (props) => (
         />
         <p>★ self-appointed</p>
       </Div3>
+
       <Div4>
         <div>
           <h3>‣ Front-End:</h3>
-          <P>HTML/CSS</P>
-          <P>JavaScript (ES6+)</P>
-          <P>React/Redux</P>
-          <P>Styled Components</P>
-          <P>CSS Grid/Flexbox</P>
-          <P>GatsbyJS</P>
-          <P>Bootstrap</P>
-          <P>jQuery</P>
+          {skills.frontEnd.map(skill => <P>{skill}</P>)}
         </div>
         <div>
           <h3>‣ Back-End:</h3>
-          <P>NodeJS/Express</P>
-          <P>Python/Django</P>
-          <P>C</P>
-          <P>SQL/SQLite3</P>
-          <P>MongoDB/Mongoose</P>
-          <P>REST/APIs</P>
-          <P>Authorization/Authentication</P>
-          <P>Netlify</P>
-          <P>Heroku</P>
+          {skills.backEnd.map(skill => <P>{skill}</P>)}
         </div>
         <div>
           <h3>‣ Other:</h3>
-          <P>Git/Github </P>
-          <P>Gitflow Workflow</P>
-          <P>Jest/Enzyme/SuperTest</P>
-          <P>iTerm2</P>
-          <P>Yarn</P>
-          <P>NPM</P>
-          <P>Mac OSX</P>
-          <P>VS Code</P>
+          {skills.other.map(skill => <P>{skill}</P>)}
         </div>
       </Div4>
     </section>

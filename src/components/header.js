@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 import { FaGithub, FaLinkedin, FaTwitter, FaMedium } from 'react-icons/fa';
-import { links } from '../assets/links.js'
+import { links } from '../assets/data.js'
 
 const Header = () => (
   <Div>
