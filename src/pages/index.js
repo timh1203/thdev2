@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Intro from '../components/Intro'
 import About from '../components/About'
+import Portfolio from '../components/Portfolio'
 
 const HomePage = (props) => (
   <Layout>
@@ -12,6 +13,7 @@ const HomePage = (props) => (
     <About
       aboutImage={props.data.aboutImage.childImageSharp.fluid}
     />
+    <Portfolio />
   </Layout>
 )
 
