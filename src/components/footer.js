@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Footer = () => (
   <Div>
-    <p>Copyright © 2018 Timothy Hoang</p>
+    <p>Copyright © 2019 Timothy Hoang</p>
   </Div>
 )
 
