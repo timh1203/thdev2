@@ -43,6 +43,26 @@ export const links = {
     "url": "https://www.udemy.com/certificate/UC-F6RNIX9G/",
     "alt": "My Web Dev Bootcamp Certificate",
   },
+  "wanderlustoria": {
+    "demo": "https://wanderlustoria.herokuapp.com/",
+    "github": "https://github.com/timh1203/wanderlustoria",
+    "desc": "A travel content sharing platform with user authentication and google geocoder API written with Node, Express, and MongoDB."
+  },
+  "simonGame": {
+    "demo": "https://timh1203.github.io/simon-game",
+    "github": "https://github.com/timh1203/simon-game",
+    "desc": "https://timh1203.github.io/simon-game"
+  },
+  "ticTacToe": {
+    "demo": "https://timh1203.github.io/tictactoe-game",
+    "github": "https://github.com/timh1203/tictactoe-game",
+    "desc": "An ubiquitous game playable against AI (MiniMax algorithm) or another player written with ReactJS."
+  },
+  "dullesBarber": {
+    "demo": "http://dullesbarber.com/",
+    "github": "https://github.com/timh1203/dullesBarber",
+    "desc": "A barber shop business based in Sterling. Created GatsbyJS, GraphQL, and Styled Components."
+  },
 }
 
 export const skills = {
