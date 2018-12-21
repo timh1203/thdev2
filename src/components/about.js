@@ -2,8 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 import { Bar } from 'react-chartjs-2'
-import { chartData, chartOptions } from '../assets/chart.js'
-import { links, skills } from '../assets/data'
+import { links, skills, chartData, chartOptions } from '../assets/'
 
 const AboutPage = (props) => (
   <section id="about">

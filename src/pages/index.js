@@ -1,9 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
-import Intro from '../components/Intro'
-import About from '../components/About'
-import Portfolio from '../components/Portfolio'
+import { Intro, About, Portfolio, Layout } from '../components'
 
 const HomePage = (props) => (
   <Layout>
