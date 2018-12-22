@@ -17,7 +17,7 @@ class Portfolio extends React.Component {
     return (
       <section id="portfolio">
         <H1>Portfolio</H1>
-        <Hr id="divider" />
+        <Hr />
         <Div1>
           {projectsData.map((project, key) => {
             return (

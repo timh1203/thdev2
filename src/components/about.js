@@ -6,6 +6,8 @@ import { links, skills, chartData, chartOptions } from '../assets/'
 
 const AboutPage = (props) => (
   <section id="about">
+    <H1a>About</H1a>
+    <Hr />
     <Image fluid={props.aboutImage} />
     <Div>
       <P>
@@ -103,6 +105,10 @@ const Image = styled(Img)`
   box-shadow: 0 0 5px black;
 `
 const A = styled.a`
+`
+const Hr = styled.hr`
+`
+const H1a = styled.h1`
 `
 const Button = styled.button`
   padding: 1rem;

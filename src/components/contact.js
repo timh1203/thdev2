@@ -3,11 +3,10 @@ import styled from 'styled-components'
 
 const Contact = () => (
   <Section>
+    <H1a>Contact</H1a>
+    <Hr />
     <Form1 action="https://formspree.io/timh1203@gmail.com" method="POST">
       <Ul1>
-        <Li1>
-          <H1a>Contact Me</H1a>
-        </Li1>
         <li>
           <input type="hidden" name="From" value="timh1203.com" />
         </li>
@@ -38,7 +37,7 @@ const Section = styled.section`
 `
 const Form1 = styled.form`
   text-align: center;
-  margin: 0 auto;
+  margin: 2% auto;
   width: 60%;
   border-radius: 10px;
   border: 2px solid white;
@@ -47,23 +46,23 @@ const Form1 = styled.form`
     width: 90%;
   }
 `
-const H1a = styled.h1`
-  font-size: 3.6rem;
-  font-family: 'Lato';
-  text-shadow: 1px 1px 2px gray;
-  text-align: center;
-  margin-top: 1rem;
-`
+// const H1a = styled.h1`
+//   font-size: 3.6rem;
+//   font-family: 'Lato';
+//   text-shadow: 1px 1px 2px gray;
+//   text-align: center;
+//   margin-top: 1rem;
+// `
 const Ul1 = styled.ul`
 `
-const Li1 = styled.ul`
-  line-height: 2;
-  @media (max-width: 400px) {
-    width: 100%;
-    margin: 0 auto;
-    line-height: 1.6;
-  }
-`
+// const Li1 = styled.ul`
+//   line-height: 2;
+//   @media (max-width: 400px) {
+//     width: 100%;
+//     margin: 0 auto;
+//     line-height: 1.6;
+//   }
+// `
 const Input1 = styled.input`
   width: 60%;
   font-size: 1.6rem;
@@ -114,9 +113,13 @@ const Button1 = styled.button`
     border: 2px solid #82DBFA;
   }
 `
-const Span1 = styled.span`
-  text-decoration: underline;
-  font-weight: 600;
+const H1a = styled.h1`
 `
+const Hr = styled.hr`
+`
+// const Span1 = styled.span`
+//   text-decoration: underline;
+//   font-weight: 600;
+// `
 
 export default Contact
