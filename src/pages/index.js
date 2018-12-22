@@ -17,20 +17,20 @@ const HomePage = (props) => (
 export const pageQuery = graphql`
   query {
     profileImage: file(relativePath: {eq: "profile.jpg" }) {
-    childImageSharp {
-      fluid(maxWidth: 1000) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    aboutImage: file(relativePath: { eq: "gto.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
         ...GatsbyImageSharpFluid
+        }
       }
     }
   }
-  aboutImage: file(relativePath: { eq: "gto.jpg" }) {
-    childImageSharp {
-      fluid(maxWidth: 1000) {
-      ...GatsbyImageSharpFluid
-      }
-    }
-  }
-}
 `
 
 export default HomePage
