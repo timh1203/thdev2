@@ -4,6 +4,7 @@ import Header from './Header'
 import Intro from './Intro'
 import Portfolio from './Portfolio'
 import Layout from './Layout'
+import Contact from './Contact'
 
 export {
   About,
@@ -12,4 +13,5 @@ export {
   Intro,
   Portfolio,
   Layout,
+  Contact,
 }

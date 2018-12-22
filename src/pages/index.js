@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { Intro, About, Portfolio, Layout } from '../components'
+import { Intro, About, Portfolio, Layout, Contact } from '../components'
 
 const HomePage = (props) => (
   <Layout>
@@ -13,6 +13,7 @@ const HomePage = (props) => (
     <Portfolio
       projectsGallery={props.data.projectsGallery.edges}
     />
+    <Contact />
   </Layout>
 )
 
