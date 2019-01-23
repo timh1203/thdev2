@@ -1,33 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Wanderlustoria, TicTacToeGame, DullesBarber, SimonGame } from './'
+import { ProjectAggregate } from './'
 
-class Portfolio extends React.Component {
-  render() {
-    return (
-      <section id="portfolio">
-        <H1>Portfolio</H1>
-        <Hr />
-
-        <Div1>
-          <Wanderlustoria />
-          <TicTacToeGame />
-          <DullesBarber />
-          <SimonGame />
-        </Div1>
-      </section>
-    )
-  }
-}
+const Portfolio = () => (
+  <Div1>
+    <H1>Portfolio</H1>
+    <Hr1 />
+    <ProjectAggregate />
+  </Div1>
+)
 
 const Div1 = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 `
 const H1 = styled.h1`
 `
-const Hr = styled.hr`
+const Hr1 = styled.hr`
 `
 
 export default Portfolio
