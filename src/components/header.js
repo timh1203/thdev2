@@ -56,10 +56,10 @@ const Header = () => (
     </Div2>
 
     <Div3>
-      <Link1 to="#intro" activeClassName="active">Home</Link1>
+      <Link1 to="#intro">Home</Link1>
       <Link1 to="#about">About</Link1>
-      <Link1 to="#">Portfolio</Link1>
-      <Link1 to="#">Contact</Link1>
+      <Link1 to="#portfolio">Portfolio</Link1>
+      <Link1 to="#contact">Contact</Link1>
     </Div3>
   </Div>
 )

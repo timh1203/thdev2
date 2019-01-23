@@ -3,14 +3,14 @@ import styled from 'styled-components'
 import { ProjectAggregate } from './'
 
 const Portfolio = () => (
-  <Div1>
+  <Section1 id="portfolio">
     <H1>Portfolio</H1>
     <Hr1 />
     <ProjectAggregate />
-  </Div1>
+  </Section1>
 )
 
-const Div1 = styled.div`
+const Section1 = styled.section`
 `
 const H1 = styled.h1`
 `

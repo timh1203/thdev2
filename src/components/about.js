@@ -5,7 +5,7 @@ import { Bar } from 'react-chartjs-2'
 import { links, skills, chartData, chartOptions } from '../assets/'
 
 const AboutPage = (props) => (
-  <section id="about">
+  <Section1 id="about">
     <H1a>About</H1a>
     <Hr />
     <Image fluid={props.aboutImage} />
@@ -71,9 +71,11 @@ const AboutPage = (props) => (
         {skills.other.map(skill => <P>{skill}</P>)}
       </div>
     </Div4>
-  </section>
+  </Section1>
 )
 
+const Section1 = styled.section`
+`
 const Div = styled.div`
   max-width: 1024px;
   margin: 0 auto;

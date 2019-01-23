@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Contact = () => (
-  <Section>
+  <Section1 id="contact">
     <H1a>Contact</H1a>
     <Hr />
     <Form1 action="https://formspree.io/timh1203@gmail.com" method="POST">
@@ -30,10 +30,10 @@ const Contact = () => (
         </li>
       </Ul1>
     </Form1>
-  </Section>
+  </Section1>
 )
 
-const Section = styled.section`
+const Section1 = styled.section`
 `
 const Form1 = styled.form`
   text-align: center;
