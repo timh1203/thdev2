@@ -191,29 +191,29 @@ export const chartOptions = {
   }
 }
 
-export const projectsData = [
-  {
+export const projectsData = {
+  "wanderlustoria": {
     "name": "Wanderlustoria",
     "demo": "https://wanderlustoria.herokuapp.com/",
     "github": "https://github.com/timh1203/wanderlustoria",
     "desc": "A travel content sharing platform with user authentication and google geocoder API written with Node, Express, and MongoDB."
   },
-  {
+  "simonGame": {
     "name": "Simon Game",
     "demo": "https://timh1203.github.io/simon-game",
     "github": "https://github.com/timh1203/simon-game",
     "desc": "https://timh1203.github.io/simon-game"
   },
-  {
+  "ticTacToeGame": {
     "name": "Tic Tac Toe",
     "demo": "https://timh1203.github.io/tictactoe-game",
     "github": "https://github.com/timh1203/tictactoe-game",
     "desc": "An ubiquitous game playable against AI (MiniMax algorithm) or another player written with ReactJS."
   },
-  {
+  "dullesBarber": {
     "name": "Dulles Barber",
     "demo": "http://dullesbarber.com/",
     "github": "https://github.com/timh1203/dullesBarber",
     "desc": "A barber shop business based in Sterling. Created GatsbyJS, GraphQL, and Styled Components."
   },
-]
+}

@@ -5,14 +5,12 @@ import { Intro, About, Portfolio, Layout, Contact } from '../components'
 const HomePage = (props) => (
   <Layout>
     <Intro
-      profileImage={props.data.profileImage.childImageSharp.fluid}
+      profile2={props.data.profile2.childImageSharp.fluid}
     />
     <About
       aboutImage={props.data.aboutImage.childImageSharp.fluid}
     />
-    <Portfolio
-      projectsGallery={props.data.projectsGallery.edges}
-    />
+    <Portfolio />
     <Contact />
   </Layout>
 )
@@ -26,24 +24,17 @@ export const pageQuery = graphql`
         }
       }
     },
+    profile2: file(relativePath: {eq: "profile2.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
     aboutImage: file(relativePath: { eq: "gto.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
         ...GatsbyImageSharpFluid
-        }
-      }
-    },
-    projectsGallery: allFile(filter: {extension: {regex: "/(jpg)|(png)/"}, relativeDirectory: {eq: "projectsGallery"}}) {
-      edges {
-        node {
-          id
-          name
-          relativePath
-          childImageSharp {
-            fluid(maxWidth: 1000, maxHeight: 1000) {
-              ...GatsbyImageSharpFluid
-            }
-          }
         }
       }
     },
