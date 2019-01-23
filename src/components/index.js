@@ -4,6 +4,9 @@ import Header from './Header'
 import Intro from './Intro'
 import Portfolio from './Portfolio'
 import Wanderlustoria from './projects/Wanderlustoria'
+import TicTacToeGame from './projects/TicTacToeGame'
+import DullesBarber from './projects/DullesBarber'
+import SimonGame from './projects/SimonGame'
 import Layout from './Layout'
 import Contact from './Contact'
 
@@ -14,6 +17,9 @@ export {
   Intro,
   Portfolio,
   Wanderlustoria,
+  TicTacToeGame,
+  DullesBarber,
+  SimonGame,
   Layout,
   Contact,
 }

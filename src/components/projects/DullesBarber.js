@@ -4,19 +4,19 @@ import { projectsData } from '../../assets'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 
-const Wanderlustoria = ({ data }) => (
+const DullesBarber = ({ data }) => (
   <Div>
-    <A1 href={projectsData.wanderlustoria.demo} target="_blank">
-      <Img1 fluid={data.wanderlustoriaImage.childImageSharp.fluid} />
+    <A1 href={projectsData.dullesBarber.demo} target="_blank">
+      <Img1 fluid={data.dullesBarberImage.childImageSharp.fluid} />
     </A1>
-    <H1a>{projectsData.wanderlustoria.name}</H1a>
-    <P1>{projectsData.wanderlustoria.desc}</P1>
+    <H1a>{projectsData.dullesBarber.name}</H1a>
+    <P1>{projectsData.dullesBarber.desc}</P1>
 
     <Div1>
-      <A1 href={projectsData.wanderlustoria.demo} target="_blank">
+      <A1 href={projectsData.dullesBarber.demo} target="_blank">
         <P1>Demo</P1>
       </A1>
-      <A1 href={projectsData.wanderlustoria.github} target="_blank">
+      <A1 href={projectsData.dullesBarber.github} target="_blank">
         <P1>Github</P1>
       </A1>
     </Div1>
@@ -51,7 +51,7 @@ export default () => (
   <StaticQuery
     query={graphql`
         query {
-          wanderlustoriaImage: file(relativePath: { eq: "wanderlustoria.png" }) {
+          dullesBarberImage: file(relativePath: { eq: "dullesBarber.png" }) {
             childImageSharp {
               fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
@@ -60,6 +60,6 @@ export default () => (
           },
         }
     `}
-    render={data => <Wanderlustoria data={data} />}
+    render={data => <DullesBarber data={data} />}
   />
 )

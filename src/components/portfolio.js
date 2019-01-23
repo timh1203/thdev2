@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-// import Img from 'gatsby-image'
-// import { projectsData } from '../assets'
-import { Wanderlustoria } from './'
+import { Wanderlustoria, TicTacToeGame, DullesBarber, SimonGame } from './'
 
 class Portfolio extends React.Component {
   render() {
@@ -13,6 +11,9 @@ class Portfolio extends React.Component {
 
         <Div1>
           <Wanderlustoria />
+          <TicTacToeGame />
+          <DullesBarber />
+          <SimonGame />
         </Div1>
       </section>
     )
