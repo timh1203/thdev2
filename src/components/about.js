@@ -60,15 +60,15 @@ const AboutPage = (props) => (
     <Div4>
       <div>
         <h3>‣ Front-End:</h3>
-        {skills.frontEnd.map(skill => <P>{skill}</P>)}
+        {skills.frontEnd.map(skill => <P key={skill}>{skill}</P>)}
       </div>
       <div>
         <h3>‣ Back-End:</h3>
-        {skills.backEnd.map(skill => <P>{skill}</P>)}
+        {skills.backEnd.map(skill => <P key={skill}>{skill}</P>)}
       </div>
       <div>
         <h3>‣ Other:</h3>
-        {skills.other.map(skill => <P>{skill}</P>)}
+        {skills.other.map(skill => <P key={skill}>{skill}</P>)}
       </div>
     </Div4>
   </Section1>
