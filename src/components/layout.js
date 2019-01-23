@@ -28,12 +28,12 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <div>
+          <GlobalStyles />
           <Header />
           {children}
           <Footer />
         </div>
 
-        <GlobalStyles />
       </>
     )}
   />
