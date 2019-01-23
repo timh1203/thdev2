@@ -5,7 +5,7 @@ import Intro from './Intro'
 import Portfolio from './Portfolio'
 import ProjectTemplate from './ProjectTemplate'
 import ProjectAggregate from './ProjectAggregate'
-import Layout from './Layout'
+import Layout from './layout'
 import Contact from './Contact'
 
 export {
