@@ -34,6 +34,20 @@ const ProjectsAggregate = ({ data }) => (
       demo={projectsData.simonGame.demo}
       github={projectsData.simonGame.github}
     />
+    <ProjectTemplate
+      img={data.pomodoroApp.childImageSharp.fluid}
+      name={projectsData.pomodoroApp.name}
+      desc={projectsData.pomodoroApp.desc}
+      demo={projectsData.pomodoroApp.demo}
+      github={projectsData.pomodoroApp.github}
+    />
+    <ProjectTemplate
+      img={data.calculatorApp.childImageSharp.fluid}
+      name={projectsData.calculatorApp.name}
+      desc={projectsData.calculatorApp.desc}
+      demo={projectsData.calculatorApp.demo}
+      github={projectsData.calculatorApp.github}
+    />
   </Div1>
 )
 
@@ -69,6 +83,20 @@ export default () => (
           }
         },
         ticTacToeGame: file(relativePath: { eq: "ticTacToeGame.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+            }
+          }
+        },
+        pomodoroApp: file(relativePath: { eq: "pomodoroApp.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+            }
+          }
+        },
+        calculatorApp: file(relativePath: { eq: "calculatorApp.png" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid

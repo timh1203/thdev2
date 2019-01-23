@@ -216,4 +216,16 @@ export const projectsData = {
     "demo": "http://dullesbarber.com/",
     "github": "https://github.com/timh1203/dullesBarber",
   },
+  "pomodoroApp": {
+    "name": "Pomodoro App",
+    "desc": "The work/break cycle app based on the Pomodoro Technique by by Francesco Cirillo.",
+    "demo": "https://timh1203.github.io/pomodoro-app/",
+    "github": "https://github.com/timh1203/pomodoro-app",
+  },
+  "calculatorApp": {
+    "name": "Calculator App",
+    "desc": "A simple calculator app built with JavaScript not using the eval() method.",
+    "demo": "https://timh1203.github.io/calculator-app",
+    "github": "https://github.com/timh1203/calculator-app",
+  },
 }
