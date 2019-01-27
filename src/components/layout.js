@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import { createGlobalStyle } from 'styled-components'
-import { Header, Footer } from './'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -29,9 +28,7 @@ const Layout = ({ children }) => (
         </Helmet>
         <div>
           <GlobalStyles />
-          <Header />
           {children}
-          <Footer />
         </div>
 
       </>

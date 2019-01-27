@@ -1,19 +1,33 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { Intro, About, Portfolio, Layout, Contact } from '../components'
+import {
+  Header,
+  Intro,
+  About,
+  Portfolio,
+  Layout,
+  Contact,
+  Footer
+} from '../components'
 
-const HomePage = (props) => (
-  <Layout>
-    <Intro
-      profile2={props.data.profile2.childImageSharp.fluid}
-    />
-    <About
-      aboutImage={props.data.aboutImage.childImageSharp.fluid}
-    />
-    <Portfolio />
-    <Contact />
-  </Layout>
-)
+class HomePage extends React.Component {
+  render() {
+    return (
+      <Layout>
+        <Header />
+        <Intro
+          profile2={this.props.data.profile2.childImageSharp.fluid}
+        />
+        <About
+          aboutImage={this.props.data.aboutImage.childImageSharp.fluid}
+        />
+        <Portfolio />
+        <Contact />
+        <Footer />
+      </Layout>
+    )
+  }
+}
 
 export const pageQuery = graphql`
   query {
