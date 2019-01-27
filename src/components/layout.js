@@ -57,11 +57,11 @@ const GlobalStyles = createGlobalStyle`
     vertical-align: baseline;
   }
   html,body{
-    max-width: 1280px;
+    /* max-width: 1280px; */
+    /* margin: 0 auto; */
     width: 100%;
     font-size: 62.5%;
     text-align: center;
-    margin: 0 auto;
     font-family: 'Monserrat';
   }
   h1 {
