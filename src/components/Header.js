@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { FaGithub, FaLinkedin, FaTwitter, FaMedium } from 'react-icons/fa';
 import { links } from '../assets/'
 
-const Header = () => (
+const Header = (props) => (
   <Div>
     <Div1>
       <a
@@ -60,8 +60,14 @@ const Header = () => (
       <Link1 to="#about">About</Link1>
       <Link1 to="#portfolio">Portfolio</Link1>
       <Link1 to="#contact">Contact</Link1>
+      {/* <Span1 role="img" aria-label="dark">🌚</Span1> */}
+      <input className="tgl tgl-skewed" onClick={() => props.lightToggler()} id="cb3" type="checkbox" />
+      <label className="tgl-btn" data-tg-off="DARK" data-tg-on="LIGHT" htmlFor="cb3"></label>
+      {/* <input onClick={() => props.lightToggler()} className="tgl tgl-light" id="cb1" type="checkbox" />
+      <label className="tgl-btn" htmlFor="cb1"></label> */}
+      {/* <Span1 role="img" aria-label="light">🌞</Span1> */}
     </Div3>
-  </Div>
+  </Div >
 )
 
 const Div = styled.div`
@@ -81,9 +87,17 @@ const Div2 = styled.div`
       flex: 1 1 40%;
     `
 const Div3 = styled.div`
-      margin-bottom: 1rem;
-      flex: 1 1 30%;
-    `
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  flex: 1 1 30%;
+`
+// const Div4 = styled.div`
+// `
+// const Span1 = styled.span`
+//   font-size: 2rem;
+// `
 const Link1 = styled(Link)`
       font-size: 2rem;
       margin: 0 1rem;
@@ -97,7 +111,7 @@ const Link1 = styled(Link)`
       padding: 0 0.5rem;
       color: black;
   :hover {
-      border-top: 2px solid white;
+    border-top: 2px solid white;
     border-bottom: 2px solid white;
     border-left: 2px solid black;
     border-right: 2px solid black;

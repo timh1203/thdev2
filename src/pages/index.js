@@ -8,12 +8,18 @@ export default class HomePage extends React.Component {
     light: false,
   }
 
+  lightToggler = () => {
+    this.setState({ light: !this.state.light })
+  }
+
   render() {
     return (
       <ThemeProvider theme={this.state.light ? lightTheme : darkTheme}>
         <Layout>
           <Div1>
-            <Header />
+            <Header
+              lightToggler={this.lightToggler}
+            />
             <Intro
               profile2={this.props.data.profile2.childImageSharp.fluid}
             />
@@ -37,7 +43,7 @@ const darkTheme = {
 
 const lightTheme = {
   textColor: 'black',
-  backgroundColor: 'lightgray',
+  backgroundColor: 'yellow',
 }
 
 const Div1 = styled.div`
