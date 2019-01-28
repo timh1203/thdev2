@@ -75,6 +75,7 @@ const AboutPage = (props) => (
 )
 
 const Section1 = styled.section`
+  color: ${props => props.theme.textColor};
 `
 const Div = styled.div`
   max-width: 1024px;
@@ -104,11 +105,13 @@ const Image = styled(Img)`
   border-radius: 3px;
   margin: 2% auto;
   padding: 0;
-  box-shadow: 0 0 5px black;
+  box-shadow: ${props => props.theme.imageShadow};
 `
 const A = styled.a`
+  color: ${props => props.theme.textColor};
 `
 const Hr = styled.hr`
+  border-color: ${props => props.theme.textColor};
 `
 const H1a = styled.h1`
 `
@@ -117,7 +120,7 @@ const Button = styled.button`
   border-radius: 3px;
   font-family: 'Quicksand';
   font-size: 1.4rem;
-  box-shadow: 1px 1px 3px black;
+  box-shadow: ${props => props.theme.buttonShadow};
 
   :hover {
     background: black;

@@ -41,8 +41,10 @@ const H1a = styled.h1`
 const P1 = styled.p`
 `
 const A1 = styled.a`
+  color: ${props => props.theme.textColor};
 `
 const Img1 = styled(Img)`
+  box-shadow: ${props => props.theme.imageShadow};
 `
 
 export default ProjectTemplate

@@ -2,7 +2,7 @@ export const slate = '#1d1e22';
 export const gray = '#ababab';
 export const white = '#f5f5f5';
 export const purple = '#3333ff';
-export const orange = `#ffcc00`;
+export const orange = '#ffcc00';
 
 export const darkTheme = {
   textColor: white,
@@ -11,15 +11,19 @@ export const darkTheme = {
   xBorderColor: `2px solid ${slate}`,
   separatorColor: `3px solid ${white}`,
   themeToggleButton: purple,
+  imageShadow: `1px 1px 5px ${gray}`,
+  buttonShadow: `1px 1px 3px ${gray}`,
 }
 
 export const lightTheme = {
   textColor: slate,
-  backgroundColor: gray,
+  backgroundColor: white,
   yBorderColor: `2px solid ${slate}`,
   xBorderColor: `2px solid ${gray}`,
   separatorColor: `3px solid ${slate}`,
   themeToggleButton: orange,
+  imageShadow: `1px 1px 5px ${slate}`,
+  buttonShadow: `1px 1px 3px ${slate}`,
 }
 
 export const links = {

@@ -61,7 +61,7 @@ export const pageQuery = graphql`
     },
     aboutImage: file(relativePath: { eq: "gto.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1000) {
+        fluid(maxWidth: 1920) {
         ...GatsbyImageSharpFluid
         }
       }

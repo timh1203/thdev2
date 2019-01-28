@@ -18,6 +18,7 @@ const Image = styled(Img)`
   border-radius: 50%;
   margin: 2% auto;
   padding: 0;
+  box-shadow: ${props => props.theme.imageShadow};
 `
 
 const H3 = styled.h3`
