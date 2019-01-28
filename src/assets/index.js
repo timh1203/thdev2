@@ -1,3 +1,27 @@
+export const slate = '#1d1e22';
+export const gray = '#ababab';
+export const white = '#f5f5f5';
+export const purple = '#3333ff';
+export const orange = `#ffcc00`;
+
+export const darkTheme = {
+  textColor: white,
+  backgroundColor: slate,
+  slateBorder: `2px solid ${slate}`,
+  whiteBorder: `2px solid ${white}`,
+  separatorColor: `3px solid ${white}`,
+  button: purple,
+}
+
+export const lightTheme = {
+  textColor: slate,
+  backgroundColor: gray,
+  slateBorder: `2px solid ${slate}`,
+  whiteBorder: `2px solid ${white}`,
+  separatorColor: `3px solid ${slate}`,
+  button: orange,
+}
+
 export const links = {
   "github": {
     "url": "https://github.com/timh1203",

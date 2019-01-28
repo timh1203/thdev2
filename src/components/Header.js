@@ -56,7 +56,7 @@ const Header = (props) => (
     </Div2>
 
     <Div3>
-      <Link1 to="#intro">Home</Link1>
+      {/* <Link1 to="#intro">Home</Link1> */}
       <Link1 to="#about">About</Link1>
       <Link1 to="#portfolio">Portfolio</Link1>
       <Link1 to="#contact">Contact</Link1>
@@ -71,21 +71,21 @@ const Header = (props) => (
 )
 
 const Div = styled.div`
-      border-bottom: 3px solid black;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 0;
-    `
+  border-bottom: ${props => props.theme.separatorColor};
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+`
 const Div1 = styled.div`
-      margin-bottom: 1rem;
-      flex: 1 1 30%;
-      line-height: 2;
-    `
+  margin-bottom: 1rem;
+  flex: 1 1 30%;
+  line-height: 2;
+`
 const Div2 = styled.div`
-      margin-bottom: 1rem;
-      flex: 1 1 40%;
-    `
+  margin-bottom: 1rem;
+  flex: 1 1 40%;
+`
 const Div3 = styled.div`
   display: flex;
   align-items: center;
@@ -99,31 +99,32 @@ const Div3 = styled.div`
 //   font-size: 2rem;
 // `
 const Link1 = styled(Link)`
-      font-size: 2rem;
-      margin: 0 1rem;
-      font-family: 'Quicksand';
-      text-decoration: none;
-      border-radius: 5px;
-      border-top: 2px solid black;
-      border-bottom: 2px solid black;
-      border-left: 2px solid white;
-      border-right: 2px solid white;
-      padding: 0 0.5rem;
-      color: black;
+  font-size: 2rem;
+  margin: 0 1rem;
+  font-family: 'Quicksand';
+  color: ${props => props.theme.textColor};
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 0 0.5rem;
+  border-top: ${props => props.theme.slateBorder};
+  border-bottom: ${props => props.theme.slateBorder};
+  border-left:${props => props.theme.whiteBorder};
+  border-right:${props => props.theme.whiteBorder};
   :hover {
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
+    border-top:${props => props.theme.whiteBorder};
+    border-bottom:${props => props.theme.whiteBorder};
+    border-left: ${props => props.theme.slateBorder};
+    border-right: ${props => props.theme.slateBorder};
   }
 `
 const H1 = styled.h1`
   margin: 1rem 0;
-  text-shadow: 2px 2px 1px gray;
+  color: ${props => props.theme.textColor};
 `
 const H6 = styled.h6`
   font-weight: 500;
   margin: 1rem 0;
+  color: ${props => props.theme.textColor};
 `
 const FaGithub1 = styled(FaGithub)`
   color: white;

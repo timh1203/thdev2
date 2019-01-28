@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import styled, { ThemeProvider } from 'styled-components'
 import { Header, Intro, About, Portfolio, Layout, Contact, Footer } from '../components'
+import { lightTheme, darkTheme } from '../assets/'
 
 export default class HomePage extends React.Component {
   state = {
@@ -34,16 +35,6 @@ export default class HomePage extends React.Component {
       </ThemeProvider>
     )
   }
-}
-
-const darkTheme = {
-  textColor: 'white',
-  backgroundColor: 'darkgray',
-}
-
-const lightTheme = {
-  textColor: 'black',
-  backgroundColor: 'yellow',
 }
 
 const Div1 = styled.div`
