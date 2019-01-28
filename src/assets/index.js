@@ -19,7 +19,7 @@ export const lightTheme = {
   textColor: slate,
   backgroundColor: white,
   yBorderColor: `2px solid ${slate}`,
-  xBorderColor: `2px solid ${gray}`,
+  xBorderColor: `2px solid ${white}`,
   separatorColor: `3px solid ${slate}`,
   themeToggleButton: orange,
   imageShadow: `1px 1px 5px ${slate}`,
