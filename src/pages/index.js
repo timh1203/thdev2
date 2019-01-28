@@ -39,7 +39,7 @@ export default class HomePage extends React.Component {
 
 const Div1 = styled.div`
   background: ${props => props.theme.backgroundColor};
-  padding: 40px 120px;
+  padding: 0 120px;
   margin: 0 auto;
 `
 

@@ -34,6 +34,7 @@ const Contact = () => (
 )
 
 const Section1 = styled.section`
+  color: ${props => props.theme.textColor};
 `
 const Form1 = styled.form`
   text-align: center;
@@ -116,6 +117,7 @@ const Button1 = styled.button`
 const H1a = styled.h1`
 `
 const Hr = styled.hr`
+  border-color: ${props => props.theme.textColor};
 `
 // const Span1 = styled.span`
 //   text-decoration: underline;

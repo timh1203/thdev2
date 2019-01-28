@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Footer = () => (
   <Div>
-    <p>Copyright © 2019 Timothy Hoang</p>
+    <P>Copyright © 2019 Timothy Hoang</P>
   </Div>
 )
 
@@ -13,7 +13,10 @@ const Div = styled.div`
   margin: 0 auto;
   margin-top: 2%;
   padding: 0.5% 0;
-  border-top: 3px solid black;
+  border-top: ${props => props.theme.separatorColor};
+  color: ${props => props.theme.textColor};
+`
+const P = styled.p`
 `
 
 export default Footer
