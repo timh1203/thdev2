@@ -159,7 +159,7 @@ const GlobalStyles = createGlobalStyle`
     backface-visibility: hidden;
     transition: all 0.2s ease;
     font-family: sans-serif;
-    background: ${props => props.theme.button};
+    background: ${props => props.theme.themeToggleButton};
   }
   .tgl-skewed + .tgl-btn:after, .tgl-skewed + .tgl-btn:before {
     transform: skew(10deg);
@@ -188,7 +188,7 @@ const GlobalStyles = createGlobalStyle`
     left: -10%;
   }
   .tgl-skewed:checked + .tgl-btn {
-    background: ${props => props.theme.button};
+    background: ${props => props.theme.themeToggleButton};
   }
   .tgl-skewed:checked + .tgl-btn:before {
     left: -100%;

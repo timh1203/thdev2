@@ -106,15 +106,15 @@ const Link1 = styled(Link)`
   text-decoration: none;
   border-radius: 5px;
   padding: 0 0.5rem;
-  border-top: ${props => props.theme.slateBorder};
-  border-bottom: ${props => props.theme.slateBorder};
-  border-left:${props => props.theme.whiteBorder};
-  border-right:${props => props.theme.whiteBorder};
+  border-top: ${props => props.theme.yBorderColor};
+  border-bottom: ${props => props.theme.yBorderColor};
+  border-left:${props => props.theme.xBorderColor};
+  border-right:${props => props.theme.xBorderColor};
   :hover {
-    border-top:${props => props.theme.whiteBorder};
-    border-bottom:${props => props.theme.whiteBorder};
-    border-left: ${props => props.theme.slateBorder};
-    border-right: ${props => props.theme.slateBorder};
+    border-top:${props => props.theme.xBorderColor};
+    border-bottom:${props => props.theme.xBorderColor};
+    border-left: ${props => props.theme.yBorderColor};
+    border-right: ${props => props.theme.yBorderColor};
   }
 `
 const H1 = styled.h1`

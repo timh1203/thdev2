@@ -7,19 +7,19 @@ export const orange = `#ffcc00`;
 export const darkTheme = {
   textColor: white,
   backgroundColor: slate,
-  slateBorder: `2px solid ${slate}`,
-  whiteBorder: `2px solid ${white}`,
+  yBorderColor: `2px solid ${gray}`,
+  xBorderColor: `2px solid ${slate}`,
   separatorColor: `3px solid ${white}`,
-  button: purple,
+  themeToggleButton: purple,
 }
 
 export const lightTheme = {
   textColor: slate,
   backgroundColor: gray,
-  slateBorder: `2px solid ${slate}`,
-  whiteBorder: `2px solid ${white}`,
+  yBorderColor: `2px solid ${slate}`,
+  xBorderColor: `2px solid ${gray}`,
   separatorColor: `3px solid ${slate}`,
-  button: orange,
+  themeToggleButton: orange,
 }
 
 export const links = {
