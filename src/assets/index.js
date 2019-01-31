@@ -96,10 +96,11 @@ export const links = {
 export const skills = {
   "frontEnd": [
     "HTML/CSS",
-    "JavaScript (ES6+)",
-    "React/Redux",
+    "JavaScript",
+    "React",
+    "Redux",
     "Styled Components",
-    "CSS Grid/Flexbox",
+    "Flexbox/CSS Grid",
     "GatsbyJS",
     "Bootstrap",
     "jQuery",
@@ -120,9 +121,11 @@ export const skills = {
     "Gitflow Workflow",
     "Jest/Enzyme/SuperTest",
     "Yarn/NPM",
-    "Mac OSX",
+    "Mac OS X",
     "iTerm2",
     "VS Code",
+    "Photoshop/GIMP",
+    "Wordpress"
   ]
 }
 

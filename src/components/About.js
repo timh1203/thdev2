@@ -11,14 +11,18 @@ const AboutPage = (props) => (
     <Image fluid={props.aboutImage} />
     <Div>
       <P>
-        I'm Full Stack Developer who loves to work with web technologies. I'm expecting to graduate in March 2019 from <A href={links.lambdaSchool.url} alt={links.lambdaSchool.alt} target="_blank" rel="noopener noreferrer">Lambda School</A>, an academy with focusing on full-stack web development spanning 7 months. Here, you will find my latest works, stats about my skills, and link to my <A href={links.resume.url} alt={links.resume.alt} target="_blank" rel="noopener noreferrer">resume</A> and certificates.
-          If you'd like to reach me, please send me an email on <A href={links.linkedIn.url} alt={links.linkedIn.alt} target="_blank" rel="noopener noreferrer">LinkedIn</A> or email me in the <A href="/contact" target="_blank" rel="noopener noreferrer">Contact</A> section.
-        </P>
+        I'm full stack developer who loves to work with web technologies. I'm will graduate in March 2019 from <A href={links.lambdaSchool.url} alt={links.lambdaSchool.alt} target="_blank" rel="noopener noreferrer">Lambda School</A>, an 7-month academy with focus on full-stack web development and computer science. I started to coding in January 2017 and transitioned away from a full-time Pharmacist role. In the past, I have completed paid freelance web projects, worked remotely with a team called <A href={links.chingu.url} alt={links.chingu.alt} target="_blank" rel="noopener noreferrer">Chingu Voyage</A>, and organized for a Free Code Camp <A href={links.fccAshburn.url} alt={links.fccAshburn.alt} target="_blank" rel="noopener noreferrer">local group</A>.
+      </P>
       <br />
       <P>
-        A self-taught developer who started in January 2017 and transitioned from a full-time Pharmacist role. I'm looking to work on exciting new projects, with a great team, and seize opportunities to grow.
-          In the past, I have completed paid freelance web projects, worked remotely with a team called <A href={links.chingu.url} alt={links.chingu.alt} target="_blank" rel="noopener noreferrer">Chingu Voyage</A>, and organized for a Free Code Camp <A href={links.fccAshburn.url} alt={links.fccAshburn.alt} target="_blank" rel="noopener noreferrer">local group</A>.
-        </P>
+        My mindset for 2019 is one of "extreme ownership", a concept popularized by Jocko Willink. Taking responsibility, whether it's code or life, has tremendous impact on the people around us. At the end of the day, our ability to solve problems is to ultimately benefit human beings. I want to take pride and responsibility in that.
+
+        In my spare time, I enjoy traveling internationally, hiking on national forest trails, reading non-fiction books and tech articles, and experimenting with GatsbyJS.
+      </P>
+      <br />
+      <P1>
+        If you'd like to reach me, please send me an email on <A href={links.linkedIn.url} alt={links.linkedIn.alt} target="_blank" rel="noopener noreferrer">LinkedIn</A> or email me in the <A href="/contact" target="_blank" rel="noopener noreferrer">Contact</A> section.
+      </P1>
     </Div>
 
     <Div2>
@@ -121,7 +125,6 @@ const Button = styled.button`
   font-family: 'Quicksand';
   font-size: 1.4rem;
   box-shadow: ${props => props.theme.buttonShadow};
-
   :hover {
     background: black;
     color: white;
@@ -131,6 +134,9 @@ const Button = styled.button`
 `
 const P = styled.p`
   font-size: 1.8rem;
+`
+const P1 = styled(P)`
+  text-align: center;
 `
 
 export default AboutPage
