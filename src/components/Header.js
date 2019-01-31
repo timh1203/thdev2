@@ -134,7 +134,7 @@ const FaGithub1 = styled(FaGithub)`
   height: 40px;
   margin: 0 2rem;
   :hover {
-      box-shadow: 3px 3px 3px black;
+      box-shadow: 3px 3px 3px ${props => props.theme.textColor};
   }
 `
 const FaLinkedin1 = styled(FaLinkedin)`
@@ -145,7 +145,7 @@ const FaLinkedin1 = styled(FaLinkedin)`
   height: 40px;
   margin: 0 2rem;
   :hover {
-      box-shadow: 3px 3px 3px black;
+      box-shadow: 3px 3px 3px ${props => props.theme.textColor};
   }
 `
 const FaTwitter1 = styled(FaTwitter)`
@@ -156,7 +156,7 @@ const FaTwitter1 = styled(FaTwitter)`
   height: 41px;
   margin: 0 2rem;
   :hover {
-      box-shadow: 3px 3px 3px black;
+      box-shadow: 3px 3px 3px ${props => props.theme.textColor};
   }
 `
 const FaMedium1 = styled(FaMedium)`
@@ -167,7 +167,7 @@ const FaMedium1 = styled(FaMedium)`
   height: 47px;
   margin: 0 2rem;
   :hover {
-      box-shadow: 3px 3px 3px black;
+      box-shadow: 3px 3px 3px ${props => props.theme.textColor};
   }
 `
 // const FaFreeCodeCamp1 = styled(FaFreeCodeCamp)`
@@ -178,7 +178,7 @@ const FaMedium1 = styled(FaMedium)`
 //   height: 50px;
 //   margin: 0 2rem;
 //   :hover {
-//     box-shadow: 3px 3px 3px black;
+//     box-shadow: 3px 3px 3px ${props => props.theme.textColor};
 //   }
 // `
 
