@@ -159,7 +159,7 @@ const GlobalStyles = createGlobalStyle`
     backface-visibility: hidden;
     transition: all 0.2s ease;
     font-family: sans-serif;
-    background: #3333ff; /* #3333ff background: ${props => props.theme.themeToggleButton}; */
+    background: #3333ff;
   }
   .tgl-skewed + .tgl-btn:after, .tgl-skewed + .tgl-btn:before {
     transform: skew(10deg);
@@ -170,7 +170,7 @@ const GlobalStyles = createGlobalStyle`
     position: absolute;
     line-height: 2em;
     font-weight: bold;
-    color: #1d1e22; /* #1d1e22 ${props => props.theme.textColor} */
+    color: #1d1e22;
     text-shadow: 0 1px 0 rgba(0, 0, 0, .4);
   }
   .tgl-skewed + .tgl-btn:after {
@@ -188,7 +188,7 @@ const GlobalStyles = createGlobalStyle`
     left: -10%;
   }
   .tgl-skewed:checked + .tgl-btn {
-    background: #ffcc00; /* #ffcc00 ${props => props.theme.themeToggleButton} */
+    background: #ffcc00;
   }
   .tgl-skewed:checked + .tgl-btn:before {
     left: -100%;
