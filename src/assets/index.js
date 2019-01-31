@@ -12,7 +12,7 @@ export const darkTheme = {
   separatorColor: `3px solid ${white}`,
   themeToggleButton: purple,
   imageShadow: `1px 1px 5px ${gray}`,
-  buttonShadow: `1px 1px 3px ${gray}`,
+  buttonShadow: `1px 1px 5px ${purple}`,
 }
 
 export const lightTheme = {
@@ -23,7 +23,7 @@ export const lightTheme = {
   separatorColor: `3px solid ${slate}`,
   themeToggleButton: orange,
   imageShadow: `1px 1px 5px ${slate}`,
-  buttonShadow: `1px 1px 3px ${slate}`,
+  buttonShadow: `1px 1px 5px ${orange}`,
 }
 
 export const links = {

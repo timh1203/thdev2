@@ -40,7 +40,7 @@ const Form1 = styled.form`
   text-align: center;
   margin: 2% auto;
   width: 60%;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 2px solid white;
   box-shadow: 0 0 5px gray;
   @media (max-width: 768px) {
@@ -99,25 +99,20 @@ const Button1 = styled.button`
   padding: 1rem;
   margin: 1rem;
   border-radius: 5px;
-  background: #82DBFA;
-  color: white;
-  border: 2px solid black;
-  font-weight: 700;
-  text-shadow: 1px 1px 3px black;
+  color: ${props => props.theme.themeToggleButton};
+  background: black;
+  border: 2px solid ${props => props.theme.themeToggleButton};
   &:hover {
     cursor: pointer;
-    background: white;
-    color: black;
-    transform: scale(1.10);
-    border-radius: 5px;
-    text-shadow: 1px 1px 3px #82DBFA;
-    border: 2px solid #82DBFA;
+    color: ${props => props.theme.textColor};
+    background: ${props => props.theme.themeToggleButton};
+    border: 2px solid ${props => props.theme.textColor};
   }
 `
 const H1a = styled.h1`
 `
 const Hr = styled.hr`
-  border-color: ${props => props.theme.textColor};
+  border-color: ${ props => props.theme.textColor};
 `
 // const Span1 = styled.span`
 //   text-decoration: underline;

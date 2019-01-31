@@ -120,16 +120,28 @@ const Hr = styled.hr`
 const H1a = styled.h1`
 `
 const Button = styled.button`
+  /* font-size: 1.6rem;
   padding: 1rem;
-  border-radius: 3px;
-  font-family: 'Quicksand';
-  font-size: 1.4rem;
+  margin: 1rem;
   box-shadow: ${props => props.theme.buttonShadow};
-  :hover {
+  &:hover {
     background: black;
     color: white;
     font-weight: 700;
     cursor: pointer;
+  } */
+  font-size: 1.6rem;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+  color: ${props => props.theme.themeToggleButton};
+  background: black;
+  border: 2px solid ${props => props.theme.themeToggleButton};
+  &:hover {
+    cursor: pointer;
+    color: ${props => props.theme.textColor};
+    background: ${props => props.theme.themeToggleButton};
+    border: 2px solid ${props => props.theme.textColor};
   }
 `
 const P = styled.p`
