@@ -25,8 +25,8 @@ const Div = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 3px solid black;
-  box-shadow: 1px 1px 10px black;
+  border: 2px solid ${props => props.theme.textColor};
+  border-radius: 2px;
   min-height: 400px;
   width: 28%;
   margin: 1%;
@@ -44,7 +44,7 @@ const A1 = styled.a`
   color: ${props => props.theme.textColor};
 `
 const Img1 = styled(Img)`
-  box-shadow: ${props => props.theme.imageShadow};
+  border-radius: 3px;
 `
 
 export default ProjectTemplate

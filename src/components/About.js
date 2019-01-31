@@ -15,7 +15,7 @@ const AboutPage = (props) => (
       </P>
       <br />
       <P>
-        My mindset for 2019 is one of "extreme ownership", a concept popularized by Jocko Willink. Taking responsibility, whether it's code or life, has tremendous impact on the people around us. At the end of the day, our ability to solve problems is to ultimately benefit human beings. I want to take pride and responsibility in that.
+        A new mindset I'm experiment with for 2019 is one of "extreme ownership", a concept learned from Jocko Willink. Taking responsibility, whether it's code or life, has tremendous impact on the people around us. At the end of the day, our ability to solve problems is to ultimately benefit human beings. I want to take pride and responsibility in that.
 
         In my spare time, I enjoy traveling internationally, hiking on national forest trails, reading non-fiction books and tech articles, and experimenting with GatsbyJS.
       </P>
@@ -120,16 +120,6 @@ const Hr = styled.hr`
 const H1a = styled.h1`
 `
 const Button = styled.button`
-  /* font-size: 1.6rem;
-  padding: 1rem;
-  margin: 1rem;
-  box-shadow: ${props => props.theme.buttonShadow};
-  &:hover {
-    background: black;
-    color: white;
-    font-weight: 700;
-    cursor: pointer;
-  } */
   font-size: 1.6rem;
   padding: 1rem;
   margin: 1rem;

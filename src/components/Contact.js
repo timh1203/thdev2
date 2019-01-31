@@ -41,7 +41,7 @@ const Form1 = styled.form`
   margin: 2% auto;
   width: 60%;
   border-radius: 5px;
-  border: 2px solid white;
+  border: 2px solid ${props => props.theme.textColor};
   box-shadow: 0 0 5px gray;
   @media (max-width: 768px) {
     width: 90%;
