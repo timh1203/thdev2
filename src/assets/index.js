@@ -95,37 +95,35 @@ export const links = {
 
 export const skills = {
   "frontEnd": [
-    "HTML/CSS",
     "JavaScript",
     "React",
-    "Redux",
     "Styled Components",
+    "Redux",
     "Flexbox/CSS Grid",
     "GatsbyJS",
+    "HTML/CSS",
     "Bootstrap",
-    "jQuery",
   ],
   "backEnd": [
     "NodeJS/Express",
-    "Python/Django",
-    "C",
-    "SQL/SQLite3",
-    "MongoDB/Mongoose",
     "REST/APIs",
     "Authorization/Authentication",
+    "SQL/PostgreSQL/SQLite3",
+    "MongoDB/Mongoose",
     "Netlify",
     "Heroku",
+    "Python/Django",
+    "C",
   ],
   "other": [
     "Git/Github",
     "Gitflow Workflow",
     "Jest/Enzyme/SuperTest",
     "Yarn/NPM",
+    "Auth0",
+    "Stripe",
     "Mac OS X",
-    "iTerm2",
-    "VS Code",
-    "Photoshop/GIMP",
-    "Wordpress"
+    "Wordpress",
   ]
 }
 
