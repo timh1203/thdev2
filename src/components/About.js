@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
-import { Bar } from 'react-chartjs-2'
-import { links, skills, chartData, chartOptions } from '../assets/'
+// import { Bar } from 'react-chartjs-2'
+// import { links, skills, chartData, chartOptions } from '../assets/'
+import { links, skills } from '../assets/'
 
 const AboutPage = (props) => (
   <Section1 id="about">
@@ -52,14 +53,14 @@ const AboutPage = (props) => (
       </A>
     </Div2>
 
-    <Div3>
+    {/* <Div3>
       <Bar
         data={chartData}
         options={chartOptions}
         responsive={true}
       />
       <p>★ self-appointed</p>
-    </Div3>
+    </Div3> */}
 
     <Div4>
       <div>
@@ -93,9 +94,9 @@ const Div2 = styled.div`
   justify-content: space-evenly;
   margin-bottom: 3rem;
 `
-const Div3 = styled.div`
-  margin-bottom: 3rem;
-`
+// const Div3 = styled.div`
+//   margin-bottom: 3rem;
+// `
 const Div4 = styled.div`
   max-width: 1024px;
   margin: 0 auto;
