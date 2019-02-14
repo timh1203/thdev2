@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import styled, { ThemeProvider } from 'styled-components'
 import { lightTheme, darkTheme } from '../assets/'
-import { Header, Footer, Layout } from '../components'
+import { Header, Footer, Posts, Layout } from '../components'
 
 export default class BlogPage extends React.Component {
   state = {
@@ -20,14 +20,7 @@ export default class BlogPage extends React.Component {
         <Layout>
           <Div1>
             <Header lightToggler={this.lightToggler} />
-            {posts.map(post => (
-              <Div2 key={post.node.id}>
-                <h1>{post.node.title}</h1>
-                <h6>{post.node.createdAt}</h6>
-                <h6>Topics: {post.node.slug}</h6>
-                <p>{post.node.content.content}</p>
-              </Div2>
-            ))}
+            <Posts posts={posts} />
             <Footer />
           </Div1>
         </Layout>
@@ -37,13 +30,8 @@ export default class BlogPage extends React.Component {
 }
 
 const Div1 = styled.div`
-  background: ${props => props.theme.backgroundColor};
   padding: 0 120px;
   margin: 0 auto;
-  height: 100vh;
-`
-const Div2 = styled.div`
-  margin: 5rem 0;
 `
 
 export const pageQuery = graphql`
@@ -59,8 +47,8 @@ export const pageQuery = graphql`
           slug
           createdAt(formatString: "MMMM DD, YYYY")
           image {
-            resolutions(width: 300) {
-              ...GatsbyContentfulResolutions
+            sizes(maxWidth: 1280) {
+              ...GatsbyContentfulSizes
             }
           }
           content {

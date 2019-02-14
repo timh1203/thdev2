@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import { FaGithub, FaLinkedin, FaTwitter, FaMedium } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import { links } from '../assets/'
 
 const Header = props => (
@@ -170,17 +170,17 @@ const FaTwitter1 = styled(FaTwitter)`
     box-shadow: 3px 3px 3px ${props => props.theme.textColor};
   }
 `
-const FaMedium1 = styled(FaMedium)`
-  color: #13c164;
-  background: #f7f7f7;
-  border-radius: 2px;
-  width: 47px;
-  height: 47px;
-  margin: 0 2rem;
-  :hover {
-    box-shadow: 3px 3px 3px ${props => props.theme.textColor};
-  }
-`
+// const FaMedium1 = styled(FaMedium)`
+//   color: #13c164;
+//   background: #f7f7f7;
+//   border-radius: 2px;
+//   width: 47px;
+//   height: 47px;
+//   margin: 0 2rem;
+//   :hover {
+//     box-shadow: 3px 3px 3px ${props => props.theme.textColor};
+//   }
+// `
 // const FaFreeCodeCamp1 = styled(FaFreeCodeCamp)`
 //   color: white;
 //   background: #006100;

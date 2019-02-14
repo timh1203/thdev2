@@ -16,7 +16,6 @@ const Div = styled.div`
   border-top: ${props => props.theme.separatorColor};
   color: ${props => props.theme.textColor};
 `
-const P = styled.p`
-`
+const P = styled.p``
 
 export default Footer

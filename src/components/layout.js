@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -26,15 +26,18 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <div>
+        <Div1>
           <GlobalStyles />
           {children}
-        </div>
+        </Div1>
       </>
     )}
   />
 )
 
+const Div1 = styled.div`
+  background: ${props => props.theme.backgroundColor};
+`
 const GlobalStyles = createGlobalStyle`
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
