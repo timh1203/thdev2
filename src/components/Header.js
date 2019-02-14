@@ -1,12 +1,26 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import { FaGithub, FaLinkedin, FaTwitter, FaMedium } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter, FaMedium } from 'react-icons/fa'
 import { links } from '../assets/'
 
-const Header = (props) => (
+const Header = props => (
   <Div>
     <Div1>
+      {/* <Link1 to="#intro">Home</Link1> */}
+      <Link1 to="#portfolio">Portfolio</Link1>
+      <Link1 to="#about">About</Link1>
+      <Link1 to="#contact">Contact</Link1>
+      <Link1 to="/blog">Blog</Link1>
+    </Div1>
+
+    <Div2>
+      <H1>Timothy Hoang</H1>
+      <H6>Full Stack Developer</H6>
+      <H6>Houston, Texas</H6>
+    </Div2>
+
+    <Div3>
       <a
         href={links.github.url}
         alt={links.github.alt}
@@ -31,14 +45,14 @@ const Header = (props) => (
       >
         <FaTwitter1 />
       </a>
-      <a
+      {/* <a
         href={links.medium.url}
         alt={links.medium.alt}
         target="_blank"
         rel="noopener noreferrer"
       >
         <FaMedium1 />
-      </a>
+      </a> */}
       {/* <a
         href={links.freeCodeCamp.url}
         alt={links.freeCodeCamp.alt}
@@ -47,27 +61,24 @@ const Header = (props) => (
       >
         <FaFreeCodeCamp1 />
       </a> */}
-    </Div1>
-
-    <Div2>
-      <H1>Timothy Hoang</H1>
-      <H6>Full Stack Developer</H6>
-      <H6>Houston, Texas</H6>
-    </Div2>
-
-    <Div3>
-      {/* <Link1 to="#intro">Home</Link1> */}
-      <Link1 to="#about">About</Link1>
-      <Link1 to="#portfolio">Portfolio</Link1>
-      <Link1 to="#contact">Contact</Link1>
       {/* <Span1 role="img" aria-label="dark">🌚</Span1> */}
-      <input className="tgl tgl-skewed" onClick={() => props.lightToggler()} id="cb3" type="checkbox" />
-      <label className="tgl-btn" data-tg-off="DARK" data-tg-on="LIGHT" htmlFor="cb3"></label>
+      <input
+        className="tgl tgl-skewed"
+        onClick={() => props.lightToggler()}
+        id="cb3"
+        type="checkbox"
+      />
+      <label
+        className="tgl-btn"
+        data-tg-off="DARK"
+        data-tg-on="LIGHT"
+        htmlFor="cb3"
+      />
       {/* <input onClick={() => props.lightToggler()} className="tgl tgl-light" id="cb1" type="checkbox" />
       <label className="tgl-btn" htmlFor="cb1"></label> */}
       {/* <Span1 role="img" aria-label="light">🌞</Span1> */}
     </Div3>
-  </Div >
+  </Div>
 )
 
 const Div = styled.div`
@@ -108,11 +119,11 @@ const Link1 = styled(Link)`
   padding: 0 0.5rem;
   border-top: ${props => props.theme.yBorderColor};
   border-bottom: ${props => props.theme.yBorderColor};
-  border-left:${props => props.theme.xBorderColor};
-  border-right:${props => props.theme.xBorderColor};
+  border-left: ${props => props.theme.xBorderColor};
+  border-right: ${props => props.theme.xBorderColor};
   :hover {
-    border-top:${props => props.theme.xBorderColor};
-    border-bottom:${props => props.theme.xBorderColor};
+    border-top: ${props => props.theme.xBorderColor};
+    border-bottom: ${props => props.theme.xBorderColor};
     border-left: ${props => props.theme.yBorderColor};
     border-right: ${props => props.theme.yBorderColor};
   }
@@ -128,46 +139,46 @@ const H6 = styled.h6`
 `
 const FaGithub1 = styled(FaGithub)`
   color: white;
-  background: #24292E;
+  background: #24292e;
   border-radius: 2px;
   width: 40px;
   height: 40px;
   margin: 0 2rem;
   :hover {
-      box-shadow: 3px 3px 3px ${props => props.theme.textColor};
+    box-shadow: 3px 3px 3px ${props => props.theme.textColor};
   }
 `
 const FaLinkedin1 = styled(FaLinkedin)`
   color: white;
-  background: #0077B5;
+  background: #0077b5;
   border-radius: 2px;
   width: 40px;
   height: 40px;
   margin: 0 2rem;
   :hover {
-      box-shadow: 3px 3px 3px ${props => props.theme.textColor};
+    box-shadow: 3px 3px 3px ${props => props.theme.textColor};
   }
 `
 const FaTwitter1 = styled(FaTwitter)`
   color: white;
-  background: #1C9BEA;
+  background: #1c9bea;
   border-radius: 2px;
   width: 41px;
   height: 41px;
   margin: 0 2rem;
   :hover {
-      box-shadow: 3px 3px 3px ${props => props.theme.textColor};
+    box-shadow: 3px 3px 3px ${props => props.theme.textColor};
   }
 `
 const FaMedium1 = styled(FaMedium)`
-  color: #13C164;
-  background: #F7F7F7;
+  color: #13c164;
+  background: #f7f7f7;
   border-radius: 2px;
   width: 47px;
   height: 47px;
   margin: 0 2rem;
   :hover {
-      box-shadow: 3px 3px 3px ${props => props.theme.textColor};
+    box-shadow: 3px 3px 3px ${props => props.theme.textColor};
   }
 `
 // const FaFreeCodeCamp1 = styled(FaFreeCodeCamp)`

@@ -28,10 +28,10 @@ export default class HomePage extends React.Component {
           <Div1>
             <Header lightToggler={this.lightToggler} />
             <Intro profile2={this.props.data.profile2.childImageSharp.fluid} />
+            <Portfolio />
             <About
               aboutImage={this.props.data.aboutImage.childImageSharp.fluid}
             />
-            <Portfolio />
             <Contact />
             <Footer />
           </Div1>
