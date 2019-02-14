@@ -1,3 +1,6 @@
+# Logs
+.env.development
+
 # Project dependencies
 .cache
 node_modules

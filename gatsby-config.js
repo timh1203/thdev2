@@ -1,6 +1,10 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
-    title: "Timothy Hoang | Full Stack Developer",
+    title: 'Timothy Hoang | Full Stack Developer',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -35,9 +39,16 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Quicksand', 'Monserrat', 'Droid Serif']
-        }
-      }
-    }
+          families: ['Quicksand', 'Monserrat', 'Droid Serif'],
+        },
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTFUL_ID,
+        accessToken: process.env.CONTENTFUL_TOKEN,
+      },
+    },
   ],
 }
