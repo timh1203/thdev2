@@ -32,6 +32,8 @@ export default class BlogPage extends React.Component {
 const Div1 = styled.div`
   padding: 0 120px;
   margin: 0 auto;
+  color: ${props => props.theme.textColor};
+  min-height: 100vh;
 `
 
 export const pageQuery = graphql`

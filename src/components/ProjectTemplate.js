@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 
-const ProjectTemplate = (props) => (
+const ProjectTemplate = props => (
   <Div>
     <A1 href={props.demo} target="_blank">
       <Img1 fluid={props.img} />
@@ -17,8 +17,8 @@ const ProjectTemplate = (props) => (
       <A1 href={props.github} target="_blank">
         <P1>Github</P1>
       </A1>
-    </Div1 >
-  </Div >
+    </Div1>
+  </Div>
 )
 
 const Div = styled.div`
@@ -36,10 +36,8 @@ const Div1 = styled.div`
   display: flex;
   justify-content: space-between;
 `
-const H1a = styled.h1`
-`
-const P1 = styled.p`
-`
+const H1a = styled.h1``
+const P1 = styled.p``
 const A1 = styled.a`
   color: ${props => props.theme.textColor};
 `
