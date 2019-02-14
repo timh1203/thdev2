@@ -1,7 +1,15 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import styled, { ThemeProvider } from 'styled-components'
-import { Header, Intro, About, Portfolio, Layout, Contact, Footer } from '../components'
+import {
+  Header,
+  Intro,
+  About,
+  Portfolio,
+  Layout,
+  Contact,
+  Footer,
+} from '../components'
 import { lightTheme, darkTheme } from '../assets/'
 
 export default class HomePage extends React.Component {
@@ -18,12 +26,8 @@ export default class HomePage extends React.Component {
       <ThemeProvider theme={this.state.light ? lightTheme : darkTheme}>
         <Layout>
           <Div1>
-            <Header
-              lightToggler={this.lightToggler}
-            />
-            <Intro
-              profile2={this.props.data.profile2.childImageSharp.fluid}
-            />
+            <Header lightToggler={this.lightToggler} />
+            <Intro profile2={this.props.data.profile2.childImageSharp.fluid} />
             <About
               aboutImage={this.props.data.aboutImage.childImageSharp.fluid}
             />
@@ -45,26 +49,26 @@ const Div1 = styled.div`
 
 export const pageQuery = graphql`
   query {
-    profileImage: file(relativePath: {eq: "profile.jpg" }) {
+    profileImage: file(relativePath: { eq: "profile.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
-    },
-    profile2: file(relativePath: {eq: "profile2.jpg" }) {
+    }
+    profile2: file(relativePath: { eq: "profile2.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
-    },
+    }
     aboutImage: file(relativePath: { eq: "gto.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1920) {
-        ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid
         }
       }
-    },
+    }
   }
 `

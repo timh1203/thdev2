@@ -30,7 +30,6 @@ const Layout = ({ children }) => (
           <GlobalStyles />
           {children}
         </div>
-
       </>
     )}
   />
