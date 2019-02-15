@@ -70,6 +70,7 @@ export const pageQuery = graphql`
     contentfulBlog(slug: { eq: $slug }) {
       id
       title
+      subtitle
       slug
       createdAt(formatString: "MMMM DD, YYYY")
       image {

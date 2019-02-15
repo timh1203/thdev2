@@ -54,15 +54,13 @@ export const pageQuery = graphql`
         node {
           id
           title
+          subtitle
           slug
           createdAt(formatString: "MMMM DD, YYYY")
           image {
             sizes(maxWidth: 1280) {
               ...GatsbyContentfulSizes
             }
-          }
-          content {
-            content
           }
         }
       }

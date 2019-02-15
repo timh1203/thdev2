@@ -4,17 +4,16 @@ import Img from 'gatsby-image'
 import Link from 'gatsby-link'
 
 export default props => {
+  const { title, subtitle, createdAt, slug, image } = props.node
+
   return (
     <Div1>
-      <Link to={`/blog/${props.node.slug}/`}>
-        <Img1 sizes={props.node.image.sizes} />
+      <Link to={`/blog/${slug}/`}>
+        <Img1 sizes={image.sizes} />
         <Div2>
-          <H1a>{props.node.title}</H1a>
-          <H6a>{props.node.createdAt}</H6a>
-          <P1>
-            {props.node.content.content.substring(0, 100)}
-            ...
-          </P1>
+          <H1a>{title}</H1a>
+          <H6a>{createdAt}</H6a>
+          <P1>{subtitle}</P1>
         </Div2>
       </Link>
     </Div1>
