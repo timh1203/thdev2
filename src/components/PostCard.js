@@ -8,14 +8,14 @@ export default props => {
 
   return (
     <Div1>
-      <Link to={`/blog/${slug}/`}>
+      <Link1 to={`/blog/${slug}/`}>
         <Img1 sizes={image.sizes} />
         <Div2>
           <H1a>{title}</H1a>
           <H6a>{createdAt}</H6a>
           <P1>{subtitle}</P1>
         </Div2>
-      </Link>
+      </Link1>
     </Div1>
   )
 }
@@ -28,7 +28,7 @@ const Div1 = styled.div`
   border-radius: 2px;
   min-height: 400px;
   width: 30%;
-  margin: 1%;
+  margin: 0.5%;
   padding: 1%;
 `
 const Div2 = styled.div`
@@ -47,4 +47,7 @@ const Img1 = styled(Img)`
   width: 80%;
   margin: 0 auto;
   border-radius: 2px;
+`
+const Link1 = styled(Link)`
+  text-decoration: none;
 `
