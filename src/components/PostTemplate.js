@@ -14,15 +14,22 @@ export default class PostTemplate extends React.Component {
   }
 
   render() {
-    console.log(this.props)
-    // const { title, createdAt, image, content } = this.props.data.contentfulBlog
+    const { title, createdAt } = this.props.data.contentfulBlog
+    const content = this.props.data.contentfulBlog.content.childMarkdownRemark
+      .html
 
     return (
       <ThemeProvider theme={this.state.light ? lightTheme : darkTheme}>
         <Layout>
           <Div1>
             <Header lightToggler={this.lightToggler} />
-            <p>test2</p>
+            <H1a>{title}</H1a>
+            <H6a>{createdAt}</H6a>
+            <Div2
+              dangerouslySetInnerHTML={{
+                __html: content,
+              }}
+            />
             <Footer />
           </Div1>
         </Layout>
@@ -36,6 +43,26 @@ const Div1 = styled.div`
   margin: 0 auto;
   color: ${props => props.theme.textColor};
   min-height: 100vh;
+`
+const Div2 = styled.div`
+  a {
+    display: block;
+    color: ${props => props.theme.themeToggleButton};
+  }
+  p {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin: 1rem 0;
+  }
+  .gatsby-resp-image-image {
+    margin: 1rem;
+  }
+`
+const H1a = styled.h1`
+  margin: 1rem 0;
+`
+const H6a = styled.h6`
+  margin: 1rem 0;
 `
 
 export const pageQuery = graphql`
@@ -51,7 +78,9 @@ export const pageQuery = graphql`
         }
       }
       content {
-        content
+        childMarkdownRemark {
+          html
+        }
       }
     }
   }
