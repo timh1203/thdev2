@@ -1,18 +1,24 @@
 import React from 'react'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
+import Link from 'gatsby-link'
 
 export default props => {
   return (
     <Div1>
-      {props.posts.map(post => (
-        <Div2 key={post.node.id}>
-          <Img1 sizes={post.node.image.sizes} />
-          <Div3>
-            <h1>{post.node.title}</h1>
-            <h6>{post.node.createdAt}</h6>
-            <p>{post.node.content.content}</p>
-          </Div3>
+      {props.posts.map(({ node }) => (
+        <Div2 key={node.id}>
+          <Link to={`/blog/${node.slug}/`}>
+            <Img1 sizes={node.image.sizes} />
+            <Div3>
+              <h1>{node.title}</h1>
+              <h6>{node.createdAt}</h6>
+              <p>
+                {node.content.content.substring(0, 100)}
+                ...
+              </p>
+            </Div3>
+          </Link>
         </Div2>
       ))}
     </Div1>
