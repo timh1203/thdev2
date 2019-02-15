@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import styled, { ThemeProvider } from 'styled-components'
 import { lightTheme, darkTheme } from '../assets/'
-import { Header, Footer, Posts, Layout } from '../components'
+import { Header, Footer, PostCard, Layout } from '../components'
 
 export default class BlogPage extends React.Component {
   state = {
@@ -21,7 +21,11 @@ export default class BlogPage extends React.Component {
         <Layout>
           <Div1>
             <Header lightToggler={this.lightToggler} />
-            <Posts posts={posts} />
+            <Div2>
+              {posts.map(({ node }) => (
+                <PostCard key={node.id} node={node} />
+              ))}
+            </Div2>
             <Footer />
           </Div1>
         </Layout>
@@ -35,6 +39,9 @@ const Div1 = styled.div`
   margin: 0 auto;
   color: ${props => props.theme.textColor};
   min-height: 100vh;
+`
+const Div2 = styled.div`
+  display: flex;
 `
 
 export const pageQuery = graphql`

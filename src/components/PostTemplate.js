@@ -15,7 +15,7 @@ export default class PostTemplate extends React.Component {
 
   render() {
     console.log(this.props)
-    const { title, createdAt, image, content } = this.props.data.contentfulBlog
+    // const { title, createdAt, image, content } = this.props.data.contentfulBlog
 
     return (
       <ThemeProvider theme={this.state.light ? lightTheme : darkTheme}>

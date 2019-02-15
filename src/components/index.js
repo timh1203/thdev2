@@ -3,7 +3,7 @@ import Footer from './Footer'
 import Header from './Header'
 import Intro from './Intro'
 import Portfolio from './Portfolio'
-import Posts from './Posts'
+import PostCard from './PostCard'
 import ProjectTemplate from './ProjectTemplate'
 import ProjectAggregate from './ProjectAggregate'
 import Layout from './layout'
@@ -15,7 +15,7 @@ export {
   Header,
   Intro,
   Portfolio,
-  Posts,
+  PostCard,
   ProjectTemplate,
   ProjectAggregate,
   Layout,
