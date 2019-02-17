@@ -224,7 +224,7 @@ export const skills = {
 //   }
 // }
 
-export const projectsData = {
+export const projectsMainData = {
   guidr: {
     name: 'Guidr',
     desc:
@@ -238,13 +238,6 @@ export const projectsData = {
       'A travel content sharing platform I made for travelers to share pictures amongst travelers. The technology stack includes NodeJS, ExpressJS, and MongoDB. App also includes user authentication and google geocoder API.',
     demo: 'https://wanderlustoria.herokuapp.com/',
     github: 'https://github.com/timh1203/wanderlustoria',
-  },
-  simonGame: {
-    name: 'Simon Game',
-    desc:
-      'A memory sequence game for the Free Code Camp curriculum with instrument sounds and a keyboard play option. The technology used was ReactJS.',
-    demo: 'https://timh1203.github.io/simon-game',
-    github: 'https://github.com/timh1203/simon-game',
   },
   ticTacToeGame: {
     name: 'Tic Tac Toe',
@@ -260,12 +253,12 @@ export const projectsData = {
     demo: 'http://dullesbarber.com/',
     github: 'https://github.com/timh1203/dullesBarber',
   },
-  pomodoroApp: {
-    name: 'Phenomenal Pomodoro App',
+  simonGame: {
+    name: 'Simon Game',
     desc:
-      'The work/break cycle app based on the Pomodoro Technique by by Francesco Cirillo. The app was for the Free Code Camp curriculum. The technology used was javascript.',
-    demo: 'https://timh1203.github.io/pomodoro-app/',
-    github: 'https://github.com/timh1203/pomodoro-app',
+      'A memory sequence game for the Free Code Camp curriculum with instrument sounds and a keyboard play option. The technology used was ReactJS.',
+    demo: 'https://timh1203.github.io/simon-game',
+    github: 'https://github.com/timh1203/simon-game',
   },
   calculatorApp: {
     name: 'Cool Calculator App',
@@ -274,6 +267,9 @@ export const projectsData = {
     demo: 'https://timh1203.github.io/calculator-app',
     github: 'https://github.com/timh1203/calculator-app',
   },
+}
+
+export const projectsAltData = {
   derikJones: {
     name: 'Derik Jones Portfolio Website',
     desc:
@@ -287,6 +283,13 @@ export const projectsData = {
       'A custom event app built for the Free Code Camp Group. The technology stack includes ReactJS and FireBase.',
     demo: 'https://timh1203.github.io/respondez-app/',
     github: 'https://github.com/timh1203/respondez-app',
+  },
+  pomodoroApp: {
+    name: 'Phenomenal Pomodoro App',
+    desc:
+      'The work/break cycle app based on the Pomodoro Technique by by Francesco Cirillo. The app was for the Free Code Camp curriculum. The technology used was javascript.',
+    demo: 'https://timh1203.github.io/pomodoro-app/',
+    github: 'https://github.com/timh1203/pomodoro-app',
   },
   twitchApp: {
     name: 'Terrific Twitch App',

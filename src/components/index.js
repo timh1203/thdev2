@@ -5,8 +5,8 @@ import Intro from './Intro'
 import Portfolio from './Portfolio'
 import PostCard from './PostCard'
 import ProjectTemplate from './ProjectTemplate'
-import ProjectAggregateMain from './ProjectAggregateMain'
-import ProjectAggregateAlt from './ProjectAggregateAlt'
+import ProjectMainAggregate from './ProjectMainAggregate'
+import ProjectAltAggregate from './ProjectAltAggregate'
 import Layout from './layout'
 import Contact from './Contact'
 
@@ -18,8 +18,8 @@ export {
   Portfolio,
   PostCard,
   ProjectTemplate,
-  ProjectAggregateMain,
-  ProjectAggregateAlt,
+  ProjectMainAggregate,
+  ProjectAltAggregate,
   Layout,
   Contact,
 }
