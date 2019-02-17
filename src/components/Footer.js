@@ -3,7 +3,9 @@ import styled from 'styled-components'
 
 const Footer = () => (
   <Div>
-    <P>Copyright © 2019 Timothy Hoang</P>
+    <P>
+      Copyright © {new Date().getFullYear()} Timothy Hoang. All rights reserved.
+    </P>
   </Div>
 )
 

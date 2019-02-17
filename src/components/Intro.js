@@ -2,12 +2,18 @@ import React from 'react'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 
-const Intro = (props) => (
+const Intro = props => (
   <section id="intro">
     <Image fluid={props.profile2} />
     <H3>Hi, I'm Tim!</H3>
     <H3>I love building powerful web apps that solve real problems.</H3>
-    <H3>I'm graduating <A href="https://lambdaschool.com/" target="_blank">Lambda School</A> in March 2019.</H3>
+    <H3>
+      I graduate{' '}
+      <A href="https://lambdaschool.com/" target="_blank">
+        Lambda School
+      </A>{' '}
+      in March 2019.
+    </H3>
     {/* <H3>"I have no special talents.<br />I am only passionately curious."</H3> */}
     {/* <Span>-Albert Einstein</Span> */}
   </section>

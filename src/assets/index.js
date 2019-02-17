@@ -1,8 +1,8 @@
-export const slate = '#1d1e22';
-export const gray = '#ababab';
-export const white = '#f5f5f5';
-export const purple = '#3333ff';
-export const orange = '#ffcc00';
+export const slate = '#1d1e22'
+export const gray = '#ababab'
+export const white = '#f5f5f5'
+export const purple = '#3333ff'
+export const orange = '#ffcc00'
 
 export const darkTheme = {
   textColor: white,
@@ -27,104 +27,108 @@ export const lightTheme = {
 }
 
 export const links = {
-  "github": {
-    "url": "https://github.com/timh1203",
-    "alt": "My Github",
+  github: {
+    url: 'https://github.com/timh1203',
+    alt: 'My Github',
   },
-  "linkedIn": {
-    "url": "https://www.linkedin.com/in/timothyhoang/",
-    "alt": "My LinkedIn",
+  linkedIn: {
+    url: 'https://www.linkedin.com/in/timothyhoang/',
+    alt: 'My LinkedIn',
   },
-  "twitter": {
-    "url": "https://twitter.com/travelDev",
-    "alt": "My Twitter",
+  twitter: {
+    url: 'https://twitter.com/travelDev',
+    alt: 'My Twitter',
   },
-  "medium": {
-    "url": "https://medium.com/@timh1203",
-    "alt": "My Medium",
+  medium: {
+    url: 'https://medium.com/@timh1203',
+    alt: 'My Medium',
   },
-  "freeCodeCamp": {
-    "url": "https://www.freecodecamp.org/timh1203",
-    "alt": "My Free Code Camp",
+  freeCodeCamp: {
+    url: 'https://www.freecodecamp.org/timh1203',
+    alt: 'My Free Code Camp',
   },
-  "lambdaSchool": {
-    "url": "https://lambdaschool.com/",
-    "alt": "Lambda School Home",
+  lambdaSchool: {
+    url: 'https://lambdaschool.com/',
+    alt: 'Lambda School Home',
   },
-  "chingu": {
-    "url": "https://chingu.io/",
-    "alt": "Chingu Home",
+  chingu: {
+    url: 'https://chingu.io/',
+    alt: 'Chingu Home',
   },
-  "fccAshburn": {
-    "url": "https://free-code-camp-ashburn.github.io/website/",
-    "alt": "Free Code Camp Ashburn Home",
+  fccAshburn: {
+    url: 'https://free-code-camp-ashburn.github.io/website/',
+    alt: 'Free Code Camp Ashburn Home',
   },
-  "resume": {
-    "url": "https://docs.google.com/document/d/1vO5Ee5s1YYSpoAR3Ng5RQ-IoP3S6jpo3-ALeiYa2zZo/edit",
-    "alt": "My Online Resume",
+  resume: {
+    url:
+      'https://docs.google.com/document/d/1vO5Ee5s1YYSpoAR3Ng5RQ-IoP3S6jpo3-ALeiYa2zZo/edit',
+    alt: 'My Online Resume',
   },
-  "fccCertificate": {
-    "url": "https://www.freecodecamp.org/timh1203/front-end-certification",
-    "alt": "My Free Code Camp Certificate",
+  fccCertificate: {
+    url: 'https://www.freecodecamp.org/timh1203/front-end-certification',
+    alt: 'My Free Code Camp Certificate',
   },
-  "wdbcCertificate": {
-    "url": "https://www.udemy.com/certificate/UC-F6RNIX9G/",
-    "alt": "My Web Dev Bootcamp Certificate",
+  wdbcCertificate: {
+    url: 'https://www.udemy.com/certificate/UC-F6RNIX9G/',
+    alt: 'My Web Dev Bootcamp Certificate',
   },
-  "wanderlustoria": {
-    "demo": "https://wanderlustoria.herokuapp.com/",
-    "github": "https://github.com/timh1203/wanderlustoria",
-    "desc": "A travel content sharing platform with user authentication and google geocoder API written with Node, Express, and MongoDB."
+  wanderlustoria: {
+    demo: 'https://wanderlustoria.herokuapp.com/',
+    github: 'https://github.com/timh1203/wanderlustoria',
+    desc:
+      'A travel content sharing platform with user authentication and google geocoder API coded with Node, Express, and MongoDB.',
   },
-  "simonGame": {
-    "demo": "https://timh1203.github.io/simon-game",
-    "github": "https://github.com/timh1203/simon-game",
-    "desc": "https://timh1203.github.io/simon-game"
+  simonGame: {
+    demo: 'https://timh1203.github.io/simon-game',
+    github: 'https://github.com/timh1203/simon-game',
+    desc: 'https://timh1203.github.io/simon-game',
   },
-  "ticTacToe": {
-    "demo": "https://timh1203.github.io/tictactoe-game",
-    "github": "https://github.com/timh1203/tictactoe-game",
-    "desc": "An ubiquitous game playable against AI (MiniMax algorithm) or another player written with ReactJS."
+  ticTacToe: {
+    demo: 'https://timh1203.github.io/tictactoe-game',
+    github: 'https://github.com/timh1203/tictactoe-game',
+    desc:
+      'An ubiquitous game playable against AI (MiniMax algorithm) or another player coded with ReactJS.',
   },
-  "dullesBarber": {
-    "demo": "http://dullesbarber.com/",
-    "github": "https://github.com/timh1203/dullesBarber",
-    "desc": "A barber shop business based in Sterling. Created GatsbyJS, GraphQL, and Styled Components."
+  dullesBarber: {
+    demo: 'http://dullesbarber.com/',
+    github: 'https://github.com/timh1203/dullesBarber',
+    desc:
+      'A barber shop business based in Sterling. Created GatsbyJS, GraphQL, and Styled Components.',
   },
 }
 
 export const skills = {
-  "frontEnd": [
-    "JavaScript",
-    "React",
-    "Styled Components",
-    "Redux",
-    "Flexbox/CSS Grid",
-    "GatsbyJS",
-    "HTML/CSS",
-    "Bootstrap",
+  frontEnd: [
+    'JavaScript',
+    'React',
+    'Styled Components',
+    'Redux',
+    'Flexbox/CSS Grid',
+    'GatsbyJS',
+    'HTML/CSS',
+    'Bootstrap',
   ],
-  "backEnd": [
-    "NodeJS/Express",
-    "REST/APIs",
-    "Authorization/Authentication",
-    "SQL/PostgreSQL/SQLite3",
-    "MongoDB/Mongoose",
-    "Netlify",
-    "Heroku",
-    "Python/Django",
-    "C",
+  backEnd: [
+    'NodeJS/Express',
+    'REST/APIs',
+    'Authorization/Authentication',
+    'SQL/PostgreSQL/SQLite3',
+    'MongoDB/Mongoose',
+    'Netlify',
+    'Heroku',
+    'Python/Django',
+    'C',
   ],
-  "other": [
-    "Git/Github",
-    "Gitflow Workflow",
-    "Jest/Enzyme/SuperTest",
-    "Yarn/NPM",
-    "Auth0",
-    "Stripe",
-    "Mac OS X",
-    "Wordpress",
-  ]
+  other: [
+    'Git/Github',
+    'Gitflow Workflow',
+    'Jest/Enzyme/SuperTest',
+    'Yarn/NPM',
+    'Auth0',
+    'Stripe',
+    'Mac OS X',
+    'Wordpress',
+  ],
 }
 
 // export const chartData = {
@@ -221,40 +225,53 @@ export const skills = {
 // }
 
 export const projectsData = {
-  "wanderlustoria": {
-    "name": "Wanderlustoria",
-    "desc": "A travel content sharing platform with user authentication and google geocoder API written with Node, Express, and MongoDB.",
-    "demo": "https://wanderlustoria.herokuapp.com/",
-    "github": "https://github.com/timh1203/wanderlustoria",
+  guidr: {
+    name: 'Guidr',
+    desc:
+      'Created during Lambda School Build Week, I led 5 other developers to build this app as the scrum master, commited code, and assisted in debugging. The technology stack includes ReactJS, NodeJS, and Sqlite3.',
+    demo: 'https://guidr2.netlify.com/',
+    github: 'https://github.com/guidr-app-lion-team',
   },
-  "simonGame": {
-    "name": "Simon Game",
-    "desc": "A memory sequence game released in 1978 with instrument sounds, keyboard play, and written with ReactJS.",
-    "demo": "https://timh1203.github.io/simon-game",
-    "github": "https://github.com/timh1203/simon-game",
+  wanderlustoria: {
+    name: 'Wanderlustoria',
+    desc:
+      'A travel content sharing platform I made for travelers to share pictures amongst travelers. The technology stack includes NodeJS, ExpressJS, and MongoDB. App also includes user authentication and google geocoder API.',
+    demo: 'https://wanderlustoria.herokuapp.com/',
+    github: 'https://github.com/timh1203/wanderlustoria',
   },
-  "ticTacToeGame": {
-    "name": "Tic Tac Toe",
-    "desc": "An ubiquitous game playable against AI (MiniMax algorithm) or another player written with ReactJS.",
-    "demo": "https://timh1203.github.io/tictactoe-game",
-    "github": "https://github.com/timh1203/tictactoe-game",
+  simonGame: {
+    name: 'Simon Game',
+    desc:
+      'A memory sequence game for the Free Code Camp curriculum with instrument sounds and a keyboard play option. The technology used was ReactJS.',
+    demo: 'https://timh1203.github.io/simon-game',
+    github: 'https://github.com/timh1203/simon-game',
   },
-  "dullesBarber": {
-    "name": "Dulles Barber",
-    "desc": "A barber shop business based in Sterling. Created GatsbyJS, GraphQL, and Styled Components.",
-    "demo": "http://dullesbarber.com/",
-    "github": "https://github.com/timh1203/dullesBarber",
+  ticTacToeGame: {
+    name: 'Tic Tac Toe',
+    desc:
+      'An well-known game for the Free Code Camp curriculum. This game is playable against AI (MiniMax algorithm) or another player. The technology used was ReactJS.',
+    demo: 'https://timh1203.github.io/tictactoe-game',
+    github: 'https://github.com/timh1203/tictactoe-game',
   },
-  "pomodoroApp": {
-    "name": "Pomodoro App",
-    "desc": "The work/break cycle app based on the Pomodoro Technique by by Francesco Cirillo.",
-    "demo": "https://timh1203.github.io/pomodoro-app/",
-    "github": "https://github.com/timh1203/pomodoro-app",
+  dullesBarber: {
+    name: 'Dulles Barber',
+    desc:
+      'This site is home for an actual barber shop business based in Sterling, Virginia. The technology stack includes GatsbyJS, GraphQL, and Styled Components.',
+    demo: 'http://dullesbarber.com/',
+    github: 'https://github.com/timh1203/dullesBarber',
   },
-  "calculatorApp": {
-    "name": "Calculator App",
-    "desc": "A simple calculator app built with JavaScript not using the eval() method.",
-    "demo": "https://timh1203.github.io/calculator-app",
-    "github": "https://github.com/timh1203/calculator-app",
+  pomodoroApp: {
+    name: 'Pomodoro App',
+    desc:
+      'The work/break cycle app based on the Pomodoro Technique by by Francesco Cirillo. The app was for the Free Code Camp curriculum. The technology used was javascript.',
+    demo: 'https://timh1203.github.io/pomodoro-app/',
+    github: 'https://github.com/timh1203/pomodoro-app',
+  },
+  calculatorApp: {
+    name: 'Calculator App',
+    desc:
+      'A simple calculator app to perform basic math operations for the Free Code Camp curriculum. The technology used was javascript.',
+    demo: 'https://timh1203.github.io/calculator-app',
+    github: 'https://github.com/timh1203/calculator-app',
   },
 }

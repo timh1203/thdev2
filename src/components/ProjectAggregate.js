@@ -7,6 +7,13 @@ import { ProjectTemplate } from './'
 const ProjectsAggregate = ({ data }) => (
   <Div1>
     <ProjectTemplate
+      img={data.guidr.childImageSharp.fluid}
+      name={projectsData.guidr.name}
+      desc={projectsData.guidr.desc}
+      demo={projectsData.guidr.demo}
+      github={projectsData.guidr.github}
+    />
+    <ProjectTemplate
       img={data.wanderlustoria.childImageSharp.fluid}
       name={projectsData.wanderlustoria.name}
       desc={projectsData.wanderlustoria.desc}
@@ -35,13 +42,6 @@ const ProjectsAggregate = ({ data }) => (
       github={projectsData.simonGame.github}
     />
     <ProjectTemplate
-      img={data.pomodoroApp.childImageSharp.fluid}
-      name={projectsData.pomodoroApp.name}
-      desc={projectsData.pomodoroApp.desc}
-      demo={projectsData.pomodoroApp.demo}
-      github={projectsData.pomodoroApp.github}
-    />
-    <ProjectTemplate
       img={data.calculatorApp.childImageSharp.fluid}
       name={projectsData.calculatorApp.name}
       desc={projectsData.calculatorApp.desc}
@@ -61,50 +61,50 @@ export default () => (
   <StaticQuery
     query={graphql`
       query {
+        guidr: file(relativePath: { eq: "guidr.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         wanderlustoria: file(relativePath: { eq: "wanderlustoria.png" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid
             }
           }
-        },
+        }
         dullesBarber: file(relativePath: { eq: "dullesBarber.png" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid
             }
           }
-        },
+        }
         simonGame: file(relativePath: { eq: "simonGame.png" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid
             }
           }
-        },
+        }
         ticTacToeGame: file(relativePath: { eq: "ticTacToeGame.png" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid
             }
           }
-        },
-        pomodoroApp: file(relativePath: { eq: "pomodoroApp.png" }) {
-          childImageSharp {
-            fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-            }
-          }
-        },
+        }
         calculatorApp: file(relativePath: { eq: "calculatorApp.png" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid
             }
           }
-        },
+        }
       }
-  `}
+    `}
     render={data => <ProjectsAggregate data={data} />}
   />
 )

@@ -12,8 +12,8 @@ const AboutPage = props => (
     <Image fluid={props.aboutImage} />
     <Div>
       <P>
-        I'm full stack developer who loves to work with web technologies. I'm
-        will graduate in March 2019 from{' '}
+        I'm full stack developer who loves to work with web technologies. My
+        current home is{' '}
         <A
           href={links.lambdaSchool.url}
           alt={links.lambdaSchool.alt}
@@ -34,17 +34,17 @@ const AboutPage = props => (
         >
           Chingu Voyage
         </A>
-        , and organized for a Free Code Camp{' '}
+        , and organized for a{' '}
         <A
           href={links.fccAshburn.url}
           alt={links.fccAshburn.alt}
           target="_blank"
           rel="noopener noreferrer"
         >
-          local group
+          Free Code Camp local group
         </A>
         . In my spare time, I enjoy traveling internationally, hiking on
-        national forest trails, reading non-fiction books and tech articles, and
+        national forest trails, reading non-fiction books/tech articles, and
         experimenting with GatsbyJS.
       </P>
       <br />
