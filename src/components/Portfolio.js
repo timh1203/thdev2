@@ -1,14 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
-import { ProjectAggregate } from './'
+import { ProjectAggregateMain, ProjectAggregateAlt } from './'
 
-const Portfolio = () => (
-  <Section1 id="portfolio">
-    <H1>Portfolio</H1>
-    <Hr1 />
-    <ProjectAggregate />
-  </Section1>
-)
+export default function Portfolio() {
+  const [isAllShowing, setAllShowing] = useState(false)
+  const toggle = () => setAllShowing(!isAllShowing)
+
+  return (
+    <Section1 id="portfolio">
+      <H1>Portfolio</H1>
+      <Hr1 />
+      <ProjectAggregateMain />
+      {isAllShowing ? <ProjectAggregateAlt /> : null}
+      <Button1 type="text" onClick={toggle}>
+        {isAllShowing ? 'See less' : 'See more'}
+      </Button1>
+    </Section1>
+  )
+}
 
 const Section1 = styled.section`
   color: ${props => props.theme.textColor};
@@ -17,5 +26,20 @@ const H1 = styled.h1``
 const Hr1 = styled.hr`
   border-color: ${props => props.theme.textColor};
 `
-
-export default Portfolio
+const Button1 = styled.button`
+  width: 20%;
+  font-size: 1.6rem;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+  outline: none;
+  color: ${props => props.theme.themeToggleButton};
+  background: black;
+  border: 2px solid ${props => props.theme.themeToggleButton};
+  &:hover {
+    cursor: pointer;
+    color: ${props => props.theme.textColor};
+    background: ${props => props.theme.themeToggleButton};
+    border: 2px solid ${props => props.theme.textColor};
+  }
+`
