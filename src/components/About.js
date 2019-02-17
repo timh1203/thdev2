@@ -43,16 +43,7 @@ const AboutPage = props => (
         >
           local group
         </A>
-        .
-      </P>
-      <br />
-      <P>
-        A new mindset I'm experiment with for 2019 is one of "extreme
-        ownership", a concept learned from Jocko Willink. Taking responsibility,
-        whether it's code or life, has tremendous impact on the people around
-        us. At the end of the day, our ability to solve problems is to
-        ultimately benefit human beings. I want to take pride and responsibility
-        in that. In my spare time, I enjoy traveling internationally, hiking on
+        . In my spare time, I enjoy traveling internationally, hiking on
         national forest trails, reading non-fiction books and tech articles, and
         experimenting with GatsbyJS.
       </P>
