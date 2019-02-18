@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { ProjectAggregateMain, ProjectAggregateAlt } from './'
+import { ProjectMainAggregate, ProjectAltAggregate } from './'
 
 export default function Portfolio() {
   const [isAllShowing, setAllShowing] = useState(false)
@@ -10,8 +10,8 @@ export default function Portfolio() {
     <Section1 id="portfolio">
       <H1>Portfolio</H1>
       <Hr1 />
-      <ProjectAggregateMain />
-      {isAllShowing ? <ProjectAggregateAlt /> : null}
+      <ProjectMainAggregate />
+      {isAllShowing ? <ProjectAltAggregate /> : null}
       <Button1 type="text" onClick={toggle}>
         {isAllShowing ? 'See less' : 'See more'}
       </Button1>

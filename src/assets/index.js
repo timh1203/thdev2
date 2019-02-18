@@ -224,7 +224,7 @@ export const skills = {
 //   }
 // }
 
-export const projectsMainData = {
+export const projectMainData = {
   guidr: {
     name: 'Guidr',
     desc:
@@ -269,7 +269,7 @@ export const projectsMainData = {
   },
 }
 
-export const projectsAltData = {
+export const projectAltData = {
   derikJones: {
     name: 'Derik Jones Portfolio Website',
     desc:

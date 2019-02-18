@@ -1,52 +1,52 @@
 import React from 'react'
 import styled from 'styled-components'
 import { StaticQuery, graphql } from 'gatsby'
-import { projectsMainData } from '../assets'
+import { projectMainData } from '../assets'
 import { ProjectTemplate } from './'
 
 const ProjectMainAggregate = ({ data }) => (
   <Div1>
     <ProjectTemplate
       img={data.guidr.childImageSharp.fluid}
-      name={projectsMainData.guidr.name}
-      desc={projectsMainData.guidr.desc}
-      demo={projectsMainData.guidr.demo}
-      github={projectsMainData.guidr.github}
+      name={projectMainData.guidr.name}
+      desc={projectMainData.guidr.desc}
+      demo={projectMainData.guidr.demo}
+      github={projectMainData.guidr.github}
     />
     <ProjectTemplate
       img={data.wanderlustoria.childImageSharp.fluid}
-      name={projectsMainData.wanderlustoria.name}
-      desc={projectsMainData.wanderlustoria.desc}
-      demo={projectsMainData.wanderlustoria.demo}
-      github={projectsMainData.wanderlustoria.github}
+      name={projectMainData.wanderlustoria.name}
+      desc={projectMainData.wanderlustoria.desc}
+      demo={projectMainData.wanderlustoria.demo}
+      github={projectMainData.wanderlustoria.github}
     />
     <ProjectTemplate
       img={data.ticTacToeGame.childImageSharp.fluid}
-      name={projectsMainData.ticTacToeGame.name}
-      desc={projectsMainData.ticTacToeGame.desc}
-      demo={projectsMainData.ticTacToeGame.demo}
-      github={projectsMainData.ticTacToeGame.github}
+      name={projectMainData.ticTacToeGame.name}
+      desc={projectMainData.ticTacToeGame.desc}
+      demo={projectMainData.ticTacToeGame.demo}
+      github={projectMainData.ticTacToeGame.github}
     />
     <ProjectTemplate
       img={data.dullesBarber.childImageSharp.fluid}
-      name={projectsMainData.dullesBarber.name}
-      desc={projectsMainData.dullesBarber.desc}
-      demo={projectsMainData.dullesBarber.demo}
-      github={projectsMainData.dullesBarber.github}
+      name={projectMainData.dullesBarber.name}
+      desc={projectMainData.dullesBarber.desc}
+      demo={projectMainData.dullesBarber.demo}
+      github={projectMainData.dullesBarber.github}
     />
     <ProjectTemplate
       img={data.simonGame.childImageSharp.fluid}
-      name={projectsMainData.simonGame.name}
-      desc={projectsMainData.simonGame.desc}
-      demo={projectsMainData.simonGame.demo}
-      github={projectsMainData.simonGame.github}
+      name={projectMainData.simonGame.name}
+      desc={projectMainData.simonGame.desc}
+      demo={projectMainData.simonGame.demo}
+      github={projectMainData.simonGame.github}
     />
     <ProjectTemplate
       img={data.calculatorApp.childImageSharp.fluid}
-      name={projectsMainData.calculatorApp.name}
-      desc={projectsMainData.calculatorApp.desc}
-      demo={projectsMainData.calculatorApp.demo}
-      github={projectsMainData.calculatorApp.github}
+      name={projectMainData.calculatorApp.name}
+      desc={projectMainData.calculatorApp.desc}
+      demo={projectMainData.calculatorApp.demo}
+      github={projectMainData.calculatorApp.github}
     />
   </Div1>
 )
