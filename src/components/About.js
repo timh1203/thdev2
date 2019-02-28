@@ -127,6 +127,9 @@ const AboutPage = props => (
 
 const Section1 = styled.section`
   color: ${props => props.theme.textColor};
+  @media (max-width: 768px) {
+    margin: 5rem 0;
+  }
 `
 const Div = styled.div`
   max-width: 1024px;
@@ -134,6 +137,9 @@ const Div = styled.div`
   margin-bottom: 3rem;
   text-align: left;
   line-height: 1.5;
+  @media (max-width: 768px) {
+    margin: 2rem 0;
+  }
 `
 const Div2 = styled.div`
   display: flex;
@@ -157,6 +163,9 @@ const Image = styled(Img)`
   margin: 2% auto;
   padding: 0;
   box-shadow: ${props => props.theme.imageShadow};
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
 `
 const A = styled.a`
   color: ${props => props.theme.textColor};

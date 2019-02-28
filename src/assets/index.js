@@ -246,7 +246,7 @@ export const projectMainData = {
     github: 'https://github.com/timh1203/dullesBarber',
   },
   derikJones: {
-    name: 'Derik Jones Architect Website',
+    name: 'Derik Jones Architect',
     desc:
       'An architect portfolio website built for a client. The technology stack includes GatsbyJS, GraphQL, and Styled Components.',
     demo: 'http://derikjones.com/',

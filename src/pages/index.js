@@ -58,7 +58,7 @@ export const pageQuery = graphql`
     }
     profile2: file(relativePath: { eq: "profile2.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1000) {
+        fluid(maxWidth: 1920) {
           ...GatsbyImageSharpFluid
         }
       }

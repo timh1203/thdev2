@@ -31,12 +31,19 @@ const Div = styled.div`
   width: 28%;
   margin: 1%;
   padding: 1%;
+  @media (max-width: 768px) {
+    width: 45%;
+  }
 `
 const Div1 = styled.div`
   display: flex;
   justify-content: space-between;
 `
-const H1a = styled.h1``
+const H1a = styled.h1`
+  @media (max-width: 768px) {
+    font-size: 3rem;
+  }
+`
 const P1 = styled.p``
 const A1 = styled.a`
   color: ${props => props.theme.textColor};

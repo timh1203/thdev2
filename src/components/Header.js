@@ -91,8 +91,6 @@ const Div = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
   }
-  @media (max-width: 400px) {
-  }
 `
 const Div1 = styled.div`
   margin-bottom: 1rem;
