@@ -42,4 +42,7 @@ const Button1 = styled.button`
     background: ${props => props.theme.themeToggleButton};
     border: 2px solid ${props => props.theme.textColor};
   }
+  @media (max-width: 400px) {
+    width: 30%;
+  }
 `

@@ -39,6 +39,9 @@ const Image = styled(Img)`
   @media (max-width: 768px) {
     max-width: 50%;
   }
+  @media (max-width: 400px) {
+    max-width: 80%;
+  }
 `
 
 const H3 = styled.h3`
@@ -48,6 +51,9 @@ const H3 = styled.h3`
   @media (max-width: 768px) {
    font-size: 2.5rem;
   }
+  @media (max-width: 400px) {
+    font-size: 2rem;
+  }
 `
 
 const A = styled.a`
@@ -55,6 +61,9 @@ const A = styled.a`
   color: ${props => props.theme.textColor};
   @media (max-width: 768px) {
    font-size: 2.5rem;
+  }
+  @media (max-width: 400px) {
+    font-size: 2rem;
   }
 `
 

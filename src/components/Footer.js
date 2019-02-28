@@ -18,6 +18,10 @@ const Div = styled.div`
   border-top: ${props => props.theme.separatorColor};
   color: ${props => props.theme.textColor};
 `
-const P = styled.p``
+const P = styled.p`
+  @media (max-width: 400px) {
+    margin: 1rem 0;
+  }
+`
 
 export default Footer

@@ -45,6 +45,10 @@ const Div1 = styled.div`
   background: ${props => props.theme.backgroundColor};
   padding: 0 120px;
   margin: 0 auto;
+
+  @media (max-width: 400px) {
+    padding: 0 10%;
+  }
 `
 
 export const pageQuery = graphql`

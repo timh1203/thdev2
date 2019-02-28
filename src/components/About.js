@@ -103,24 +103,24 @@ const AboutPage = props => (
     </Div3> */}
 
     <Div4>
-      <div>
+      <Div5>
         <h3>‣ Front-End:</h3>
         {skills.frontEnd.map(skill => (
           <P key={skill}>{skill}</P>
         ))}
-      </div>
-      <div>
+      </Div5>
+      <Div5>
         <h3>‣ Back-End:</h3>
         {skills.backEnd.map(skill => (
           <P key={skill}>{skill}</P>
         ))}
-      </div>
-      <div>
+      </Div5>
+      <Div5>
         <h3>‣ Other:</h3>
         {skills.other.map(skill => (
           <P key={skill}>{skill}</P>
         ))}
-      </div>
+      </Div5>
     </Div4>
   </Section1>
 )
@@ -145,6 +145,9 @@ const Div2 = styled.div`
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 3rem;
+  @media (max-width: 400px) {
+    flex-direction: column;
+  }
 `
 // const Div3 = styled.div`
 //   margin-bottom: 3rem;
@@ -156,6 +159,14 @@ const Div4 = styled.div`
   justify-content: space-around;
   font-size: 2rem;
   line-height: 1.5;
+  @media (max-width: 400px) {
+    flex-direction: column;
+  }
+`
+const Div5 = styled.div`
+  @media (max-width:400px) {
+    margin: 1rem 0;
+  }
 `
 const Image = styled(Img)`
   max-width: 80%;

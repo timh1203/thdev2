@@ -34,6 +34,10 @@ const Div = styled.div`
   @media (max-width: 768px) {
     width: 45%;
   }
+  @media (max-width: 400px) {
+    width: 100%;
+    padding: 5%;
+  }
 `
 const Div1 = styled.div`
   display: flex;

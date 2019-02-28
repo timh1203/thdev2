@@ -46,6 +46,9 @@ const Form1 = styled.form`
   @media (max-width: 768px) {
     width: 90%;
   }
+  @media (max-width: 400px) {
+    margin: 2rem auto;
+  }
 `
 // const H1a = styled.h1`
 //   font-size: 3.6rem;
