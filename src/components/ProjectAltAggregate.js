@@ -7,11 +7,25 @@ import { ProjectTemplate } from './'
 const ProjectAltAggregate = ({ data }) => (
   <Div1>
     <ProjectTemplate
-      img={data.derikJones.childImageSharp.fluid}
-      name={projectAltData.derikJones.name}
-      desc={projectAltData.derikJones.desc}
-      demo={projectAltData.derikJones.demo}
-      github={projectAltData.derikJones.github}
+      img={data.ticTacToeGame.childImageSharp.fluid}
+      name={projectAltData.ticTacToeGame.name}
+      desc={projectAltData.ticTacToeGame.desc}
+      demo={projectAltData.ticTacToeGame.demo}
+      github={projectAltData.ticTacToeGame.github}
+    />
+    <ProjectTemplate
+      img={data.simonGame.childImageSharp.fluid}
+      name={projectAltData.simonGame.name}
+      desc={projectAltData.simonGame.desc}
+      demo={projectAltData.simonGame.demo}
+      github={projectAltData.simonGame.github}
+    />
+    <ProjectTemplate
+      img={data.calculatorApp.childImageSharp.fluid}
+      name={projectAltData.calculatorApp.name}
+      desc={projectAltData.calculatorApp.desc}
+      demo={projectAltData.calculatorApp.demo}
+      github={projectAltData.calculatorApp.github}
     />
     <ProjectTemplate
       img={data.respondezApp.childImageSharp.fluid}
@@ -89,7 +103,21 @@ export default () => (
   <StaticQuery
     query={graphql`
       query {
-        derikJones: file(relativePath: { eq: "derikJones.png" }) {
+        simonGame: file(relativePath: { eq: "simonGame.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        ticTacToeGame: file(relativePath: { eq: "ticTacToeGame.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        calculatorApp: file(relativePath: { eq: "calculatorApp.png" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid

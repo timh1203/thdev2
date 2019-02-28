@@ -21,32 +21,19 @@ const ProjectMainAggregate = ({ data }) => (
       github={projectMainData.wanderlustoria.github}
     />
     <ProjectTemplate
-      img={data.ticTacToeGame.childImageSharp.fluid}
-      name={projectMainData.ticTacToeGame.name}
-      desc={projectMainData.ticTacToeGame.desc}
-      demo={projectMainData.ticTacToeGame.demo}
-      github={projectMainData.ticTacToeGame.github}
-    />
-    <ProjectTemplate
       img={data.dullesBarber.childImageSharp.fluid}
       name={projectMainData.dullesBarber.name}
       desc={projectMainData.dullesBarber.desc}
       demo={projectMainData.dullesBarber.demo}
       github={projectMainData.dullesBarber.github}
     />
+
     <ProjectTemplate
-      img={data.simonGame.childImageSharp.fluid}
-      name={projectMainData.simonGame.name}
-      desc={projectMainData.simonGame.desc}
-      demo={projectMainData.simonGame.demo}
-      github={projectMainData.simonGame.github}
-    />
-    <ProjectTemplate
-      img={data.calculatorApp.childImageSharp.fluid}
-      name={projectMainData.calculatorApp.name}
-      desc={projectMainData.calculatorApp.desc}
-      demo={projectMainData.calculatorApp.demo}
-      github={projectMainData.calculatorApp.github}
+      img={data.derikJones.childImageSharp.fluid}
+      name={projectMainData.derikJones.name}
+      desc={projectMainData.derikJones.desc}
+      demo={projectMainData.derikJones.demo}
+      github={projectMainData.derikJones.github}
     />
   </Div1>
 )
@@ -82,21 +69,7 @@ export default () => (
             }
           }
         }
-        simonGame: file(relativePath: { eq: "simonGame.png" }) {
-          childImageSharp {
-            fluid(maxWidth: 1000) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        ticTacToeGame: file(relativePath: { eq: "ticTacToeGame.png" }) {
-          childImageSharp {
-            fluid(maxWidth: 1000) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        calculatorApp: file(relativePath: { eq: "calculatorApp.png" }) {
+        derikJones: file(relativePath: { eq: "derikJones.png" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid

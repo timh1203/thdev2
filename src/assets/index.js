@@ -111,9 +111,8 @@ export const skills = {
   backEnd: [
     'NodeJS/Express',
     'REST/APIs',
-    'Authorization/Authentication',
-    'SQL/PostgreSQL/SQLite3',
-    'MongoDB/Mongoose',
+    'SQL/PostgreSQL',
+    'MongoDB',
     'Netlify',
     'Heroku',
     'Python/Django',
@@ -121,8 +120,8 @@ export const skills = {
   ],
   other: [
     'Git/Github',
-    'Gitflow Workflow',
-    'Jest/Enzyme/SuperTest',
+    'Git Workflow',
+    'Jest/Enzyme',
     'Yarn/NPM',
     'Auth0',
     'Stripe',
@@ -228,7 +227,7 @@ export const projectMainData = {
   guidr: {
     name: 'Guidr',
     desc:
-      'Created during Lambda School Build Week, I led 5 other developers to build this app as the scrum master, commited code, and assisted in debugging. The technology stack includes ReactJS, NodeJS, and Sqlite3.',
+      'Created during Lambda School Build Week, I led 5 other developers to build this app as the scrum master, committed code, and assisted in debugging. The technology stack includes ReactJS, NodeJS, and Sqlite3.',
     demo: 'https://guidr2.netlify.com/',
     github: 'https://github.com/guidr-app-lion-team',
   },
@@ -239,19 +238,29 @@ export const projectMainData = {
     demo: 'https://wanderlustoria.herokuapp.com/',
     github: 'https://github.com/timh1203/wanderlustoria',
   },
-  ticTacToeGame: {
-    name: 'Tic Tac Toe',
-    desc:
-      'An well-known game for the Free Code Camp curriculum. This game is playable against AI (MiniMax algorithm) or another player. The technology used was ReactJS.',
-    demo: 'https://timh1203.github.io/tictactoe-game',
-    github: 'https://github.com/timh1203/tictactoe-game',
-  },
   dullesBarber: {
     name: 'Dulles Barber',
     desc:
       'This site is home for an actual barber shop business based in Sterling, Virginia. The technology stack includes GatsbyJS, GraphQL, and Styled Components.',
     demo: 'http://dullesbarber.com/',
     github: 'https://github.com/timh1203/dullesBarber',
+  },
+  derikJones: {
+    name: 'Derik Jones Architect Website',
+    desc:
+      'An architect portfolio website built for a client. The technology stack includes GatsbyJS, GraphQL, and Styled Components.',
+    demo: 'http://derikjones.com/',
+    github: 'https://github.com/timh1203/derikjones',
+  }
+}
+
+export const projectAltData = {
+  ticTacToeGame: {
+    name: 'Tic Tac Toe',
+    desc:
+      'A well-known game for the Free Code Camp curriculum. This game is playable against AI (MiniMax algorithm) or another player. The technology used was ReactJS.',
+    demo: 'https://timh1203.github.io/tictactoe-game',
+    github: 'https://github.com/timh1203/tictactoe-game',
   },
   simonGame: {
     name: 'Simon Game',
@@ -261,21 +270,11 @@ export const projectMainData = {
     github: 'https://github.com/timh1203/simon-game',
   },
   calculatorApp: {
-    name: 'Cool Calculator App',
+    name: 'Calculator App',
     desc:
       'A simple calculator app to perform basic math operations for the Free Code Camp curriculum. The technology used was javascript.',
     demo: 'https://timh1203.github.io/calculator-app',
     github: 'https://github.com/timh1203/calculator-app',
-  },
-}
-
-export const projectAltData = {
-  derikJones: {
-    name: 'Derik Jones Portfolio Website',
-    desc:
-      'An architecture portfolio website. The technology stack includes GatsbyJS, GraphQL, and Styled Components.',
-    demo: 'http://derikjones.com/',
-    github: 'https://github.com/timh1203/derikjones',
   },
   respondezApp: {
     name: 'Remarkable Respondez App',
