@@ -39,9 +39,15 @@ const Div1 = styled.div`
   margin: 0 auto;
   color: ${props => props.theme.textColor};
   min-height: 100vh;
+  @media (max-width: 768px) {
+    padding: 0 40px;
+  }
 `
 const Div2 = styled.div`
   display: flex;
+  @media (max-width: 400px) {
+    flex-direction: column;
+  }
 `
 
 export const pageQuery = graphql`

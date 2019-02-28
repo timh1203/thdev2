@@ -26,10 +26,18 @@ const Div1 = styled.div`
   flex-direction: column;
   border: 2px solid ${props => props.theme.textColor};
   border-radius: 2px;
-  min-height: 400px;
+  min-height: 350px;
   width: 30%;
   margin: 0.5%;
   padding: 1%;
+  @media (max-width: 768px) {
+    width: 45%;
+    margin: 1rem auto;
+  }
+  @media (max-width: 400px) {
+    width: 96%;
+    min-height: 350px;
+  }
 `
 const Div2 = styled.div`
   display: flex;
@@ -40,8 +48,16 @@ const Div2 = styled.div`
     margin: 0.5rem 0;
   }
 `
-const H1a = styled.h1``
-const H6a = styled.h6``
+const H1a = styled.h1`
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+`
+const H6a = styled.h6`
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+`
 const P1 = styled.p``
 const Img1 = styled(Img)`
   width: 80%;
