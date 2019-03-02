@@ -90,6 +90,27 @@ const ProjectAltAggregate = ({ data }) => (
       demo={projectAltData.travelersChecklist.demo}
       github={projectAltData.travelersChecklist.github}
     />
+    <ProjectTemplate
+      img={data.vzSuites.childImageSharp.fluid}
+      name={projectAltData.vzSuites.name}
+      desc={projectAltData.vzSuites.desc}
+      demo={projectAltData.vzSuites.demo}
+      github={projectAltData.vzSuites.github}
+    />
+    <ProjectTemplate
+      img={data.sightseeWithMe.childImageSharp.fluid}
+      name={projectAltData.sightseeWithMe.name}
+      desc={projectAltData.sightseeWithMe.desc}
+      demo={projectAltData.sightseeWithMe.demo}
+      github={projectAltData.sightseeWithMe.github}
+    />
+    <ProjectTemplate
+      img={data.talkOfTheTown.childImageSharp.fluid}
+      name={projectAltData.talkOfTheTown.name}
+      desc={projectAltData.talkOfTheTown.desc}
+      demo={projectAltData.talkOfTheTown.demo}
+      github={projectAltData.talkOfTheTown.github}
+    />
   </Div1>
 )
 
@@ -182,6 +203,33 @@ export default () => (
         }
         travelersChecklist: file(
           relativePath: { eq: "travelersChecklist.png" }
+        ) {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        vzSuites: file(
+          relativePath: { eq: "vzSuites.png" }
+        ) {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        sightseeWithMe: file(
+          relativePath: { eq: "sightseeWithMe.png" }
+        ) {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        talkOfTheTown: file(
+          relativePath: { eq: "talkOfTheTown.png" }
         ) {
           childImageSharp {
             fluid(maxWidth: 1000) {

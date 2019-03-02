@@ -340,4 +340,19 @@ export const projectAltData = {
     demo: 'https://timh1203.github.io/traveler-checklist/',
     github: 'https://github.com/timh1203/traveler-checklist',
   },
+  sightseeWithMe: {
+    name: 'Sightsee With Me',
+    desc: 'A sightseeing business based in Charlottesville. Created with the Divi Theme Framework by Elegant Themes.',
+    demo: 'http://www.sightseewithme.com/'
+  },
+  vzSuites: {
+    name: 'VZ Suites',
+    desc: 'An apartment rental business based in Seattle. Created with the Divi Theme Framework by Elegant Themes.',
+    demo: 'http://vzsuites.com/'
+  },
+  talkOfTheTown: {
+    name: 'Talk of The Town Languages',
+    desc: 'An language business based in Charlottesville. Created with the Divi Theme Framework by Elegant Themes.',
+    demo: 'http://talkofthetownlanguages.com/'
+  },
 }
