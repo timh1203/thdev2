@@ -87,15 +87,19 @@ const Div = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
-
   @media (max-width: 768px) {
     flex-direction: column;
   }
 `
 const Div1 = styled.div`
+  display: flex;
   margin-bottom: 1rem;
   flex: 1 1 30%;
   line-height: 2;
+  @media (max-width: 400px) {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 `
 const Div2 = styled.div`
   margin-bottom: 1rem;
@@ -130,6 +134,9 @@ const Link1 = styled(Link)`
     border-bottom: ${props => props.theme.xBorderColor};
     border-left: ${props => props.theme.yBorderColor};
     border-right: ${props => props.theme.yBorderColor};
+  }
+  @media (max-width: 400px) {
+    margin: 0.5rem 0;
   }
 `
 const H1 = styled.h1`
