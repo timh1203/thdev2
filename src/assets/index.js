@@ -224,6 +224,13 @@ export const skills = {
 // }
 
 export const projectMainData = {
+  refreshr: {
+    name: 'Refreshr',
+    desc:
+      'Created during Lambda Labs 10 capstone project, I worked as a core developer with 4 others to build this app to send out mini quizzes to help students review information. The technology stack includes ReactJS, NodeJS, PostGresQL, SendGrid, and TypeForm.',
+    demo: 'https://refreshr-app.netlify.com/',
+    github: 'https://github.com/Lambda-School-Labs/labs10-student-follow',
+  },
   guidr: {
     name: 'Guidr',
     desc:

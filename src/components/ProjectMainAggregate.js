@@ -7,6 +7,13 @@ import { ProjectTemplate } from './'
 const ProjectMainAggregate = ({ data }) => (
   <Div1>
     <ProjectTemplate
+      img={data.refreshr.childImageSharp.fluid}
+      name={projectMainData.refreshr.name}
+      desc={projectMainData.refreshr.desc}
+      demo={projectMainData.refreshr.demo}
+      github={projectMainData.refreshr.github}
+    />
+    <ProjectTemplate
       img={data.guidr.childImageSharp.fluid}
       name={projectMainData.guidr.name}
       desc={projectMainData.guidr.desc}
@@ -41,13 +48,20 @@ const ProjectMainAggregate = ({ data }) => (
 const Div1 = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 `
 
 export default () => (
   <StaticQuery
     query={graphql`
       query {
+        refreshr: file(relativePath: { eq: "refreshr.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         guidr: file(relativePath: { eq: "guidr.png" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
