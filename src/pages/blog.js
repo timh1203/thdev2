@@ -35,7 +35,7 @@ export default class BlogPage extends React.Component {
 }
 
 const Div1 = styled.div`
-  padding: 0 120px;
+  padding: 0 90px;
   margin: 0 auto;
   color: ${props => props.theme.textColor};
   min-height: 100vh;
@@ -45,6 +45,7 @@ const Div1 = styled.div`
 `
 const Div2 = styled.div`
   display: flex;
+  flex-wrap: wrap;
   @media (max-width: 400px) {
     flex-direction: column;
   }
