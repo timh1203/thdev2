@@ -13,6 +13,7 @@ export const darkTheme = {
   themeToggleButton: purple,
   imageShadow: `1px 1px 5px ${gray}`,
   buttonShadow: `1px 1px 5px ${purple}`,
+  underlineColor: purple,
 }
 
 export const lightTheme = {
@@ -24,6 +25,7 @@ export const lightTheme = {
   themeToggleButton: orange,
   imageShadow: `1px 1px 5px ${slate}`,
   buttonShadow: `1px 1px 5px ${orange}`,
+  underlineColor: orange,
 }
 
 export const links = {

@@ -189,6 +189,7 @@ const Image = styled(Img)`
 `
 const A = styled.a`
   color: ${props => props.theme.textColor};
+  text-decoration-color: ${props => props.theme.underlineColor};
 `
 const Hr = styled.hr`
   border-color: ${props => props.theme.textColor};
