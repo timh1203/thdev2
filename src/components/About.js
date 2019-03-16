@@ -12,8 +12,8 @@ const AboutPage = props => (
     <Image fluid={props.aboutImage} />
     <Div>
       <P>
-        I'm full stack developer who loves to work with web technologies. My
-        current home is{' '}
+        I'm full stack developer who loves to work with web technologies. I am an alumnus of
+        {' '}
         <A
           href={links.lambdaSchool.url}
           alt={links.lambdaSchool.alt}
@@ -22,17 +22,26 @@ const AboutPage = props => (
         >
           Lambda School
         </A>
-        , an 7-month academy with focus on full-stack web development and
-        computer science. I started to coding in January 2017 and transitioned
-        away from a full-time Pharmacist role. In the past, I have completed
-        paid freelance web projects, worked remotely with a team called{' '}
+        , a 7-month academy with focus on full-stack web development and
+        computer science. I started coding in January 2017 and transitioned
+        away from a full-time pharmacist role. In the past, I have completed
+        paid freelance web projects, worked as a core developer on a project for Lambda School Labs to build {' '}
         <A
-          href={links.chingu.url}
-          alt={links.chingu.alt}
+          href={links.refreshr.url}
+          alt={links.refreshr.alt}
           target="_blank"
           rel="noopener noreferrer"
         >
-          Chingu Voyage
+          Refreshr
+        </A>
+        , led 5 other developers as scrummaster during Lambda School Build Week with {' '}
+        <A
+          href={links.guidr.url}
+          alt={links.guidr.alt}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Guidr
         </A>
         , and organized for a{' '}
         <A
