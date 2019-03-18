@@ -59,11 +59,16 @@ const H3 = styled.h3`
 const A = styled.a`
   font-size: 3rem;
   color: ${props => props.theme.textColor};
-  text-decoration-color: ${props => props.theme.underlineColor};
-  @media (max-width: 768px) {
-   font-size: 2.5rem;
+  text-decoration: none;
+  border-bottom: 2px solid ${props => props.theme.underlineColor};
+  &:hover {
+    bottom: 3px;
+    position: relative;
   }
-  @media (max-width: 400px) {
+  @media(max-width: 768px) {
+    font-size: 2.5rem;
+  }
+  @media(max-width: 400px) {
     font-size: 2rem;
   }
 `

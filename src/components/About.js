@@ -76,30 +76,30 @@ const AboutPage = props => (
     </Div>
 
     <Div2>
-      <A
+      <A2
         href={links.resume.url}
         alt={links.resume.alt}
         target="_blank"
         rel="noopener noreferrer"
       >
         <Button>My Online Resume</Button>
-      </A>
-      <A
+      </A2>
+      <A2
         href={links.fccCertificate.url}
         alt={links.fccCertificate.alt}
         target="_blank"
         rel="noopener noreferrer"
       >
         <Button>Certificate: Free Code Camp</Button>
-      </A>
-      <A
+      </A2>
+      <A2
         href={links.wdbcCertificate.url}
         alt={links.wdbcCertificate.alt}
         target="_blank"
         rel="noopener noreferrer"
       >
         <Button>Certificate: Udemy FullStack</Button>
-      </A>
+      </A2>
     </Div2>
 
     {/* <Div3>
@@ -189,7 +189,20 @@ const Image = styled(Img)`
 `
 const A = styled.a`
   color: ${props => props.theme.textColor};
-  text-decoration-color: ${props => props.theme.underlineColor};
+  text-decoration: none;
+  border-bottom: 2px solid ${props => props.theme.underlineColor};
+  &:hover {
+    bottom: 3px;
+    position: relative;
+  }
+`
+const A2 = styled.a`
+  color: ${props => props.theme.textColor};
+  text-decoration: none;
+  &:hover {
+    color: ${props => props.theme.underlineColor};
+    border-bottom: none;
+  }
 `
 const Hr = styled.hr`
   border-color: ${props => props.theme.textColor};
