@@ -17,7 +17,7 @@ const Header = props => (
     <Div2>
       <H1>Timothy Hoang</H1>
       <H6>Full Stack Developer</H6>
-      <H6>Houston, Texas</H6>
+      <H6>Austin, Texas</H6>
     </Div2>
 
     <Div3>
