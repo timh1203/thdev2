@@ -62,8 +62,7 @@ export const links = {
     alt: 'Free Code Camp Ashburn Home',
   },
   resume: {
-    url:
-      'https://docs.google.com/document/d/1vO5Ee5s1YYSpoAR3Ng5RQ-IoP3S6jpo3-ALeiYa2zZo/edit',
+    url: 'https://resume.creddle.io/resume/9f4autrrf1v',
     alt: 'My Online Resume',
   },
   fccCertificate: {
