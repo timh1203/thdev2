@@ -78,8 +78,20 @@ export const links = {
     alt: 'Refreshr App Github Repository',
   },
   guidr: {
-    url: 'hhttps://github.com/guidr-app-lion-team',
+    url: 'https://github.com/guidr-app-lion-team',
     alt: 'Guidr App Github Organization',
+  },
+  dullesBarber: {
+    url: 'http://dullesbarber.com/',
+    alt: 'Dulles Barber Barber Client',
+  },
+  derikJones: {
+    url: 'hhttp://derikjones.com/',
+    alt: 'Derik Jones Architect Client',
+  },
+  vzSuites: {
+    url: 'http://vzsuites.com/',
+    alt: 'VZ Suites Rental Client',
   },
 }
 

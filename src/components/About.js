@@ -12,7 +12,7 @@ const AboutPage = props => (
     <Image fluid={props.aboutImage} />
     <Div>
       <P>
-        I'm full stack developer who loves to work with web technologies. I am an alumnus of
+        Full stack developer who loves to work with web technologies.
         {' '}
         <A
           href={links.lambdaSchool.url}
@@ -22,43 +22,87 @@ const AboutPage = props => (
         >
           Lambda School
         </A>
-        , a 7-month academy with focus on full-stack web development and
-        computer science. I started coding in January 2017 and transitioned
-        away from a full-time pharmacist role. In the past, I have completed
-        paid freelance web projects, worked as a core developer on a project for Lambda School Labs to build {' '}
-        <A
-          href={links.refreshr.url}
-          alt={links.refreshr.alt}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Refreshr
-        </A>
-        , led 5 other developers as scrummaster during Lambda School Build Week with {' '}
-        <A
-          href={links.guidr.url}
-          alt={links.guidr.alt}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Guidr
-        </A>
-        , and organized for a{' '}
-        <A
-          href={links.fccAshburn.url}
-          alt={links.fccAshburn.alt}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Free Code Camp local group
-        </A>
-        . In my spare time, I enjoy traveling internationally, hiking on
+        {' '}alumnus, a fast-paced 7-month academy with a focus on full-stack web development and computer science. I started coding in January 2017, when I transitioned away from a full-time pharmacist role.
+
+        <br />
+        <br />
+
+        Previous experiences include:
+        <Ul>
+          <li>Worked as a core developer on a project for Lambda School Labs to build {' '}
+            <A
+              href={links.refreshr.url}
+              alt={links.refreshr.alt}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Refreshr
+            </A>
+          </li>
+          <li>
+            Led 5 other developers as scrummaster during Lambda School Build Week with {' '}
+            <A
+              href={links.guidr.url}
+              alt={links.guidr.alt}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Guidr
+            </A>
+          </li>
+          <li>Paid freelance web projects with  {' '}
+            <A
+              href={links.dullesBarber.url}
+              alt={links.dullesBarber.alt}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Dulles barber
+            </A>
+            , {' '}
+            <A
+              href={links.derikJones.url}
+              alt={links.derikJones.alt}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Derik Jones
+            </A>
+            , {' '}
+            <A
+              href={links.vzSuites.url}
+              alt={links.vzSuites.alt}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              VZ Suites
+            </A>
+          </li>
+          <li>
+            Organized for a {' '}
+            <A
+              href={links.fccAshburn.url}
+              alt={links.fccAshburn.alt}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Free Code Camp local group
+            </A>
+          </li>
+        </Ul>
+
+        <br />
+
+        In my spare time, I enjoy traveling internationally, hiking on
         national forest trails, reading non-fiction books/tech articles, and
         experimenting with GatsbyJS.
       </P>
+
       <br />
-      <P1>
-        If you'd like to reach me, please send me an email on{' '}
+      <br />
+
+      <P>
+        If you'd like to reach me, please send me a message on{' '}
         <A
           href={links.linkedIn.url}
           alt={links.linkedIn.alt}
@@ -72,7 +116,7 @@ const AboutPage = props => (
           Contact
         </A>{' '}
         section.
-      </P1>
+      </P>
     </Div>
 
     <Div2>
@@ -226,8 +270,12 @@ const Button = styled.button`
 const P = styled.p`
   font-size: 1.8rem;
 `
-const P1 = styled(P)`
-  text-align: center;
+// const P1 = styled(P)`
+//   text-align: center;
+// `
+const Ul = styled.ul`
+  list-style: circle;
+  margin-left: 30px;
 `
 
 export default AboutPage
