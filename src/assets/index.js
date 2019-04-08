@@ -65,6 +65,10 @@ export const links = {
     url: 'https://resume.creddle.io/resume/9f4autrrf1v',
     alt: 'My Online Resume',
   },
+  lambdaBadge: {
+    url: 'https://www.youracclaim.com/badges/3d1bd32a-e3fa-4b65-be51-217058ff0ab6/public_url',
+    alt: 'My Lambda School Badge',
+  },
   fccCertificate: {
     url: 'https://www.freecodecamp.org/timh1203/front-end-certification',
     alt: 'My Free Code Camp Certificate',

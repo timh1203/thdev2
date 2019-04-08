@@ -129,6 +129,14 @@ const AboutPage = props => (
         <Button>My Online Resume</Button>
       </A2>
       <A2
+        href={links.lambdaBadge.url}
+        alt={links.lambdaBadge.alt}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Button>Certificate: Free Code Camp</Button>
+      </A2>
+      <A2
         href={links.fccCertificate.url}
         alt={links.fccCertificate.alt}
         target="_blank"

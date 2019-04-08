@@ -1,16 +1,22 @@
 import React from 'react'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
+import { links } from '../assets/'
 
 const Intro = props => (
   <Section1 id="intro">
     <Image fluid={props.profile2} />
     <Div1>
-      <H3>Hi, I'm Tim!</H3>
-      <H3>I love building powerful web apps that solve real problems.</H3>
+      <H3>Hi, I'm Tim! A full stack web developer </H3>
+      <H3>building powerful web apps that solve real problems.</H3>
       <H3>
         I am a {' '}
-        <A href="https://lambdaschool.com/" target="_blank">
+        <A
+          href={links.lambdaBadge.url}
+          alt={links.lambdaBadge.alt}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Lambda School
       </A>
         {' '} alumnus.

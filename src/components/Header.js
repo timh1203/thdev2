@@ -16,7 +16,7 @@ const Header = props => (
 
     <Div2>
       <H1>Timothy Hoang</H1>
-      <H6>Full Stack Developer</H6>
+      {/* <H6>Full Stack Developer</H6> */}
       {/* <H6>Austin, Texas</H6> */}
     </Div2>
 
@@ -143,11 +143,11 @@ const H1 = styled.h1`
   margin: 1rem 0;
   color: ${props => props.theme.textColor};
 `
-const H6 = styled.h6`
-  font-weight: 500;
-  margin: 1rem 0;
-  color: ${props => props.theme.textColor};
-`
+// const H6 = styled.h6`
+//   font-weight: 500;
+//   margin: 1rem 0;
+//   color: ${props => props.theme.textColor};
+// `
 const FaGithub1 = styled(FaGithub)`
   color: white;
   background: #24292e;
