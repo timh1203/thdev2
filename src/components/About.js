@@ -38,80 +38,86 @@ const AboutPage = props => (
         <br />
 
         Previous experiences include:
-        <Ul>
-          <li>Worked as a core developer on a project for Lambda School Labs to build {' '}
-            <A
-              href={links.refreshr.url}
-              alt={links.refreshr.alt}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Refreshr
-            </A>
-          </li>
-          <li>
-            Led 5 other developers as scrummaster during Lambda School Build Week with {' '}
-            <A
-              href={links.guidr.url}
-              alt={links.guidr.alt}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Guidr
-            </A>
-          </li>
-          <li>Paid freelance web projects with  {' '}
-            <A
-              href={links.dullesBarber.url}
-              alt={links.dullesBarber.alt}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Dulles barber
-            </A>
-            , {' '}
-            <A
-              href={links.derikJones.url}
-              alt={links.derikJones.alt}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Derik Jones
-            </A>
-            , {' '}
-            <A
-              href={links.vzSuites.url}
-              alt={links.vzSuites.alt}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              VZ Suites
-            </A>
-            , {' '}
-            <A
-              href={links.sightsee.url}
-              alt={links.sightsee.alt}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Sightsee With Me
-            </A>
-          </li>
-          <li>
-            Organized for a {' '}
-            <A
-              href={links.fccAshburn.url}
-              alt={links.fccAshburn.alt}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Free Code Camp local group
-            </A>
-          </li>
-        </Ul>
+      </P>
 
-        <br />
+      <Ul>
+        <li>Worked as a core developer on a project for Lambda School Labs to build {' '}
+          <A
+            href={links.refreshr.url}
+            alt={links.refreshr.alt}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Refreshr
+          </A>
+        </li>
 
+        <li>
+          Led 5 other developers as scrummaster during Lambda School Build Week with {' '}
+          <A
+            href={links.guidr.url}
+            alt={links.guidr.alt}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Guidr
+          </A>
+        </li>
+
+        <li>Paid freelance web projects with  {' '}
+          <A
+            href={links.dullesBarber.url}
+            alt={links.dullesBarber.alt}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Dulles barber
+          </A>
+          , {' '}
+          <A
+            href={links.derikJones.url}
+            alt={links.derikJones.alt}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Derik Jones
+          </A>
+          , {' '}
+          <A
+            href={links.vzSuites.url}
+            alt={links.vzSuites.alt}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            VZ Suites
+          </A>
+          , {' '}
+          <A
+            href={links.sightsee.url}
+            alt={links.sightsee.alt}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Sightsee With Me
+          </A>
+        </li>
+
+        <li>
+          Organized for a {' '}
+          <A
+            href={links.fccAshburn.url}
+            alt={links.fccAshburn.alt}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Free Code Camp local group
+          </A>
+        </li>
+      </Ul>
+
+      <br />
+
+      <P>
         In my spare time, I enjoy traveling internationally, hiking on
         national forest trails, reading non-fiction books/tech articles, and
         experimenting with GatsbyJS.
@@ -295,6 +301,7 @@ const P = styled.p`
 const Ul = styled.ul`
   list-style: circle;
   margin-left: 30px;
+  font-size: 1.8rem;
 `
 
 export default AboutPage
