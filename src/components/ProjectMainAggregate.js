@@ -10,22 +10,17 @@ const ProjectMainAggregate = ({ data }) => (
       img={data.refreshr.childImageSharp.fluid}
       name={projectMainData.refreshr.name}
       desc={projectMainData.refreshr.desc}
-      demo={projectMainData.refreshr.demo}
+      video={projectMainData.refreshr.video}
+      // demo={projectMainData.refreshr.demo}
       github={projectMainData.refreshr.github}
     />
     <ProjectTemplate
       img={data.guidr.childImageSharp.fluid}
       name={projectMainData.guidr.name}
       desc={projectMainData.guidr.desc}
-      demo={projectMainData.guidr.demo}
+      video={projectMainData.guidr.video}
+      // demo={projectMainData.guidr.demo}
       github={projectMainData.guidr.github}
-    />
-    <ProjectTemplate
-      img={data.wanderlustoria.childImageSharp.fluid}
-      name={projectMainData.wanderlustoria.name}
-      desc={projectMainData.wanderlustoria.desc}
-      demo={projectMainData.wanderlustoria.demo}
-      github={projectMainData.wanderlustoria.github}
     />
     <ProjectTemplate
       img={data.dullesBarber.childImageSharp.fluid}
@@ -34,13 +29,19 @@ const ProjectMainAggregate = ({ data }) => (
       demo={projectMainData.dullesBarber.demo}
       github={projectMainData.dullesBarber.github}
     />
-
     <ProjectTemplate
       img={data.derikJones.childImageSharp.fluid}
       name={projectMainData.derikJones.name}
       desc={projectMainData.derikJones.desc}
       demo={projectMainData.derikJones.demo}
       github={projectMainData.derikJones.github}
+    />
+    <ProjectTemplate
+      img={data.wanderlustoria.childImageSharp.fluid}
+      name={projectMainData.wanderlustoria.name}
+      desc={projectMainData.wanderlustoria.desc}
+      demo={projectMainData.wanderlustoria.demo}
+      github={projectMainData.wanderlustoria.github}
     />
   </Div1>
 )

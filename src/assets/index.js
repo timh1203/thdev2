@@ -108,6 +108,7 @@ export const projectMainData = {
     name: 'Refreshr',
     desc:
       'Created for Lambda Labs Capstone Project, I worked as a core developer with 4 other developers to build this app to send out mini quizzes to help students review information. The technology stack includes ReactJS, NodeJS, PostGresQL, SendGrid, and TypeForm.',
+    video: 'https://youtu.be/D_KNyY7LiD0',
     demo: 'https://refreshr-app.netlify.com/',
     github: 'https://github.com/Lambda-School-Labs/labs10-student-follow',
   },
@@ -115,6 +116,7 @@ export const projectMainData = {
     name: 'Guidr',
     desc:
       'Created during Lambda School Build Week, I led 5 other developers to build this app as scrummaster, committed code, and assisted in debugging. The technology stack includes ReactJS, Redux, NodeJS, and Sqlite3.',
+    video: 'https://youtu.be/0C2toPa9GHM',
     demo: 'https://guidr2.netlify.com/',
     github: 'https://github.com/guidr-app-lion-team',
   },

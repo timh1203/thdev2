@@ -14,6 +14,13 @@ const ProjectTemplate = props => (
       <A1 href={props.demo} target="_blank">
         <P1>Demo</P1>
       </A1>
+      {
+        props.video ? (
+          <A1 href={props.video} target="_blank">
+            <P1>Video</P1>
+          </A1>
+        ) : ''
+      }
       <A1 href={props.github} target="_blank">
         <P1>Github</P1>
       </A1>
