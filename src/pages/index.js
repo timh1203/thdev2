@@ -43,9 +43,11 @@ export default class HomePage extends React.Component {
 
 const Div1 = styled.div`
   background: ${props => props.theme.backgroundColor};
-  padding: 0 120px;
+  padding: 0 8%;
   margin: 0 auto;
-
+  @media (max-width: 768px) {
+    padding: 0 5%;
+  }
   @media (max-width: 400px) {
     padding: 0 10%;
   }

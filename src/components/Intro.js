@@ -43,7 +43,7 @@ const Image = styled(Img)`
   padding: 0;
   box-shadow: ${props => props.theme.imageShadow};
   @media (max-width: 768px) {
-    max-width: 50%;
+    max-width: 45%;
   }
   @media (max-width: 400px) {
     max-width: 80%;

@@ -108,6 +108,9 @@ const Div2 = styled.div`
   margin-bottom: 1rem;
   flex: 1 1 40%;
   line-height: 2;
+  @media (max-width: 768px) {
+    margin-bottom: 2rem;
+  }
   @media (max-width: 400px) {
     flex-wrap: wrap;
     flex-direction: column;
