@@ -34,7 +34,7 @@ export const links = {
     alt: 'My Github',
   },
   linkedIn: {
-    url: 'https://www.linkedin.com/in/timothyhoang/',
+    url: 'https://www.linkedin.com/in/timothyhoang',
     alt: 'My LinkedIn',
   },
   twitter: {
@@ -58,7 +58,7 @@ export const links = {
     alt: 'Chingu Home',
   },
   fccAshburn: {
-    url: 'https://free-code-camp-ashburn.github.io/website/',
+    url: 'https://free-code-camp-ashburn.github.io/website',
     alt: 'Free Code Camp Ashburn Home',
   },
   resume: {
@@ -74,7 +74,7 @@ export const links = {
     alt: 'My Free Code Camp Certificate',
   },
   wdbcCertificate: {
-    url: 'https://www.udemy.com/certificate/UC-F6RNIX9G/',
+    url: 'https://www.udemy.com/certificate/UC-F6RNIX9G',
     alt: 'My Web Dev Bootcamp Certificate',
   },
   refreshr: {
@@ -86,16 +86,20 @@ export const links = {
     alt: 'Guidr App Github Organization',
   },
   dullesBarber: {
-    url: 'http://dullesbarber.com/',
+    url: 'http://dullesbarber.com',
     alt: 'Dulles Barber Barber Client',
   },
   derikJones: {
-    url: 'hhttp://derikjones.com/',
+    url: 'hhttp://derikjones.com',
     alt: 'Derik Jones Architect Client',
   },
   vzSuites: {
-    url: 'http://vzsuites.com/',
+    url: 'http://vzsuites.com',
     alt: 'VZ Suites Rental Client',
+  },
+  sightsee: {
+    url: 'http://www.sightseewithme.com',
+    alt: 'Sightsee With Me Tour Client',
   },
 }
 
@@ -163,42 +167,42 @@ export const projectAltData = {
     name: 'Remarkable Respondez App',
     desc:
       'A custom event app built for the Free Code Camp Group. The technology stack includes ReactJS and FireBase.',
-    demo: 'https://timh1203.github.io/respondez-app/',
+    demo: 'https://timh1203.github.io/respondez-app',
     github: 'https://github.com/timh1203/respondez-app',
   },
   pomodoroApp: {
     name: 'Phenomenal Pomodoro App',
     desc:
       'The work/break cycle app based on the Pomodoro Technique by by Francesco Cirillo. The app was for the Free Code Camp curriculum. The technology used was javascript.',
-    demo: 'https://timh1203.github.io/pomodoro-app/',
+    demo: 'https://timh1203.github.io/pomodoro-app',
     github: 'https://github.com/timh1203/pomodoro-app',
   },
   twitchApp: {
     name: 'Terrific Twitch App',
     desc:
       'A Twitch app displaying the channels streaming status from the Twitch API. The technology stack includes ReactJS and FireBase.',
-    demo: 'https://timh1203.github.io/twitch-app/',
+    demo: 'https://timh1203.github.io/twitch-app',
     github: 'https://github.com/timh1203/twitch-app',
   },
   wikipediaApp: {
     name: 'Witty Wikipedia App',
     desc:
       'A wikipedia app that displays a user search results or a random article from the WikiMedia API. The technology used was javascript.',
-    demo: 'https://timh1203.github.io/wikipedia-app/',
+    demo: 'https://timh1203.github.io/wikipedia-app',
     github: 'https://github.com/timh1203/wikipedia-app',
   },
   weatherApp: {
     name: 'Wonderful Weather App',
     desc:
       "A weather app that displays the weather forecast (24 hours, 48 hours, and 1 week) based on the user's IP location. The technologies used were javascript, Dark Sky API, and Skycons.",
-    demo: 'https://timh1203.github.io/weather-app/',
+    demo: 'https://timh1203.github.io/weather-app',
     github: 'https://github.com/timh1203/weather-app',
   },
   photographySite: {
     name: 'Photography Website',
     desc:
       'A photography website that uses an API to pull pictures from instagram. The technologies used were javascript, Materialize, and InstafeedJS.',
-    demo: 'https://timh1203.github.io/photo-site/',
+    demo: 'https://timh1203.github.io/photo-site',
     github: 'https://github.com/timh1203/photo-site',
   },
   turtleDash: {
@@ -213,30 +217,30 @@ export const projectAltData = {
     name: 'Random Quote Machine',
     desc:
       'A random quote generator with randoms quotes from an API with the ability to share on Twitter and Facebook. The technologies used were javascript and jQuery.',
-    demo: 'https://timh1203.github.io/quote-machine/',
+    demo: 'https://timh1203.github.io/quote-machine',
     github: 'https://github.com/timh1203/quote-machine',
   },
   travelersChecklist: {
     name: "Traveler's Checklist",
     desc:
       'An app for the travler to make a packing list before a big trip. The technologies used were javascript and jQuery.',
-    demo: 'https://timh1203.github.io/traveler-checklist/',
+    demo: 'https://timh1203.github.io/traveler-checklist',
     github: 'https://github.com/timh1203/traveler-checklist',
   },
   sightseeWithMe: {
     name: 'Sightsee With Me',
     desc: 'A sightseeing business based in Charlottesville. Created with the Divi Theme Framework by Elegant Themes.',
-    demo: 'http://www.sightseewithme.com/'
+    demo: 'http://www.sightseewithme.com'
   },
   vzSuites: {
     name: 'VZ Suites',
     desc: 'An apartment rental business based in Seattle. Created with the Divi Theme Framework by Elegant Themes.',
-    demo: 'http://vzsuites.com/'
+    demo: 'http://vzsuites.com'
   },
   talkOfTheTown: {
     name: 'Talk of The Town Languages',
     desc: 'An language business based in Charlottesville. Created with the Divi Theme Framework by Elegant Themes.',
-    demo: 'http://talkofthetownlanguages.com/'
+    demo: 'http://talkofthetownlanguages.com'
   },
 }
 

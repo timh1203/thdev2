@@ -10,6 +10,16 @@ const AboutPage = props => (
     <H1a>About</H1a>
     <Hr />
     <Image fluid={props.aboutImage} />
+    <Div2>
+      <A2
+        href={links.resume.url}
+        alt={links.resume.alt}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Button>My Online Resume</Button>
+      </A2>
+    </Div2>
     <Div>
       <P>
         Full stack developer who loves to work with web technologies.
@@ -77,6 +87,15 @@ const AboutPage = props => (
             >
               VZ Suites
             </A>
+            , {' '}
+            <A
+              href={links.sightsee.url}
+              alt={links.sightsee.alt}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Sightsee With Me
+            </A>
           </li>
           <li>
             Organized for a {' '}
@@ -121,20 +140,12 @@ const AboutPage = props => (
 
     <Div2>
       <A2
-        href={links.resume.url}
-        alt={links.resume.alt}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Button>My Online Resume</Button>
-      </A2>
-      <A2
         href={links.lambdaBadge.url}
         alt={links.lambdaBadge.alt}
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Button>Certificate: Free Code Camp</Button>
+        <Button>Badge: Lambda School</Button>
       </A2>
       <A2
         href={links.fccCertificate.url}
