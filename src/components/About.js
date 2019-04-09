@@ -43,7 +43,7 @@ const AboutPage = props => (
       <Ul>
         <li>Worked as a core developer on a project for Lambda School Labs to build {' '}
           <A
-            href={links.refreshr.url}
+            href={links.refreshr.video}
             alt={links.refreshr.alt}
             target="_blank"
             rel="noopener noreferrer"
@@ -55,7 +55,7 @@ const AboutPage = props => (
         <li>
           Led 5 other developers as scrummaster during Lambda School Build Week with {' '}
           <A
-            href={links.guidr.url}
+            href={links.guidr.video}
             alt={links.guidr.alt}
             target="_blank"
             rel="noopener noreferrer"

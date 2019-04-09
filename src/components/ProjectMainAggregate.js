@@ -10,16 +10,16 @@ const ProjectMainAggregate = ({ data }) => (
       img={data.refreshr.childImageSharp.fluid}
       name={projectMainData.refreshr.name}
       desc={projectMainData.refreshr.desc}
+      demo={projectMainData.refreshr.demo}
       video={projectMainData.refreshr.video}
-      // demo={projectMainData.refreshr.demo}
       github={projectMainData.refreshr.github}
     />
     <ProjectTemplate
       img={data.guidr.childImageSharp.fluid}
       name={projectMainData.guidr.name}
       desc={projectMainData.guidr.desc}
+      demo={projectMainData.guidr.demo}
       video={projectMainData.guidr.video}
-      // demo={projectMainData.guidr.demo}
       github={projectMainData.guidr.github}
     />
     <ProjectTemplate

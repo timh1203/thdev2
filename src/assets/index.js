@@ -80,17 +80,19 @@ export const links = {
   refreshr: {
     url: 'https://github.com/Lambda-School-Labs/labs10-student-follow',
     alt: 'Refreshr App Github Repository',
+    video: 'https://youtu.be/D_KNyY7LiD0',
   },
   guidr: {
     url: 'https://github.com/guidr-app-lion-team',
     alt: 'Guidr App Github Organization',
+    video: 'https://youtu.be/0C2toPa9GHM',
   },
   dullesBarber: {
     url: 'http://dullesbarber.com',
     alt: 'Dulles Barber Barber Client',
   },
   derikJones: {
-    url: 'hhttp://derikjones.com',
+    url: 'http://derikjones.com',
     alt: 'Derik Jones Architect Client',
   },
   vzSuites: {
@@ -106,18 +108,16 @@ export const links = {
 export const projectMainData = {
   refreshr: {
     name: 'Refreshr',
-    desc:
-      'Created for Lambda Labs Capstone Project, I worked as a core developer with 4 other developers to build this app to send out mini quizzes to help students review information. The technology stack includes ReactJS, NodeJS, PostGresQL, SendGrid, and TypeForm.',
-    video: 'https://youtu.be/D_KNyY7LiD0',
+    desc: 'Created for Lambda Labs Capstone Project, I worked as a core developer with 4 other developers to build this app to send out mini quizzes to help students review information. The technology stack includes ReactJS, NodeJS, PostGresQL, SendGrid, and TypeForm.',
     demo: 'https://refreshr-app.netlify.com/',
+    video: 'https://youtu.be/D_KNyY7LiD0',
     github: 'https://github.com/Lambda-School-Labs/labs10-student-follow',
   },
   guidr: {
     name: 'Guidr',
-    desc:
-      'Created during Lambda School Build Week, I led 5 other developers to build this app as scrummaster, committed code, and assisted in debugging. The technology stack includes ReactJS, Redux, NodeJS, and Sqlite3.',
-    video: 'https://youtu.be/0C2toPa9GHM',
+    desc: 'Created during Lambda School Build Week, I led 5 other developers to build this app as scrummaster, committed code, and assisted in debugging. The technology stack includes ReactJS, Redux, NodeJS, and Sqlite3.',
     demo: 'https://guidr2.netlify.com/',
+    video: 'https://youtu.be/0C2toPa9GHM',
     github: 'https://github.com/guidr-app-lion-team',
   },
   wanderlustoria: {
