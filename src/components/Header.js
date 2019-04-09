@@ -7,17 +7,25 @@ import { links } from '../assets/'
 const Header = props => (
   <Div>
     <Div1>
+      <H1>Timothy Hoang</H1>
+      {/* <H6>Full Stack Developer</H6> */}
+      {/* <H6>Austin, Texas</H6> */}
+    </Div1>
+
+    <Div2>
       {/* <Link1 to="#intro">Home</Link1> */}
+      <A
+        href={links.resume.url}
+        alt={links.resume.alt}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Resume
+      </A>
       <Link1 to="#portfolio">Portfolio</Link1>
       <Link1 to="#about">About</Link1>
       <Link1 to="#contact">Contact</Link1>
       <Link1 to="/blog">Blog</Link1>
-    </Div1>
-
-    <Div2>
-      <H1>Timothy Hoang</H1>
-      {/* <H6>Full Stack Developer</H6> */}
-      {/* <H6>Austin, Texas</H6> */}
     </Div2>
 
     <Div3>
@@ -92,18 +100,18 @@ const Div = styled.div`
   }
 `
 const Div1 = styled.div`
-  display: flex;
   margin-bottom: 1rem;
   flex: 1 1 30%;
+`
+const Div2 = styled.div`
+  display: flex;
+  margin-bottom: 1rem;
+  flex: 1 1 40%;
   line-height: 2;
   @media (max-width: 400px) {
     flex-wrap: wrap;
     flex-direction: column;
   }
-`
-const Div2 = styled.div`
-  margin-bottom: 1rem;
-  flex: 1 1 40%;
 `
 const Div3 = styled.div`
   display: flex;
@@ -117,6 +125,28 @@ const Div3 = styled.div`
 // const Span1 = styled.span`
 //   font-size: 2rem;
 // `
+const A = styled.a`
+  font-size: 2rem;
+  margin: 0 1rem;
+  font-family: 'Quicksand';
+  color: ${props => props.theme.textColor};
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 0 0.5rem;
+  border-top: ${props => props.theme.yBorderColor};
+  border-bottom: ${props => props.theme.yBorderColor};
+  border-left: ${props => props.theme.xBorderColor};
+  border-right: ${props => props.theme.xBorderColor};
+  :hover {
+    border-top: ${props => props.theme.xBorderColor};
+    border-bottom: ${props => props.theme.xBorderColor};
+    border-left: ${props => props.theme.yBorderColor};
+    border-right: ${props => props.theme.yBorderColor};
+  }
+  @media (max-width: 400px) {
+    margin: 0.5rem 0;
+  }
+`
 const Link1 = styled(Link)`
   font-size: 2rem;
   margin: 0 1rem;
