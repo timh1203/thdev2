@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
+import { FaLaptop, FaYoutube, FaGithub } from 'react-icons/fa'
+
 
 const ProjectTemplate = props => (
   <Div>
@@ -12,17 +14,17 @@ const ProjectTemplate = props => (
 
     <Div1>
       <A1 href={props.demo} target="_blank">
-        <P1>Demo</P1>
+        <FaLaptop1 />
       </A1>
       {
         props.video ? (
           <A1 href={props.video} target="_blank">
-            <P1>Video</P1>
+            <FaYoutube1 />
           </A1>
         ) : ''
       }
       <A1 href={props.github} target="_blank">
-        <P1>Github</P1>
+        <FaGithub1 />
       </A1>
     </Div1>
   </Div>
@@ -53,6 +55,36 @@ const Div1 = styled.div`
 const H1a = styled.h1`
   @media (max-width: 768px) {
     font-size: 3rem;
+  }
+`
+const FaLaptop1 = styled(FaLaptop)`
+  color: ${props => props.theme.socialIconColor};
+  border-radius: 2px;
+  width: 25px;
+  height: 25px;
+  margin: 0 2rem;
+  :hover {
+    box-shadow: 3px 3px 3px ${props => props.theme.textColor};
+  }
+`
+const FaYoutube1 = styled(FaYoutube)`
+  color: ${props => props.theme.socialIconColor};
+  border-radius: 2px;
+  width: 25px;
+  height: 25px;
+  margin: 0 2rem;
+  :hover {
+    box-shadow: 3px 3px 3px ${props => props.theme.textColor};
+  }
+`
+const FaGithub1 = styled(FaGithub)`
+  color: ${props => props.theme.socialIconColor};
+  border-radius: 2px;
+  width: 25px;
+  height: 25px;
+  margin: 0 2rem;
+  :hover {
+    box-shadow: 3px 3px 3px ${props => props.theme.textColor};
   }
 `
 const P1 = styled.p``
