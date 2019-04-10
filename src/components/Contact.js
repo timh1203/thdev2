@@ -8,22 +8,47 @@ const Contact = () => (
     <Form1 action="https://formspree.io/timh1203@gmail.com" method="POST">
       <Ul1>
         <li>
-          <input type="hidden" name="From" value="timh1203.com" />
+          <input
+            type="hidden"
+            name="From"
+            value="timh1203.com"
+          />
         </li>
         <li>
           <input type="hidden" name="_gotcha" />
         </li>
         <li>
-          <Input1 type="text" name="First Name" placeholder="First Name" required />
+          <Input1
+            type="text"
+            name="First Name"
+            placeholder="First Name"
+            required
+          />
         </li>
         <li>
-          <Input1 type="text" name="Last Name" placeholder="Last Name" required />
+          <Input1
+            type="text"
+            name="Last Name"
+            placeholder="Last Name"
+            required
+          />
         </li>
         <li>
-          <Input1 type="email" name="Email" placeholder="Email" required />
+          <Input1
+            type="email"
+            name="Email"
+            placeholder="Email"
+            required
+          />
         </li>
         <li>
-          <Textarea1 type="text" name="Message" placeholder="Message" required></Textarea1>
+          <Textarea1
+            type="text"
+            name="Message"
+            placeholder="Message"
+            required
+          >
+          </Textarea1>
         </li>
         <li>
           <Button1 type="submit">Send</Button1>
@@ -75,7 +100,8 @@ const Input1 = styled.input`
   border-radius: 2px;
   font-family: 'Quicksand';
   &:focus {
-    box-shadow: 0 0 20px #82DBFA;
+    /* box-shadow: 0 0 20px #82DBFA; */
+    box-shadow: 0 0 20px ${props => props.theme.themeToggleButton};
   }
   @media (max-width: 768px) {
     width: 80%;
@@ -90,7 +116,8 @@ const Textarea1 = styled.textarea`
   border-radius: 2px;
   font-family: 'Quicksand';
   &:focus {
-    box-shadow: 0 0 20px #82DBFA;
+    /* box-shadow: 0 0 20px #82DBFA; */
+    box-shadow: 0 0 20px ${props => props.theme.themeToggleButton};
   }
   @media (max-width: 768px) {
     width: 80%;

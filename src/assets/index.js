@@ -280,12 +280,12 @@ export const skills = {
   other: [
     'Git/Github',
     'Git Workflow',
-    'Jest/Enzyme',
+    'Jest/React-Testing-Library',
     'Yarn/NPM',
     'Auth0',
     'Stripe',
-    'Mac OS X',
-    'Wordpress',
+    'Vietnamese (fluent)',
+    'Spanish (basic)',
   ],
 }
 
