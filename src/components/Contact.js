@@ -140,6 +140,7 @@ const Button1 = styled.button`
   }
 `
 const H1a = styled.h1`
+  text-align: left;
 `
 const Hr = styled.hr`
   border-color: ${ props => props.theme.textColor};

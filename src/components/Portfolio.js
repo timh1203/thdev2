@@ -22,7 +22,9 @@ export default function Portfolio() {
 const Section1 = styled.section`
   color: ${props => props.theme.textColor};
 `
-const H1 = styled.h1``
+const H1 = styled.h1`
+  text-align: left;
+`
 const Hr1 = styled.hr`
   border-color: ${props => props.theme.textColor};
 `

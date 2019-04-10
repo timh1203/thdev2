@@ -278,7 +278,9 @@ const A2 = styled.a`
 const Hr = styled.hr`
   border-color: ${props => props.theme.textColor};
 `
-const H1a = styled.h1``
+const H1a = styled.h1`
+  text-align: left;
+`
 const Button = styled.button`
   font-size: 1.6rem;
   padding: 1rem;

@@ -113,7 +113,7 @@ const Div2 = styled.div`
   }
   @media (max-width: 400px) {
     flex-wrap: wrap;
-    flex-direction: column;
+    justify-content: space-evenly;
   }
 `
 const Div3 = styled.div`
@@ -190,6 +190,9 @@ const FaGithub1 = styled(FaGithub)`
   :hover {
     box-shadow: 3px 3px 3px ${props => props.theme.textColor};
   }
+  @media (max-width: 400px) {
+    width: 25px;
+  }
 `
 const FaLinkedinIn1 = styled(FaLinkedinIn)`
   color: ${props => props.theme.socialIconColor};
@@ -201,6 +204,9 @@ const FaLinkedinIn1 = styled(FaLinkedinIn)`
   :hover {
     box-shadow: 3px 3px 3px ${props => props.theme.textColor};
   }
+  @media (max-width: 400px) {
+    width: 25px;
+  }
 `
 const FaTwitter1 = styled(FaTwitter)`
   color: ${props => props.theme.socialIconColor};
@@ -211,6 +217,9 @@ const FaTwitter1 = styled(FaTwitter)`
   margin: 0 2rem;
   :hover {
     box-shadow: 3px 3px 3px ${props => props.theme.textColor};
+  }
+  @media (max-width: 400px) {
+    width: 25px;
   }
 `
 // const FaMedium1 = styled(FaMedium)`

@@ -5,11 +5,14 @@ import { links } from '../assets/'
 
 const Intro = props => (
   <Section1 id="intro">
-    <Image fluid={props.profile2} />
     <Div1>
-      <H3>Hi, I'm Tim! A full stack web developer </H3>
-      <H3>building powerful web apps that solve real problems.</H3>
+      <Image fluid={props.profile2} />
+    </Div1>
+    <Div2>
       <H3>
+        Hi, I'm Tim!
+        A full stack web developer building
+        powerful web apps that solve real problems.
         I am a {' '}
         <A
           href={links.lambdaBadge.url}
@@ -18,41 +21,56 @@ const Intro = props => (
           rel="noopener noreferrer"
         >
           Lambda School
-      </A>
+        </A>
         {' '} alumnus.
       </H3>
       {/* <H3>"I have no special talents.<br />I am only passionately curious."</H3> */}
       {/* <Span>-Albert Einstein</Span> */}
-    </Div1>
+    </Div2>
   </Section1>
 )
 
 const Section1 = styled.section`
-  margin: 5rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 6rem 0;
+  @media (max-width: 768px) {
+    margin: 5rem 0;
+    flex-direction: column;
+    justify-content: center;
+  }
 `
 const Div1 = styled.div`
+  width: 20%;
   @media (max-width: 768px) {
+    width: 40%;
+  }
+  @media (max-width: 400px) {
+    width: 60%;
+  }
+`
+const Div2 = styled.div`
+  width: 50%;
+  @media (max-width: 768px) {
+    width: 85%;
     margin: 2rem 0;
   }
 `
 
 const Image = styled(Img)`
-  max-width: 20%;
   border-radius: 50%;
-  margin: 2% auto;
   padding: 0;
   box-shadow: ${props => props.theme.imageShadow};
   @media (max-width: 768px) {
-    max-width: 45%;
   }
   @media (max-width: 400px) {
-    max-width: 80%;
   }
 `
 
 const H3 = styled.h3`
   font-size: 3rem;
-  line-height: 1.5;
+  line-height: 2;
   color: ${props => props.theme.textColor};
   @media (max-width: 768px) {
    font-size: 2.5rem;
