@@ -117,14 +117,14 @@ export const links = {
 export const projectMainData = {
   refreshr: {
     name: 'Refreshr',
-    desc: 'A spaced-repetition review app to send out learning snippets for students from the teacher. Worked as a core developer with 4 other developers using agile methodologies and git workflow. The technology stack includes ReactJS, NodeJS, PostGresQL, SendGrid, and TypeForm.',
+    desc: 'A spaced-repetition review app to send out learning snippets for students from the teacher. Worked as a core developer with 4 full stack developers deploying agile methodologies and git workflow. The technology stack includes ReactJS, NodeJS, PostGresQL, SendGrid, and TypeForm.',
     demo: 'https://refreshr-app.netlify.com/',
     video: 'https://youtu.be/D_KNyY7LiD0',
     github: 'https://github.com/Lambda-School-Labs/labs10-student-follow',
   },
   guidr: {
     name: 'Guidr',
-    desc: 'A trip logging app to help backcountry guides of all types log their private or professional adventures. Led 5 other developers to build this app as scrummaster, committed code, and assisted in debugging. The technology stack includes ReactJS, Redux, NodeJS, and Sqlite3.',
+    desc: 'A trip logging app to help backcountry guides of all types log their private or professional adventures. Led as ScrumMaster for 5 developers of various skill levels, coordinated team goals to build the application, committed code, and assisted in debugging. The technology stack includes ReactJS, Redux, NodeJS, and Sqlite3.',
     demo: 'https://guidr2.netlify.com/',
     video: 'https://youtu.be/0C2toPa9GHM',
     github: 'https://github.com/guidr-app-lion-team',
@@ -132,7 +132,7 @@ export const projectMainData = {
   dullesBarber: {
     name: 'Dulles Barber',
     desc:
-      'This site is home for an actual barber shop business based in Sterling, Virginia. Serves as online hub for the business with store information, announcements, and contact. The technology stack includes GatsbyJS, GraphQL, and Styled Components.',
+      'This site is home for an actual barber shop business based in Sterling, Virginia. Serves as an online business hub for store information, announcements, and digital contact. The technology stack includes GatsbyJS, GraphQL, and Styled Components.',
     demo: 'http://dullesbarber.com/',
     github: 'https://github.com/timh1203/dullesBarber',
   },
@@ -146,7 +146,7 @@ export const projectMainData = {
   wanderlustoria: {
     name: 'Wanderlustoria',
     desc:
-      'An travel content sharing app made for travelers to share pictures with other travelers. The technology stack includes NodeJS, ExpressJS, and MongoDB. APIs includes PassportJS, Cloudinary, and Google Geocoder.',
+      'A travel content sharing app made for travelers to share pictures from their travel journey. Ability to interact through profile creation, uploading photos, and comment system. The technology stack includes NodeJS, ExpressJS, and MongoDB. APIs includes PassportJS, Cloudinary, and Google Geocoder.',
     demo: 'https://wanderlustoria.herokuapp.com/',
     github: 'https://github.com/timh1203/wanderlustoria',
   },
