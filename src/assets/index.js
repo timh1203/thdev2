@@ -117,39 +117,39 @@ export const links = {
 export const projectMainData = {
   refreshr: {
     name: 'Refreshr',
-    desc: 'Created for Lambda Labs Capstone Project, I worked as a core developer with 4 other developers to build this app to send out mini quizzes to help students review information. The technology stack includes ReactJS, NodeJS, PostGresQL, SendGrid, and TypeForm.',
+    desc: 'A spaced-repetition review app to send out learning snippets for students from the teacher. Worked as a core developer with 4 other developers using agile methodologies and git workflow. The technology stack includes ReactJS, NodeJS, PostGresQL, SendGrid, and TypeForm.',
     demo: 'https://refreshr-app.netlify.com/',
     video: 'https://youtu.be/D_KNyY7LiD0',
     github: 'https://github.com/Lambda-School-Labs/labs10-student-follow',
   },
   guidr: {
     name: 'Guidr',
-    desc: 'Created during Lambda School Build Week, I led 5 other developers to build this app as scrummaster, committed code, and assisted in debugging. The technology stack includes ReactJS, Redux, NodeJS, and Sqlite3.',
+    desc: 'A trip logging app to help backcountry guides of all types log their private or professional adventures. Led 5 other developers to build this app as scrummaster, committed code, and assisted in debugging. The technology stack includes ReactJS, Redux, NodeJS, and Sqlite3.',
     demo: 'https://guidr2.netlify.com/',
     video: 'https://youtu.be/0C2toPa9GHM',
     github: 'https://github.com/guidr-app-lion-team',
   },
-  wanderlustoria: {
-    name: 'Wanderlustoria',
-    desc:
-      'A travel content sharing platform I made for travelers to share pictures with other travelers. The technology stack includes NodeJS, ExpressJS, and MongoDB. APIs includes PassportJS, Cloudinary, and Google Geocoder.',
-    demo: 'https://wanderlustoria.herokuapp.com/',
-    github: 'https://github.com/timh1203/wanderlustoria',
-  },
   dullesBarber: {
     name: 'Dulles Barber',
     desc:
-      'This site is home for an actual barber shop business based in Sterling, Virginia. The technology stack includes GatsbyJS, GraphQL, and Styled Components.',
+      'This site is home for an actual barber shop business based in Sterling, Virginia. Serves as online hub for the business with store information, announcements, and contact. The technology stack includes GatsbyJS, GraphQL, and Styled Components.',
     demo: 'http://dullesbarber.com/',
     github: 'https://github.com/timh1203/dullesBarber',
   },
   derikJones: {
     name: 'Derik Jones Architect',
     desc:
-      'An architect portfolio website built for a client. The technology stack includes GatsbyJS, GraphQL, and Styled Components.',
+      'An architect portfolio website built for a client. Showcases the client\'s professional designs, projects, and inspirational photos. The technology stack includes GatsbyJS, GraphQL, and Styled Components.',
     demo: 'http://derikjones.com/',
     github: 'https://github.com/timh1203/derikjones',
-  }
+  },
+  wanderlustoria: {
+    name: 'Wanderlustoria',
+    desc:
+      'An travel content sharing app made for travelers to share pictures with other travelers. The technology stack includes NodeJS, ExpressJS, and MongoDB. APIs includes PassportJS, Cloudinary, and Google Geocoder.',
+    demo: 'https://wanderlustoria.herokuapp.com/',
+    github: 'https://github.com/timh1203/wanderlustoria',
+  },
 }
 
 export const projectAltData = {
