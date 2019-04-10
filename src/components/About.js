@@ -10,16 +10,7 @@ const AboutPage = props => (
     <H1a>About</H1a>
     <Hr />
     <Image fluid={props.aboutImage} />
-    <Div2>
-      <A2
-        href={links.resume.url}
-        alt={links.resume.alt}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Button>My Online Resume</Button>
-      </A2>
-    </Div2>
+
     <Div>
       <P>
         Full stack developer who loves to work with web technologies.
@@ -143,6 +134,17 @@ const AboutPage = props => (
         section.
       </P>
     </Div>
+
+    <Div2>
+      <A2
+        href={links.resume.url}
+        alt={links.resume.alt}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Button>My Online Resume</Button>
+      </A2>
+    </Div2>
 
     <Div2>
       <A2
@@ -283,8 +285,8 @@ const Button = styled.button`
   margin: 1rem;
   border-radius: 5px;
   color: ${props => props.theme.themeToggleButton};
-  background: black;
-  border: 2px solid ${props => props.theme.themeToggleButton};
+  background: ${props => props.theme.buttonBackground};
+  border: 2px solid ${props => props.theme.buttonBorder};
   &:hover {
     cursor: pointer;
     color: ${props => props.theme.textColor};

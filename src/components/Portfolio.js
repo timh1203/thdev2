@@ -34,8 +34,8 @@ const Button1 = styled.button`
   border-radius: 5px;
   outline: none;
   color: ${props => props.theme.themeToggleButton};
-  background: black;
-  border: 2px solid ${props => props.theme.themeToggleButton};
+  background: ${props => props.theme.buttonBackground};
+  border: 2px solid ${props => props.theme.buttonBorder};
   &:hover {
     cursor: pointer;
     color: ${props => props.theme.textColor};

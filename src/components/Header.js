@@ -182,8 +182,7 @@ const H1 = styled.h1`
 //   color: ${props => props.theme.textColor};
 // `
 const FaGithub1 = styled(FaGithub)`
-  color: white;
-  background: #24292e;
+  color: ${props => props.theme.socialIconColor};
   border-radius: 2px;
   width: 40px;
   height: 40px;
@@ -193,7 +192,7 @@ const FaGithub1 = styled(FaGithub)`
   }
 `
 const FaLinkedinIn1 = styled(FaLinkedinIn)`
-  color: white;
+  color: ${props => props.theme.socialIconColor};
   /* background: #0077b5; */
   border-radius: 2px;
   width: 40px;
@@ -204,7 +203,7 @@ const FaLinkedinIn1 = styled(FaLinkedinIn)`
   }
 `
 const FaTwitter1 = styled(FaTwitter)`
-  color: white;
+  color: ${props => props.theme.socialIconColor};
   /* background: #1c9bea; */
   border-radius: 2px;
   width: 41px;

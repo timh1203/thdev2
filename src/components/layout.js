@@ -165,7 +165,7 @@ const GlobalStyles = createGlobalStyle`
     backface-visibility: hidden;
     transition: all 0.2s ease;
     font-family: sans-serif;
-    background: #3333ff;
+    background: #8bd8bd;
   }
   .tgl-skewed + .tgl-btn:after, .tgl-skewed + .tgl-btn:before {
     transform: skew(10deg);
@@ -176,7 +176,7 @@ const GlobalStyles = createGlobalStyle`
     position: absolute;
     line-height: 2em;
     font-weight: bold;
-    color: #1d1e22;
+    color: #000;
     text-shadow: 0 1px 0 rgba(0, 0, 0, .4);
   }
   .tgl-skewed + .tgl-btn:after {

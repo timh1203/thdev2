@@ -3,6 +3,10 @@ export const gray = '#ababab'
 export const white = '#f5f5f5'
 export const purple = '#3333ff'
 export const orange = '#ffcc00'
+export const teal = '#8bd8bd'
+export const forest = '#295f2d'
+export const blue = '#4831D4'
+export const metallic = '#585858'
 
 export const darkTheme = {
   textColor: white,
@@ -10,10 +14,13 @@ export const darkTheme = {
   yBorderColor: `2px solid ${gray}`,
   xBorderColor: `2px solid ${slate}`,
   separatorColor: `3px solid ${white}`,
-  themeToggleButton: purple,
   imageShadow: `1px 1px 5px ${gray}`,
-  buttonShadow: `1px 1px 5px ${purple}`,
-  underlineColor: purple,
+  buttonShadow: `1px 1px 5px ${teal}`,
+  themeToggleButton: teal,
+  buttonBackground: metallic,
+  buttonBorder: teal,
+  underlineColor: teal,
+  socialIconColor: white,
 }
 
 export const lightTheme = {
@@ -22,10 +29,12 @@ export const lightTheme = {
   yBorderColor: `2px solid ${slate}`,
   xBorderColor: `2px solid ${white}`,
   separatorColor: `3px solid ${slate}`,
-  themeToggleButton: orange,
+  themeToggleButton: forest,
   imageShadow: `1px 1px 5px ${slate}`,
-  buttonShadow: `1px 1px 5px ${orange}`,
-  underlineColor: orange,
+  // buttonBackground: ,
+  buttonShadow: `1px 1px 5px ${forest}`,
+  underlineColor: forest,
+  socialIconColor: slate,
 }
 
 export const links = {
