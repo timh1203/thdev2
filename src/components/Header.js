@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 import { links } from '../assets/'
 
 const Header = props => (
@@ -43,7 +43,7 @@ const Header = props => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaLinkedin1 />
+        <FaLinkedinIn1 />
       </a>
       <a
         href={links.twitter.url}
@@ -192,9 +192,9 @@ const FaGithub1 = styled(FaGithub)`
     box-shadow: 3px 3px 3px ${props => props.theme.textColor};
   }
 `
-const FaLinkedin1 = styled(FaLinkedin)`
+const FaLinkedinIn1 = styled(FaLinkedinIn)`
   color: white;
-  background: #0077b5;
+  /* background: #0077b5; */
   border-radius: 2px;
   width: 40px;
   height: 40px;
@@ -205,7 +205,7 @@ const FaLinkedin1 = styled(FaLinkedin)`
 `
 const FaTwitter1 = styled(FaTwitter)`
   color: white;
-  background: #1c9bea;
+  /* background: #1c9bea; */
   border-radius: 2px;
   width: 41px;
   height: 41px;
