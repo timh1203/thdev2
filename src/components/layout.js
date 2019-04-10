@@ -64,7 +64,7 @@ const GlobalStyles = createGlobalStyle`
     width: 100%;
     font-size: 62.5%;
     text-align: center;
-    font-family: 'Monserrat';
+    font-family: 'Quicksand';
   }
   h1 {
     font-size: 3.6rem;
@@ -76,9 +76,11 @@ const GlobalStyles = createGlobalStyle`
   }
   h3 {
     font-size: 3.2rem;
+    font-family: 'Quicksand';
   }
   h4 {
     font-size: 2.8rem;
+    font-family: 'Quicksand';
   }
   h5 {
     font-size: 2.4rem;
@@ -90,9 +92,11 @@ const GlobalStyles = createGlobalStyle`
   }
   p {
     font-size: 1.6rem;
+    font-family: 'Quicksand';
   }
   a {
     color: black;
+    font-family: 'Quicksand';
   }
   /* HTML5 display-role reset for older browsers */
   article, aside, details, figcaption, figure, 
