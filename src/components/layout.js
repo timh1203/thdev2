@@ -194,7 +194,7 @@ const GlobalStyles = createGlobalStyle`
     left: -10%;
   }
   .tgl-skewed:checked + .tgl-btn {
-    background: #ffcc00;
+    background: #8aaae5;
   }
   .tgl-skewed:checked + .tgl-btn:before {
     left: -100%;

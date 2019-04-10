@@ -5,7 +5,7 @@ export const purple = '#3333ff'
 export const orange = '#ffcc00'
 export const teal = '#8bd8bd'
 export const forest = '#295f2d'
-export const blue = '#4831D4'
+export const sky = '#8aaae5'
 export const metallic = '#585858'
 
 export const darkTheme = {
@@ -29,11 +29,11 @@ export const lightTheme = {
   yBorderColor: `2px solid ${slate}`,
   xBorderColor: `2px solid ${white}`,
   separatorColor: `3px solid ${slate}`,
-  themeToggleButton: forest,
+  themeToggleButton: sky,
   imageShadow: `1px 1px 5px ${slate}`,
-  // buttonBackground: ,
-  buttonShadow: `1px 1px 5px ${forest}`,
-  underlineColor: forest,
+  buttonBackground: metallic,
+  buttonShadow: `1px 1px 5px ${sky}`,
+  underlineColor: sky,
   socialIconColor: slate,
 }
 
