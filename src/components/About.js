@@ -13,8 +13,7 @@ const AboutPage = props => (
 
     <Div>
       <P>
-        Full stack developer who loves to work with web technologies.
-        {' '}
+        Full stack developer who loves to work with web technologies.{' '}
         <A
           href={links.lambdaSchool.url}
           alt={links.lambdaSchool.alt}
@@ -22,17 +21,19 @@ const AboutPage = props => (
           rel="noopener noreferrer"
         >
           Lambda School
-        </A>
-        {' '}alumnus, a fast-paced 7-month academy with a focus on full-stack web development and computer science. I started coding in January 2017, when I transitioned away from a full-time pharmacist role.
-
+        </A>{' '}
+        alumnus, a fast-paced 7-month academy with a focus on full-stack web
+        development and computer science. I started coding in January 2017, when
+        I transitioned away from a full-time pharmacist role.
         <br />
         <br />
-
         Previous experiences include:
       </P>
 
       <Ul>
-        <li>Worked as a core developer on a project for Lambda School Labs to build {' '}
+        <li>
+          Worked as a core developer on a project for Lambda School Labs to
+          build{' '}
           <A
             href={links.refreshr.video}
             alt={links.refreshr.alt}
@@ -44,7 +45,8 @@ const AboutPage = props => (
         </li>
 
         <li>
-          Led 5 other developers as scrummaster during Lambda School Build Week with {' '}
+          Led 5 other developers as scrummaster during Lambda School Build Week
+          with{' '}
           <A
             href={links.guidr.video}
             alt={links.guidr.alt}
@@ -55,7 +57,8 @@ const AboutPage = props => (
           </A>
         </li>
 
-        <li>Paid freelance web projects with  {' '}
+        <li>
+          Paid freelance web projects with{' '}
           <A
             href={links.dullesBarber.url}
             alt={links.dullesBarber.alt}
@@ -64,7 +67,7 @@ const AboutPage = props => (
           >
             Dulles barber
           </A>
-          , {' '}
+          ,{' '}
           <A
             href={links.derikJones.url}
             alt={links.derikJones.alt}
@@ -73,7 +76,7 @@ const AboutPage = props => (
           >
             Derik Jones
           </A>
-          , {' '}
+          ,{' '}
           <A
             href={links.vzSuites.url}
             alt={links.vzSuites.alt}
@@ -82,7 +85,7 @@ const AboutPage = props => (
           >
             VZ Suites
           </A>
-          , {' '}
+          ,{' '}
           <A
             href={links.sightsee.url}
             alt={links.sightsee.alt}
@@ -94,7 +97,7 @@ const AboutPage = props => (
         </li>
 
         <li>
-          Organized for a {' '}
+          Organized for a{' '}
           <A
             href={links.fccAshburn.url}
             alt={links.fccAshburn.alt}
@@ -109,8 +112,8 @@ const AboutPage = props => (
       <br />
 
       <P>
-        In my spare time, I enjoy traveling internationally, hiking on
-        national forest trails, reading non-fiction books/tech articles, and
+        In my spare time, I enjoy traveling internationally, hiking on national
+        forest trails, reading non-fiction books/tech articles, and
         experimenting with GatsbyJS.
       </P>
 
@@ -196,7 +199,7 @@ const AboutPage = props => (
         ))}
       </Div5>
       <Div5>
-        <h3>‣ Other:</h3>
+        <h3>‣ Other Skills:</h3>
         {skills.other.map(skill => (
           <P key={skill}>{skill}</P>
         ))}
@@ -244,7 +247,7 @@ const Div4 = styled.div`
   }
 `
 const Div5 = styled.div`
-  @media (max-width:400px) {
+  @media (max-width: 400px) {
     margin: 1rem 0;
   }
 `

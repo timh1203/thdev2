@@ -75,7 +75,8 @@ export const links = {
     alt: 'My Online Resume',
   },
   lambdaBadge: {
-    url: 'https://www.youracclaim.com/badges/3d1bd32a-e3fa-4b65-be51-217058ff0ab6/public_url',
+    url:
+      'https://www.youracclaim.com/badges/3d1bd32a-e3fa-4b65-be51-217058ff0ab6/public_url',
     alt: 'My Lambda School Badge',
   },
   fccCertificate: {
@@ -117,14 +118,16 @@ export const links = {
 export const projectMainData = {
   refreshr: {
     name: 'Refreshr',
-    desc: 'A spaced-repetition review app to send out learning snippets for students from the teacher. Worked as a core developer with 4 full stack developers deploying agile methodologies and git workflow. The technology stack includes ReactJS, NodeJS, PostGresQL, SendGrid, and TypeForm.',
+    desc:
+      'A spaced-repetition review app to send out learning snippets for students from the teacher. Worked as a core developer with 4 full stack developers deploying agile methodologies and git workflow. The technology stack includes ReactJS, NodeJS, PostGresQL, SendGrid, and TypeForm.',
     demo: 'https://refreshr-app.netlify.com/',
     video: 'https://youtu.be/D_KNyY7LiD0',
     github: 'https://github.com/Lambda-School-Labs/labs10-student-follow',
   },
   guidr: {
     name: 'Guidr',
-    desc: 'A trip logging app to help backcountry guides of all types log their private or professional adventures. Led as ScrumMaster for 5 developers of various skill levels, coordinated team goals to build the application, committed code, and assisted in debugging. The technology stack includes ReactJS, Redux, NodeJS, and Sqlite3.',
+    desc:
+      'A trip logging app to help backcountry guides of all types log their private or professional adventures. Led as ScrumMaster for 5 developers of various skill levels, coordinated team goals to build the application, committed code, and assisted in debugging. The technology stack includes ReactJS, Redux, NodeJS, and Sqlite3.',
     demo: 'https://guidr2.netlify.com/',
     video: 'https://youtu.be/0C2toPa9GHM',
     github: 'https://github.com/guidr-app-lion-team',
@@ -139,7 +142,7 @@ export const projectMainData = {
   derikJones: {
     name: 'Derik Jones Architect',
     desc:
-      'An architect portfolio website built for a client. Showcases the client\'s professional designs, projects, and inspirational photos. The technology stack includes GatsbyJS, GraphQL, and Styled Components.',
+      "An architect portfolio website built for a client. Showcases the client's professional designs, projects, and inspirational photos. The technology stack includes GatsbyJS, GraphQL, and Styled Components.",
     demo: 'http://derikjones.com/',
     github: 'https://github.com/timh1203/derikjones',
   },
@@ -240,21 +243,23 @@ export const projectAltData = {
   },
   sightseeWithMe: {
     name: 'Sightsee With Me',
-    desc: 'A sightseeing business based in Charlottesville. Created with the Divi Theme Framework by Elegant Themes.',
-    demo: 'http://www.sightseewithme.com'
+    desc:
+      'A sightseeing business based in Charlottesville. Created with the Divi Theme Framework by Elegant Themes.',
+    demo: 'http://www.sightseewithme.com',
   },
   vzSuites: {
     name: 'VZ Suites',
-    desc: 'An apartment rental business based in Seattle. Created with the Divi Theme Framework by Elegant Themes.',
-    demo: 'http://vzsuites.com'
+    desc:
+      'An apartment rental business based in Seattle. Created with the Divi Theme Framework by Elegant Themes.',
+    demo: 'http://vzsuites.com',
   },
   talkOfTheTown: {
     name: 'Talk of The Town Languages',
-    desc: 'An language business based in Charlottesville. Created with the Divi Theme Framework by Elegant Themes.',
-    demo: 'http://talkofthetownlanguages.com'
+    desc:
+      'An language business based in Charlottesville. Created with the Divi Theme Framework by Elegant Themes.',
+    demo: 'http://talkofthetownlanguages.com',
   },
 }
-
 
 export const skills = {
   frontEnd: [
@@ -280,7 +285,7 @@ export const skills = {
   other: [
     'Git/Github',
     'Git Workflow',
-    'Jest/React-Testing-Library',
+    'Jest',
     'Yarn/NPM',
     'Auth0',
     'Stripe',
