@@ -13,7 +13,7 @@ const AboutPage = props => (
 
     <Div>
       <P>
-        Full stack developer who loves to work with web technologies.{' '}
+        Software Engineer who loves to work with front-end, full-stack, and web technologies.{' '}
         <A
           href={links.lambdaSchool.url}
           alt={links.lambdaSchool.alt}
@@ -22,15 +22,29 @@ const AboutPage = props => (
         >
           Lambda School
         </A>{' '}
-        alumnus, a fast-paced 7-month academy with a focus on full-stack web
-        development and computer science. I started coding in January 2017, when
-        I transitioned away from a full-time pharmacist role.
+        alumnus from a fast-paced 7-month academy with a focus on full-stack web
+        development and computer science. Started coding in January 2017 when
+        transitioned away from a full-time pharmacist role.
         <br />
         <br />
         Previous experiences include:
       </P>
 
       <Ul>
+        <li>
+          Working as an associate full-stack software engineer at{' '}
+          <A
+            href={links.tenavox.url}
+            alt={links.tenavox.alt}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Tenavox
+          </A>
+          , a startup in the commercial real estate industry
+
+        </li>
+
         <li>
           Worked as a core developer on a project for Lambda School Labs to
           build{' '}
@@ -112,9 +126,8 @@ const AboutPage = props => (
       <br />
 
       <P>
-        In my spare time, I enjoy traveling internationally, hiking on national
-        forest trails, reading non-fiction books/tech articles, and
-        experimenting with GatsbyJS.
+        In my spare time, I enjoy traveling internationally, engaging in outdoor activities, reading non-fiction books/tech articles, and
+        experimenting with new technologies like GatsbyJS, NextJS, and others.
       </P>
 
       <br />
@@ -172,7 +185,7 @@ const AboutPage = props => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Button>Certificate: Udemy FullStack</Button>
+        <Button>Certificate: Udemy Full-Stack</Button>
       </A2>
     </Div2>
 

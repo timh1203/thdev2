@@ -113,6 +113,10 @@ export const links = {
     url: 'http://www.sightseewithme.com',
     alt: 'Sightsee With Me Tour Client',
   },
+  tenavox: {
+    url: 'https://www.tenavox.com/',
+    alt: 'Commercial Real Estate Startup'
+  }
 }
 
 export const projectMainData = {
@@ -268,27 +272,30 @@ export const skills = {
     'Styled Components',
     'Redux',
     'Flexbox/CSS Grid',
-    'GatsbyJS',
+    'Gatsby',
+    'Next.js',
     'HTML/CSS',
     'Bootstrap',
   ],
   backEnd: [
-    'NodeJS/Express',
-    'REST/APIs',
+    'Node.js/Express.js',
+    'RESTful Architecture/APIs',
     'SQL/PostgreSQL',
     'MongoDB',
     'Netlify',
     'Heroku',
     'Python/Django',
     'C',
+    'Swagger API'
   ],
   other: [
     'Git/Github',
     'Git Workflow',
-    'Jest',
+    'CircleCI',
+    'Cypress',
     'Yarn/NPM',
     'Auth0',
-    'Stripe',
+    'Jira',
     'Vietnamese (fluent)',
     'Spanish (basic)',
   ],
