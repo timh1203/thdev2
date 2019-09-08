@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import Img from 'gatsby-image'
 import { FaLaptop, FaYoutube, FaGithub } from 'react-icons/fa'
 
-
 const ProjectTemplate = props => (
   <Div>
     <A1 href={props.demo} target="_blank">
@@ -16,13 +15,13 @@ const ProjectTemplate = props => (
       <A1 href={props.demo} target="_blank">
         <FaLaptop1 />
       </A1>
-      {
-        props.video ? (
-          <A1 href={props.video} target="_blank">
-            <FaYoutube1 />
-          </A1>
-        ) : ''
-      }
+      {props.video ? (
+        <A1 href={props.video} target="_blank">
+          <FaYoutube1 />
+        </A1>
+      ) : (
+        ''
+      )}
       <A1 href={props.github} target="_blank">
         <FaGithub1 />
       </A1>

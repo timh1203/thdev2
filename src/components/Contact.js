@@ -8,11 +8,7 @@ const Contact = () => (
     <Form1 action="https://formspree.io/timh1203@gmail.com" method="POST">
       <Ul1>
         <li>
-          <input
-            type="hidden"
-            name="From"
-            value="timh1203.com"
-          />
+          <input type="hidden" name="From" value="timh1203.com" />
         </li>
         <li>
           <input type="hidden" name="_gotcha" />
@@ -34,12 +30,7 @@ const Contact = () => (
           />
         </li>
         <li>
-          <Input1
-            type="email"
-            name="Email"
-            placeholder="Email"
-            required
-          />
+          <Input1 type="email" name="Email" placeholder="Email" required />
         </li>
         <li>
           <Textarea1
@@ -47,8 +38,7 @@ const Contact = () => (
             name="Message"
             placeholder="Message"
             required
-          >
-          </Textarea1>
+          />
         </li>
         <li>
           <Button1 type="submit">Send</Button1>
@@ -82,8 +72,7 @@ const Form1 = styled.form`
 //   text-align: center;
 //   margin-top: 1rem;
 // `
-const Ul1 = styled.ul`
-`
+const Ul1 = styled.ul``
 // const Li1 = styled.ul`
 //   line-height: 2;
 //   @media (max-width: 400px) {
@@ -146,7 +135,7 @@ const H1a = styled.h1`
   text-align: left;
 `
 const Hr = styled.hr`
-  border-color: ${ props => props.theme.textColor};
+  border-color: ${props => props.theme.textColor};
 `
 // const Span1 = styled.span`
 //   text-decoration: underline;

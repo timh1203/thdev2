@@ -210,27 +210,21 @@ export default () => (
             }
           }
         }
-        vzSuites: file(
-          relativePath: { eq: "vzSuites.png" }
-        ) {
+        vzSuites: file(relativePath: { eq: "vzSuites.png" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        sightseeWithMe: file(
-          relativePath: { eq: "sightseeWithMe.png" }
-        ) {
+        sightseeWithMe: file(relativePath: { eq: "sightseeWithMe.png" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        talkOfTheTown: file(
-          relativePath: { eq: "talkOfTheTown.png" }
-        ) {
+        talkOfTheTown: file(relativePath: { eq: "talkOfTheTown.png" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid

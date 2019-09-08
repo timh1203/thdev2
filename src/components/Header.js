@@ -7,7 +7,9 @@ import { links } from '../assets/'
 const Header = props => (
   <Div>
     <Div1>
-      <H1>Timothy Hoang</H1>
+      <Link to="/">
+        <H1>Timothy Hoang</H1>
+      </Link>
       {/* <H6>Full Stack Developer</H6> */}
       {/* <H6>Austin, Texas</H6> */}
     </Div1>
