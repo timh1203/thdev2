@@ -10,10 +10,8 @@ const Intro = props => (
     </Div1>
     <Div2>
       <H3>
-        Hi, I'm Tim!
-        A full stack web developer building
-        powerful web apps that solve real problems.
-        I am a {' '}
+        Hi, I'm Tim! A software engineer building powerful web apps that solve
+        real problems. I am a{' '}
         <A
           href={links.lambdaBadge.url}
           alt={links.lambdaBadge.alt}
@@ -21,8 +19,8 @@ const Intro = props => (
           rel="noopener noreferrer"
         >
           Lambda School
-        </A>
-        {' '} alumnus.
+        </A>{' '}
+        alumnus.
       </H3>
       {/* <H3>"I have no special talents.<br />I am only passionately curious."</H3> */}
       {/* <Span>-Albert Einstein</Span> */}
@@ -73,7 +71,7 @@ const H3 = styled.h3`
   line-height: 2;
   color: ${props => props.theme.textColor};
   @media (max-width: 768px) {
-   font-size: 2.5rem;
+    font-size: 2.5rem;
   }
   @media (max-width: 400px) {
     font-size: 2rem;
@@ -89,10 +87,10 @@ const A = styled.a`
     bottom: 3px;
     position: relative;
   }
-  @media(max-width: 768px) {
+  @media (max-width: 768px) {
     font-size: 2.5rem;
   }
-  @media(max-width: 400px) {
+  @media (max-width: 400px) {
     font-size: 2rem;
   }
 `
