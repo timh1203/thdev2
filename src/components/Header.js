@@ -7,9 +7,9 @@ import { links } from '../assets/'
 const Header = props => (
   <Div>
     <Div1>
-      <Link to="/">
+      <Link1 to="/">
         <H1>Timothy Hoang</H1>
-      </Link>
+      </Link1>
       {/* <H6>Full Stack Developer</H6> */}
       {/* <H6>Austin, Texas</H6> */}
     </Div1>
@@ -24,10 +24,10 @@ const Header = props => (
       >
         Resume
       </A>
-      <Link1 to="#portfolio">Portfolio</Link1>
-      <Link1 to="#about">About</Link1>
-      <Link1 to="#contact">Contact</Link1>
-      <Link1 to="/blog">Blog</Link1>
+      <Link2 to="#portfolio">Portfolio</Link2>
+      <Link2 to="#about">About</Link2>
+      <Link2 to="#contact">Contact</Link2>
+      <Link2 to="/blog">Blog</Link2>
     </Div2>
 
     <Div3>
@@ -153,6 +153,12 @@ const A = styled.a`
   }
 `
 const Link1 = styled(Link)`
+  text-decoration: none;
+  &:hover: {
+    cursor: pointer;
+  }
+`
+const Link2 = styled(Link)`
   font-size: 2rem;
   margin: 0 1rem;
   font-family: 'Quicksand';
