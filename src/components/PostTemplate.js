@@ -48,8 +48,11 @@ const Div1 = styled.div`
   }
 `
 const Div2 = styled.div`
+  width: 70%;
+  margin: 0 auto;
+  text-align: left;
+
   a {
-    display: block;
     color: ${props => props.theme.themeToggleButton};
   }
   p {
@@ -59,6 +62,10 @@ const Div2 = styled.div`
   }
   .gatsby-resp-image-image {
     margin: 1rem;
+  }
+  hr {
+    margin: 3rem auto;
+    width: 75%;
   }
 `
 const H1a = styled.h1`

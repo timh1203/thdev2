@@ -4,7 +4,7 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: 'Timothy Hoang | Full Stack Developer',
+    title: 'Timothy Hoang | Software Engineer',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

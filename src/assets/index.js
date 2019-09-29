@@ -271,11 +271,11 @@ export const skills = {
     'React',
     'Styled Components',
     'Redux',
-    'Flexbox/CSS Grid',
+    'Flexbox',
     'Gatsby',
     'Next.js',
-    'HTML/CSS',
-    'Bootstrap',
+    'Sass/CSS',
+    'HTML',
   ],
   backEnd: [
     'Node.js/Express.js',
@@ -286,7 +286,6 @@ export const skills = {
     'Heroku',
     'Python/Django',
     'C',
-    'Swagger API'
   ],
   other: [
     'Git/Github',

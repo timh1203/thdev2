@@ -13,7 +13,8 @@ const AboutPage = props => (
 
     <Div>
       <P>
-        Software Engineer who loves to work with front-end, full-stack, and web technologies.{' '}
+        A software engineer who loves to work with front-end, full-stack, and web technologies.{' '}
+        A{' '}
         <A
           href={links.lambdaSchool.url}
           alt={links.lambdaSchool.alt}
@@ -22,7 +23,7 @@ const AboutPage = props => (
         >
           Lambda School
         </A>{' '}
-        alumnus from a fast-paced 7-month academy with a focus on full-stack web
+        alumnus from a fast-paced 7-month academy with focus on full-stack web
         development and computer science. Started coding in January 2017 when
         transitioned away from a full-time pharmacist role.
         <br />
@@ -72,7 +73,7 @@ const AboutPage = props => (
         </li>
 
         <li>
-          Paid freelance web projects with{' '}
+          Worked as a freelancer with clients to develop web projects:{' '}
           <A
             href={links.dullesBarber.url}
             alt={links.dullesBarber.alt}
@@ -126,8 +127,8 @@ const AboutPage = props => (
       <br />
 
       <P>
-        In my spare time, I enjoy traveling internationally, engaging in outdoor activities, reading non-fiction books/tech articles, and
-        experimenting with new technologies like GatsbyJS, NextJS, and others.
+        In my spare time, I enjoy traveling, engaging in outdoor activities, reading non-fiction books/tech articles, engage in Front End Masters courses, and
+        experimenting with new technologies and learning new features.
       </P>
 
       <br />
