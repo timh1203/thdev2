@@ -59,6 +59,11 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
+          content {
+            childMarkdownRemark {
+              excerpt
+            }
+          }
           id
           title
           subtitle
@@ -68,6 +73,7 @@ export const pageQuery = graphql`
             sizes(maxWidth: 1280) {
               ...GatsbyContentfulSizes
             }
+            description
           }
         }
       }

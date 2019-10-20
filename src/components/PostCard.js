@@ -4,16 +4,22 @@ import Img from 'gatsby-image'
 import Link from 'gatsby-link'
 
 export default props => {
-  const { title, subtitle, createdAt, slug, image } = props.node
-
+  const { title, subtitle, createdAt, slug } = props.node
+  const { sizes, description } = props.node.image
+  const { excerpt } = props.node.content.childMarkdownRemark
   return (
     <Div1>
       <Link1 to={`/blog/${slug}/`}>
-        <Img1 sizes={image.sizes} />
         <Div2>
-          <H1a>{title}</H1a>
-          <H6a>{createdAt}</H6a>
-          <P1>{subtitle}</P1>
+          <Div3>
+            <Img1 alt={description} sizes={sizes} />
+          </Div3>
+          <Div4>
+            <H1a>{title}</H1a>
+            <H4a>{createdAt}</H4a>
+            <H6a>{subtitle}</H6a>
+            <P1>{excerpt}</P1>
+          </Div4>
         </Div2>
       </Link1>
     </Div1>
@@ -21,49 +27,61 @@ export default props => {
 }
 
 const Div1 = styled.div`
+  width: 70%;
+  margin: 0 auto;
+  border-bottom: 2px solid ${props => props.theme.textColor};
+`
+const Div2 = styled.div`
   display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  border: 2px solid ${props => props.theme.textColor};
-  border-radius: 2px;
-  min-height: 350px;
-  width: 30%;
-  margin: 0.5%;
-  padding: 1%;
-  @media (max-width: 768px) {
+  align-items: center;
+  margin: 3rem auto;
+  /* @media (max-width: 768px) {
     width: 45%;
     margin: 1rem auto;
   }
   @media (max-width: 400px) {
     width: 96%;
     min-height: 350px;
-  }
+  } */ */
 `
-const Div2 = styled.div`
+const Div3 = styled.div`
+  width: 50%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+`
+const Div4 = styled.div`
+  width: 60%;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-around;
   color: ${props => props.theme.textColor};
   * {
-    margin: 0.5rem 0;
+    width: 100%;
   }
 `
 const H1a = styled.h1`
-  @media (max-width: 768px) {
+  /* border-bottom: 2px solid ${props => props.theme.underlineColor}; */
+  text-decoration: underline;
+  text-decoration-color: ${props => props.theme.underlineColor};
+  /* @media (max-width: 768px) {
     font-size: 2.5rem;
-  }
+  } */
+`
+const H4a = styled.h4`
 `
 const H6a = styled.h6`
-  @media (max-width: 768px) {
+  font-style: italic;
+  /* @media (max-width: 768px) {
     font-size: 1.5rem;
-  }
+  } */
 `
-const P1 = styled.p``
+const P1 = styled.p`
+`
 const Img1 = styled(Img)`
-  width: 80%;
-  margin: 0 auto;
-  border-radius: 2px;
+  min-width: 300px;
+  max-width: 300px;
 `
 const Link1 = styled(Link)`
-  text-decoration: none;
 `
