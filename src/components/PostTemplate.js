@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import styled, { ThemeProvider } from 'styled-components'
 import { lightTheme, darkTheme } from '../assets/'
 import { Header, Footer, Layout } from '../components'
+import Parser from 'html-react-parser';
 
 export default class PostTemplate extends React.Component {
   state = {
@@ -15,8 +16,7 @@ export default class PostTemplate extends React.Component {
 
   render() {
     const { title, createdAt } = this.props.data.contentfulBlog
-    const content = this.props.data.contentfulBlog.content.childMarkdownRemark
-      .html
+    const content = this.props.data.contentfulBlog.content.childMarkdownRemark.html
 
     return (
       <ThemeProvider theme={this.state.light ? lightTheme : darkTheme}>
@@ -25,11 +25,9 @@ export default class PostTemplate extends React.Component {
             <Header lightToggler={this.lightToggler} />
             <H1a>{title}</H1a>
             <H6a>{createdAt}</H6a>
-            <Div2
-              dangerouslySetInnerHTML={{
-                __html: content,
-              }}
-            />
+            <Div2>
+              {Parser(content)}
+            </Div2>
             <Footer />
           </Div1>
         </Layout>
@@ -60,8 +58,10 @@ const Div2 = styled.div`
     line-height: 1.6;
     margin: 1rem 0;
   }
-  .gatsby-resp-image-image {
-    margin: 1rem;
+  img {
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
   }
   hr {
     margin: 3rem auto;
