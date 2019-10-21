@@ -15,19 +15,23 @@ export default class PostTemplate extends React.Component {
   }
 
   render() {
-    const { title, createdAt } = this.props.data.contentfulBlog
+    const { title, createdAt, updatedAt } = this.props.data.contentfulBlog
     const content = this.props.data.contentfulBlog.content.childMarkdownRemark.html
 
+    console.log(this.props.data)
     return (
       <ThemeProvider theme={this.state.light ? lightTheme : darkTheme}>
         <Layout>
           <Div1>
             <Header lightToggler={this.lightToggler} />
             <H1a>{title}</H1a>
-            <H6a>{createdAt}</H6a>
             <Div2>
-              {Parser(content)}
+              <H6a>Created: {createdAt}</H6a>
+              <H6a>Updated: {updatedAt}</H6a>
             </Div2>
+            <Div3>
+              {Parser(content)}
+            </Div3>
             <Footer />
           </Div1>
         </Layout>
@@ -46,6 +50,13 @@ const Div1 = styled.div`
   }
 `
 const Div2 = styled.div`
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  font-style: italic;
+`
+const Div3 = styled.div`
   width: 70%;
   margin: 0 auto;
   text-align: left;
@@ -70,6 +81,8 @@ const Div2 = styled.div`
 `
 const H1a = styled.h1`
   margin: 1rem 0;
+  text-decoration: underline;
+  text-decoration-color: ${props => props.theme.underlineColor};
 `
 const H6a = styled.h6`
   margin: 1rem 0;
@@ -83,6 +96,7 @@ export const pageQuery = graphql`
       subtitle
       slug
       createdAt(formatString: "MMMM DD, YYYY")
+      updatedAt(formatString: "MMMM DD, YYYY")
       image {
         sizes(maxWidth: 1280) {
           ...GatsbyContentfulSizes

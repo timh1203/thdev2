@@ -69,6 +69,7 @@ export const pageQuery = graphql`
           subtitle
           slug
           createdAt(formatString: "MMMM DD, YYYY")
+          updatedAt(formatString: "MMMM DD, YYYY")
           image {
             sizes(maxWidth: 1280) {
               ...GatsbyContentfulSizes

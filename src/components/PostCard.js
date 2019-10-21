@@ -4,7 +4,7 @@ import Img from 'gatsby-image'
 import Link from 'gatsby-link'
 
 export default props => {
-  const { title, subtitle, createdAt, slug } = props.node
+  const { title, subtitle, updatedAt, slug } = props.node
   const { sizes, description } = props.node.image
   const { excerpt } = props.node.content.childMarkdownRemark
   return (
@@ -16,7 +16,7 @@ export default props => {
           </Div3>
           <Div4>
             <H1a>{title}</H1a>
-            <H4a>{createdAt}</H4a>
+            <H5a>Updated: {updatedAt}</H5a>
             <H6a>{subtitle}</H6a>
             <P1>{excerpt}</P1>
           </Div4>
@@ -69,7 +69,8 @@ const H1a = styled.h1`
     font-size: 2.5rem;
   } */
 `
-const H4a = styled.h4`
+const H5a = styled.h5`
+  font-weight: bold;
 `
 const H6a = styled.h6`
   font-style: italic;
@@ -84,4 +85,5 @@ const Img1 = styled(Img)`
   max-width: 300px;
 `
 const Link1 = styled(Link)`
+  text-decoration: none;
 `
