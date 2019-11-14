@@ -14,7 +14,7 @@ export default class BlogPage extends React.Component {
   }
 
   render() {
-    const posts = this.props.data.allContentfulBlog.edges
+    const posts = this.props.data.allContentfulWritings.edges
 
     return (
       <ThemeProvider theme={this.state.light ? lightTheme : darkTheme}>
@@ -53,7 +53,7 @@ const Div2 = styled.div`
 
 export const pageQuery = graphql`
   query blogQuery {
-    allContentfulBlog(
+    allContentfulWritings(
       filter: { node_locale: { eq: "en-US" } }
       sort: { fields: [createdAt], order: DESC }
     ) {
@@ -67,6 +67,7 @@ export const pageQuery = graphql`
           id
           title
           subtitle
+          tags
           slug
           createdAt(formatString: "MMMM DD, YYYY")
           updatedAt(formatString: "MMMM DD, YYYY")

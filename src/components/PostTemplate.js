@@ -15,10 +15,9 @@ export default class PostTemplate extends React.Component {
   }
 
   render() {
-    const { title, createdAt, updatedAt } = this.props.data.contentfulBlog
-    const content = this.props.data.contentfulBlog.content.childMarkdownRemark.html
+    const { title, createdAt, updatedAt } = this.props.data.contentfulWritings
+    const content = this.props.data.contentfulWritings.content.childMarkdownRemark.html
 
-    console.log(this.props.data)
     return (
       <ThemeProvider theme={this.state.light ? lightTheme : darkTheme}>
         <Layout>
@@ -26,8 +25,8 @@ export default class PostTemplate extends React.Component {
             <Header lightToggler={this.lightToggler} />
             <H1a>{title}</H1a>
             <Div2>
-              <H6a>Created: {createdAt}</H6a>
-              <H6a>Updated: {updatedAt}</H6a>
+              <H6a><u>Created:</u> {createdAt}</H6a>
+              <H6a><u>Updated:</u> {updatedAt}</H6a>
             </Div2>
             <Div3>
               {Parser(content)}
@@ -90,7 +89,7 @@ const H6a = styled.h6`
 
 export const pageQuery = graphql`
   query($slug: String!) {
-    contentfulBlog(slug: { eq: $slug }) {
+    contentfulWritings(slug: { eq: $slug }) {
       id
       title
       subtitle

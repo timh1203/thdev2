@@ -23,7 +23,7 @@ exports.createPages = ({ graphql, actions }) => {
     resolve(
       graphql(`
         {
-          allContentfulBlog(limit: 1000) {
+          allContentfulWritings(limit: 1000) {
             edges {
               node {
                 slug
@@ -32,21 +32,21 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       `).then(result => {
-        if (result.errors) {
-          reject(result.errors)
-        }
+          if (result.errors) {
+            reject(result.errors)
+          }
 
-        result.data.allContentfulBlog.edges.map(({ node }) => {
-          createPage({
-            path: `blog/${node.slug}`,
-            component: path.resolve('./src/components/PostTemplate.js'),
-            context: {
-              slug: node.slug,
-            },
+          result.data.allContentfulWritings.edges.map(({ node }) => {
+            createPage({
+              path: `blog/${node.slug}`,
+              component: path.resolve('./src/components/PostTemplate.js'),
+              context: {
+                slug: node.slug,
+              },
+            })
           })
+          resolve()
         })
-        resolve()
-      })
     )
   })
 }

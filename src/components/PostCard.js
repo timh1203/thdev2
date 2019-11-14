@@ -4,7 +4,7 @@ import Img from 'gatsby-image'
 import Link from 'gatsby-link'
 
 export default props => {
-  const { title, subtitle, updatedAt, slug } = props.node
+  const { title, subtitle, updatedAt, slug, tags } = props.node
   const { sizes, description } = props.node.image
   const { excerpt } = props.node.content.childMarkdownRemark
   return (
@@ -16,8 +16,9 @@ export default props => {
           </Div3>
           <Div4>
             <H1a>{title}</H1a>
-            <H5a>Updated: {updatedAt}</H5a>
             <H6a>{subtitle}</H6a>
+            <P1><U1>Updated:</U1> {updatedAt}</P1>
+            <P1><U1>Tags:</U1> {tags}</P1>
             <P1>{excerpt}</P1>
           </Div4>
         </Div2>
@@ -33,7 +34,6 @@ const Div1 = styled.div`
 `
 const Div2 = styled.div`
   display: flex;
-  align-items: center;
   margin: 3rem auto;
   /* @media (max-width: 768px) {
     width: 45%;
@@ -59,6 +59,7 @@ const Div4 = styled.div`
   color: ${props => props.theme.textColor};
   * {
     width: 100%;
+    margin: 0.5rem 0;
   }
 `
 const H1a = styled.h1`
@@ -68,9 +69,6 @@ const H1a = styled.h1`
   /* @media (max-width: 768px) {
     font-size: 2.5rem;
   } */
-`
-const H5a = styled.h5`
-  font-weight: bold;
 `
 const H6a = styled.h6`
   font-style: italic;
@@ -86,4 +84,8 @@ const Img1 = styled(Img)`
 `
 const Link1 = styled(Link)`
   text-decoration: none;
+`
+const U1 = styled.u`
+  text-decoration: underline;
+  text-decoration-color: ${props => props.theme.underlineColor};
 `
