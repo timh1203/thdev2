@@ -7,6 +7,14 @@ import { ProjectTemplate } from './'
 const ProjectMainAggregate = ({ data }) => (
   <Div1>
     <ProjectTemplate
+      img={data.tenavoxAdmin.childImageSharp.fluid}
+      name={projectMainData.tenavoxAdmin.name}
+      desc={projectMainData.tenavoxAdmin.desc}
+      demo={projectMainData.tenavoxAdmin.demo}
+      video={projectMainData.tenavoxAdmin.video}
+      github={projectMainData.tenavoxAdmin.github}
+    />
+    <ProjectTemplate
       img={data.refreshr.childImageSharp.fluid}
       name={projectMainData.refreshr.name}
       desc={projectMainData.refreshr.desc}
@@ -56,6 +64,13 @@ export default () => (
   <StaticQuery
     query={graphql`
       query {
+        tenavoxAdmin: file(relativePath: { eq: "tenavoxAdmin.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         refreshr: file(relativePath: { eq: "refreshr.png" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
