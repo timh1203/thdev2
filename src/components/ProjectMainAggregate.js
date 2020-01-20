@@ -44,13 +44,6 @@ const ProjectMainAggregate = ({ data }) => (
       demo={projectMainData.derikJones.demo}
       github={projectMainData.derikJones.github}
     />
-    <ProjectTemplate
-      img={data.wanderlustoria.childImageSharp.fluid}
-      name={projectMainData.wanderlustoria.name}
-      desc={projectMainData.wanderlustoria.desc}
-      demo={projectMainData.wanderlustoria.demo}
-      github={projectMainData.wanderlustoria.github}
-    />
   </Div1>
 )
 
@@ -79,13 +72,6 @@ export default () => (
           }
         }
         guidr: file(relativePath: { eq: "guidr.png" }) {
-          childImageSharp {
-            fluid(maxWidth: 1000) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        wanderlustoria: file(relativePath: { eq: "wanderlustoria.png" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid

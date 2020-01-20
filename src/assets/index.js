@@ -163,6 +163,9 @@ export const projectMainData = {
     demo: 'http://derikjones.com/',
     github: 'https://github.com/timh1203/derikjones',
   },
+}
+
+export const projectAltData = {
   wanderlustoria: {
     name: 'Wanderlustoria',
     desc:
@@ -170,9 +173,6 @@ export const projectMainData = {
     demo: 'https://wanderlustoria.herokuapp.com/',
     github: 'https://github.com/timh1203/wanderlustoria',
   },
-}
-
-export const projectAltData = {
   ticTacToeGame: {
     name: 'Tic Tac Toe',
     desc:

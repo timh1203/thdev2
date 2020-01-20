@@ -7,6 +7,13 @@ import { ProjectTemplate } from './'
 const ProjectAltAggregate = ({ data }) => (
   <Div1>
     <ProjectTemplate
+      img={data.wanderlustoria.childImageSharp.fluid}
+      name={projectAltData.wanderlustoria.name}
+      desc={projectAltData.wanderlustoria.desc}
+      demo={projectAltData.wanderlustoria.demo}
+      github={projectAltData.wanderlustoria.github}
+    />
+    <ProjectTemplate
       img={data.ticTacToeGame.childImageSharp.fluid}
       name={projectAltData.ticTacToeGame.name}
       desc={projectAltData.ticTacToeGame.desc}
@@ -124,6 +131,13 @@ export default () => (
   <StaticQuery
     query={graphql`
       query {
+        wanderlustoria: file(relativePath: { eq: "wanderlustoria.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         simonGame: file(relativePath: { eq: "simonGame.png" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
