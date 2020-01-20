@@ -47,7 +47,7 @@ export const links = {
     alt: 'My LinkedIn',
   },
   twitter: {
-    url: 'https://twitter.com/travelDev',
+    url: 'https://twitter.com/timh1203',
     alt: 'My Twitter',
   },
   medium: {
