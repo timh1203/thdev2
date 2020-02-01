@@ -90,7 +90,7 @@ export const links = {
   tenavoxAdmin: {
     url: 'https://admin-v2.tenavox.com',
     alt: 'Tenavox Admid App Login',
-    video: '',
+    video: 'https://youtu.be/o4Kd1pOrdlI',
   },
   refreshr: {
     url: 'https://github.com/Lambda-School-Labs/labs10-student-follow',
@@ -130,7 +130,7 @@ export const projectMainData = {
     desc:
       'An internal-facing admin app for the management of real estate properties from brokers. Worked as a core developer with a lead developer and product owners employing agile methodologies and git workflow. The technology stack includes NextJS, ReactJS, NodeJS, PostGresQL, AWS, Docker, CircleCI, Auth0.',
     demo: 'https://admin-v2.tenavox.com',
-    video: '',
+    video: 'https://youtu.be/o4Kd1pOrdlI',
     github: 'https://github.com/tenavox/admin-v2-tenavox',
   },
   refreshr: {
