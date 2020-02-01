@@ -50,6 +50,10 @@ export const links = {
     url: 'https://twitter.com/timh1203',
     alt: 'My Twitter',
   },
+  youtube: {
+    url: 'https://www.youtube.com/channel/UCGp8egS6eFH2Or5rUYscF8A/',
+    alt: 'My Youtube',
+  },
   medium: {
     url: 'https://medium.com/@timh1203',
     alt: 'My Medium',

@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
+import { FaGithub, FaLinkedinIn, FaTwitter, FaYoutube } from 'react-icons/fa'
 import { links } from '../assets/'
 
 const Header = props => (
@@ -54,6 +54,14 @@ const Header = props => (
         rel="noopener noreferrer"
       >
         <FaTwitter1 />
+      </a>
+      <a
+        href={links.youtube.url}
+        alt={links.youtube.alt}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaYoutube1 />
       </a>
       {/* <a
         href={links.medium.url}
@@ -204,7 +212,6 @@ const FaGithub1 = styled(FaGithub)`
 `
 const FaLinkedinIn1 = styled(FaLinkedinIn)`
   color: ${props => props.theme.socialIconColor};
-  /* background: #0077b5; */
   border-radius: 2px;
   width: 40px;
   height: 40px;
@@ -218,7 +225,19 @@ const FaLinkedinIn1 = styled(FaLinkedinIn)`
 `
 const FaTwitter1 = styled(FaTwitter)`
   color: ${props => props.theme.socialIconColor};
-  /* background: #1c9bea; */
+  border-radius: 2px;
+  width: 41px;
+  height: 41px;
+  margin: 0 2rem;
+  :hover {
+    box-shadow: 3px 3px 3px ${props => props.theme.textColor};
+  }
+  @media (max-width: 400px) {
+    width: 25px;
+  }
+`
+const FaYoutube1 = styled(FaYoutube)`
+  color: ${props => props.theme.socialIconColor};
   border-radius: 2px;
   width: 41px;
   height: 41px;
