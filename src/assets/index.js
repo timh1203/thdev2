@@ -95,7 +95,7 @@ export const links = {
   refreshr: {
     url: 'https://github.com/Lambda-School-Labs/labs10-student-follow',
     alt: 'Refreshr App Github Repository',
-    video: 'https://youtu.be/D_KNyY7LiD0',
+    video: 'https://youtu.be/_iP127acNts',
   },
   guidr: {
     url: 'https://github.com/guidr-app-lion-team',
@@ -138,7 +138,7 @@ export const projectMainData = {
     desc:
       'A spaced-repetition review app to send out learning snippets for students from the teacher. Worked as a core developer with 4 full stack developers deploying agile methodologies and git workflow. The technology stack includes ReactJS, NodeJS, PostGresQL, SendGrid, and TypeForm.',
     demo: 'https://refreshr-app.netlify.com/',
-    video: 'https://youtu.be/D_KNyY7LiD0',
+    video: 'https://youtu.be/_iP127acNts',
     github: 'https://github.com/Lambda-School-Labs/labs10-student-follow',
   },
   guidr: {
