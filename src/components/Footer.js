@@ -4,6 +4,7 @@ import styled from 'styled-components'
 const Footer = () => (
   <Div>
     <P>
+      Hosted by <A1 href="https://www.netlify.com/" alt="Netlify Home">Netlify</A1>.
       Copyright © {new Date().getFullYear()} Timothy Hoang. All rights reserved.
     </P>
   </Div>
@@ -22,6 +23,9 @@ const P = styled.p`
   @media (max-width: 400px) {
     margin: 1rem 0;
   }
+`
+const A1 = styled.a`
+  color: white;
 `
 
 export default Footer
