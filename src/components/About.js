@@ -12,28 +12,45 @@ const AboutPage = props => (
     <Image fluid={props.aboutImage} />
 
     <Div>
-      <P>
-        A software engineer who loves to work with front-end, full-stack, and web technologies.{' '}
-        A{' '}
-        <A
-          href={links.lambdaSchool.url}
-          alt={links.lambdaSchool.alt}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Lambda School
-        </A>{' '}
-        alumnus from a fast-paced 7-month academy with focus on full-stack web
-        development and computer science. Started coding in January 2017 when
-        transitioned away from a full-time pharmacist role.
-        <br />
-        <br />
-        Previous experiences include:
-      </P>
-
       <Ul>
         <li>
-          Working as an associate full-stack software engineer at{' '}
+          Working as a Web Applications Developer at{' '}
+          <A
+            href={links.opensymmetry.url}
+            alt={links.opensymmetry.alt}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            OpenSymmetry
+          </A>
+          , a global SPM company
+        </li>
+        <li>
+          Pioneering the Plutus Core language with Plutus Pioneer Program at{' '}
+          <A
+            href={links.plutuspioneerprogram.url}
+            alt={links.plutuspioneerprogram.alt}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            IOHK
+          </A>
+          , a blockchain and cryptocurrency company
+        </li>
+        <li>
+          Volunteering with Hispanic Hackers at{' '}
+          <A
+            href={links.hispanichackers.url}
+            alt={links.hispanichackers.alt}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Austin Hispanic Hackers
+          </A>
+          , a technology promoting diversity and inclusion in technology
+        </li>
+        <li>
+          Worked as an associate full-stack software engineer at{' '}
           <A
             href={links.tenavox.url}
             alt={links.tenavox.alt}
@@ -43,7 +60,6 @@ const AboutPage = props => (
             Tenavox
           </A>
           , a startup in the commercial real estate industry
-
         </li>
 
         <li>
@@ -125,10 +141,33 @@ const AboutPage = props => (
       </Ul>
 
       <br />
+      <Hr />
+      <br />
 
       <P>
-        In my spare time, I enjoy traveling, engaging in outdoor activities, reading non-fiction books/tech articles, engage in Front End Masters courses, and
-        experimenting with new technologies and learning new features.
+        A software engineer who loves to work with front-end, full-stack, and
+        web technologies. A{' '}
+        <A
+          href={links.lambdaSchool.url}
+          alt={links.lambdaSchool.alt}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Lambda School
+        </A>{' '}
+        alumnus from a fast-paced 7-month academy with focus on full-stack web
+        development and computer science. Started coding in January 2017 when
+        transitioned away from a full-time pharmacist role.
+      </P>
+
+      <br />
+      <br />
+
+      <P>
+        In my spare time, I enjoy traveling, outdoor activities, reading
+        non-fiction books/tech articles, taking coding courses, and
+        experimenting with new technologies and learning new features. I'm
+        currently exploring the React and Blockchain ecosystems.
       </P>
 
       <br />

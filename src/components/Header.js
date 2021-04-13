@@ -10,12 +10,9 @@ const Header = props => (
       <Link1 to="/">
         <H1>Timothy Hoang</H1>
       </Link1>
-      {/* <H6>Full Stack Developer</H6> */}
-      {/* <H6>Austin, Texas</H6> */}
     </Div1>
 
     <Div2>
-      {/* <Link1 to="#intro">Home</Link1> */}
       <A
         href={links.resume.url}
         alt={links.resume.alt}

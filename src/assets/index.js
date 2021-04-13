@@ -47,11 +47,11 @@ export const links = {
     alt: 'My LinkedIn',
   },
   twitter: {
-    url: 'https://twitter.com/timh1203',
+    url: 'https://twitter.com/timothyhoangdev',
     alt: 'My Twitter',
   },
   youtube: {
-    url: 'https://www.youtube.com/channel/UCGp8egS6eFH2Or5rUYscF8A/',
+    url: 'https://www.youtube.com/channel/UC20f70HjfOSYUk725xid1XQ',
     alt: 'My Youtube',
   },
   medium: {
@@ -63,11 +63,11 @@ export const links = {
     alt: 'My Free Code Camp',
   },
   lambdaSchool: {
-    url: 'https://lambdaschool.com/',
+    url: 'https://lambdaschool.com',
     alt: 'Lambda School Home',
   },
   chingu: {
-    url: 'https://chingu.io/',
+    url: 'https://chingu.io',
     alt: 'Chingu Home',
   },
   fccAshburn: {
@@ -124,8 +124,20 @@ export const links = {
   },
   tenavox: {
     url: 'https://www.tenavox.com/',
-    alt: 'Commercial Real Estate Startup'
-  }
+    alt: 'Commercial Real Estate Startup',
+  },
+  opensymmetry: {
+    url: 'https://www.opensymmetry.com/',
+    alt: 'Global SPM Company',
+  },
+  plutuspioneerprogram: {
+    url: 'https://developers.cardano.org/en/plutus-pioneer-program/',
+    alt: 'Plutus Pioneer Program',
+  },
+  hispanichackers: {
+    url: 'https://www.hispanichackers.com/',
+    alt: 'Austin Hispanic Hackers',
+  },
 }
 
 export const projectMainData = {
@@ -134,7 +146,7 @@ export const projectMainData = {
     desc:
       'An internal-facing admin app for the management of real estate properties from brokers. Worked as a core developer with a lead developer and product owners employing agile methodologies and git workflow. The technology stack includes NextJS, ReactJS, NodeJS, PostGresQL, AWS, Docker, CircleCI, Auth0.',
     demo: 'https://admin-v2.tenavox.com',
-    video: 'https://youtu.be/o4Kd1pOrdlI',
+    video: 'https://www.youtube.com/watch?v=ihciDpboFTo',
     github: 'https://github.com/tenavox/admin-v2-tenavox',
   },
   refreshr: {
@@ -142,7 +154,7 @@ export const projectMainData = {
     desc:
       'A spaced-repetition review app to send out learning snippets for students from the teacher. Worked as a core developer with 4 full stack developers deploying agile methodologies and git workflow. The technology stack includes ReactJS, NodeJS, PostGresQL, SendGrid, and TypeForm.',
     demo: 'https://refreshr-app.netlify.com/',
-    video: 'https://youtu.be/_iP127acNts',
+    video: 'https://www.youtube.com/watch?v=u89p3RqXqZM',
     github: 'https://github.com/Lambda-School-Labs/labs10-student-follow',
   },
   guidr: {

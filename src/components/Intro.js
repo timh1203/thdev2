@@ -10,8 +10,8 @@ const Intro = props => (
     </Div1>
     <Div2>
       <H3>
-        Hi, I'm Tim! A software engineer building powerful web apps that solve
-        real problems. I am a{' '}
+        Hi, I'm software engineer building powerful web apps and creating web
+        development content. I am a{' '}
         <A
           href={links.lambdaBadge.url}
           alt={links.lambdaBadge.alt}
@@ -22,8 +22,6 @@ const Intro = props => (
         </A>{' '}
         alumnus.
       </H3>
-      {/* <H3>"I have no special talents.<br />I am only passionately curious."</H3> */}
-      {/* <Span>-Albert Einstein</Span> */}
     </Div2>
   </Section1>
 )
