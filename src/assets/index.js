@@ -99,7 +99,7 @@ export const links = {
   refreshr: {
     url: 'https://github.com/Lambda-School-Labs/labs10-student-follow',
     alt: 'Refreshr App Github Repository',
-    video: 'https://youtu.be/_iP127acNts',
+    video: 'https://youtu.be/u89p3RqXqZM',
   },
   guidr: {
     url: 'https://github.com/guidr-app-lion-team',
@@ -123,7 +123,7 @@ export const links = {
     alt: 'Sightsee With Me Tour Client',
   },
   tenavox: {
-    url: 'https://www.tenavox.com/',
+    url: 'https://www.linkedin.com/company/tenavox/',
     alt: 'Commercial Real Estate Startup',
   },
   opensymmetry: {
@@ -154,7 +154,7 @@ export const projectMainData = {
     desc:
       'A spaced-repetition review app to send out learning snippets for students from the teacher. Worked as a core developer with 4 full stack developers deploying agile methodologies and git workflow. The technology stack includes ReactJS, NodeJS, PostGresQL, SendGrid, and TypeForm.',
     demo: 'https://refreshr-app.netlify.com/',
-    video: 'https://www.youtube.com/watch?v=u89p3RqXqZM',
+    video: 'https://youtu.be/u89p3RqXqZM',
     github: 'https://github.com/Lambda-School-Labs/labs10-student-follow',
   },
   guidr: {

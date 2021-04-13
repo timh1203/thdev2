@@ -49,7 +49,7 @@ const AboutPage = props => (
           , a blockchain company ({new Date().getFullYear()})
         </li>
         <li>
-          Working as an Technology Manager a{' '}
+          Working as a Technology Manager a{' '}
           <A
             href={links.dullesBarber.url}
             alt={links.dullesBarber.alt}
@@ -61,7 +61,7 @@ const AboutPage = props => (
           , a small business in Northern Virginia ({new Date().getFullYear()})
         </li>
         <li>
-          Volunteering with Hispanic Hackers at{' '}
+          Volunteering with{' '}
           <A
             href={links.hispanichackers.url}
             alt={links.hispanichackers.alt}
@@ -70,7 +70,8 @@ const AboutPage = props => (
           >
             Austin Hispanic Hackers
           </A>
-          , a technology group promoting diversity ({new Date().getFullYear()})
+          , a technology group promoting diversity and inclusion (
+          {new Date().getFullYear()})
         </li>
         <li>
           Worked as an associate full-stack software engineer at{' '}
@@ -82,7 +83,7 @@ const AboutPage = props => (
           >
             Tenavox
           </A>
-          , a startup in the commercial real estate industry
+          , a startup in the commercial real estate industry (2019)
         </li>
 
         <li>
@@ -95,7 +96,8 @@ const AboutPage = props => (
             rel="noopener noreferrer"
           >
             Refreshr
-          </A>
+          </A>{' '}
+          (2019)
         </li>
 
         <li>
@@ -108,7 +110,8 @@ const AboutPage = props => (
             rel="noopener noreferrer"
           >
             Guidr
-          </A>
+          </A>{' '}
+          (2019)
         </li>
 
         <li>
@@ -138,7 +141,8 @@ const AboutPage = props => (
             rel="noopener noreferrer"
           >
             Sightsee With Me
-          </A>
+          </A>{' '}
+          (2018)
         </li>
 
         <li>
@@ -150,7 +154,8 @@ const AboutPage = props => (
             rel="noopener noreferrer"
           >
             Free Code Camp local group
-          </A>
+          </A>{' '}
+          (2018)
         </li>
       </Ul>
 
