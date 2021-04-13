@@ -10,7 +10,7 @@ const Intro = props => (
     </Div1>
     <Div2>
       <H3>
-        Hi, I'm software engineer building powerful web apps and creating web
+        Hi, I'm a software engineer building powerful web apps and creating web
         development content. I am a{' '}
         <A
           href={links.lambdaBadge.url}

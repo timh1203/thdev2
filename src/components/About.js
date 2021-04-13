@@ -11,6 +11,17 @@ const AboutPage = props => (
     <Hr />
     <Image fluid={props.aboutImage} />
 
+    <Div2>
+      <A2
+        href={links.resume.url}
+        alt={links.resume.alt}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Button>My Online Resume</Button>
+      </A2>
+    </Div2>
+
     <Div>
       <Ul>
         <li>
@@ -23,7 +34,7 @@ const AboutPage = props => (
           >
             OpenSymmetry
           </A>
-          , a global SPM company
+          , a global SPM company ({new Date().getFullYear()})
         </li>
         <li>
           Pioneering the Plutus Core language with Plutus Pioneer Program at{' '}
@@ -35,7 +46,19 @@ const AboutPage = props => (
           >
             IOHK
           </A>
-          , a blockchain and cryptocurrency company
+          , a blockchain company ({new Date().getFullYear()})
+        </li>
+        <li>
+          Working as an Technology Manager a{' '}
+          <A
+            href={links.dullesBarber.url}
+            alt={links.dullesBarber.alt}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Dulles barber
+          </A>
+          , a small business in Northern Virginia ({new Date().getFullYear()})
         </li>
         <li>
           Volunteering with Hispanic Hackers at{' '}
@@ -47,7 +70,7 @@ const AboutPage = props => (
           >
             Austin Hispanic Hackers
           </A>
-          , a technology promoting diversity and inclusion in technology
+          , a technology group promoting diversity and inclusion
         </li>
         <li>
           Worked as an associate full-stack software engineer at{' '}
@@ -59,7 +82,8 @@ const AboutPage = props => (
           >
             Tenavox
           </A>
-          , a startup in the commercial real estate industry
+          , a startup in the commercial real estate industry (
+          {new Date().getFullYear()})
         </li>
 
         <li>
@@ -89,16 +113,7 @@ const AboutPage = props => (
         </li>
 
         <li>
-          Worked as a freelancer with clients to develop web projects:{' '}
-          <A
-            href={links.dullesBarber.url}
-            alt={links.dullesBarber.alt}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Dulles barber
-          </A>
-          ,{' '}
+          Worked as a freelancer with clients to develop web design sites:{' '}
           <A
             href={links.derikJones.url}
             alt={links.derikJones.alt}
@@ -141,7 +156,9 @@ const AboutPage = props => (
       </Ul>
 
       <br />
+      <br />
       <Hr />
+      <br />
       <br />
 
       <P>
@@ -190,17 +207,6 @@ const AboutPage = props => (
         section.
       </P>
     </Div>
-
-    <Div2>
-      <A2
-        href={links.resume.url}
-        alt={links.resume.alt}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Button>My Online Resume</Button>
-      </A2>
-    </Div2>
 
     <Div2>
       <A2
