@@ -70,7 +70,7 @@ const AboutPage = props => (
           >
             Austin Hispanic Hackers
           </A>
-          , a technology group promoting diversity and inclusion
+          , a technology group promoting diversity ({new Date().getFullYear()})
         </li>
         <li>
           Worked as an associate full-stack software engineer at{' '}
@@ -82,8 +82,7 @@ const AboutPage = props => (
           >
             Tenavox
           </A>
-          , a startup in the commercial real estate industry (
-          {new Date().getFullYear()})
+          , a startup in the commercial real estate industry
         </li>
 
         <li>
