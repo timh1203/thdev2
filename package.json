@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Timothy Hoang <timh1203@gmail.com>",
   "dependencies": {
-    "chart.js": "^2.7.3",
+    "chart.js": "^2.9.4",
     "gatsby": "^2.1.2",
     "gatsby-image": "^2.0.15",
     "gatsby-plugin-manifest": "^2.0.5",
